@@ -94,6 +94,17 @@
   });
 
   $("mbmAdminClose")?.addEventListener("click", () => $("mbmAdminPanel").hidden = true);
+  $("mbmAdminSignup")?.addEventListener("click", async () => {
+    const email = $("mbmAdminEmail").value.trim();
+    const password = $("mbmAdminPassword").value;
+    const message = $("mbmAdminMessage");
+    if (!email || password.length < 8) {
+      status(message, "Escribe tu correo y una contraseña de al menos 8 caracteres.");
+      return;
+    }
+    const { error } = await client.auth.signUp({ email, password });
+    status(message, error ? "No se pudo crear la cuenta. Comprueba el correo o si ya existe." : "Cuenta creada. Revisa tu correo para confirmar. Después habrá que autorizarla como administradora.");
+  });
   $("mbmAdminLogin")?.addEventListener("submit", async (event) => {
     event.preventDefault();
     const message = $("mbmAdminMessage");
