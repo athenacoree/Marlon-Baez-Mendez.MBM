@@ -1,4 +1,4 @@
-const CACHE='mbm-profile-v5';
+const CACHE='mbm-profile-v6';
 const CORE=['./','./index.html','./profile.js','./manifest.webmanifest','./favicon.svg'];
 
 self.addEventListener('install',event=>{
