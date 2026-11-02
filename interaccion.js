@@ -63,7 +63,7 @@
   $("name").textContent=profile.name||"Usuario";
   $("tagline").textContent=profile.bio||"Este perfil todavía no tiene una descripción.";
   $("contactBtn").textContent="Compartir perfil ↗";$("contactBtn").href=location.href;$("contactBtn").onclick=null;
-  $("avatar").src=profile.avatar_url||"assets/profile.jpg";$("avatar").alt="Foto de "+(profile.name||"usuario");
+  $("avatar").src=profile.avatar_url||"assets/default-avatar.svg";$("avatar").alt="Foto de "+(profile.name||"usuario");
   $("year").textContent=new Date().getFullYear();$("footerText").textContent="Perfil de "+(profile.name||"usuario");
   document.title=(profile.name||"Perfil")+" · Interacción";
   let actions=$("ia-profile-actions");if(!actions){actions=document.createElement("div");actions.id="ia-profile-actions";actions.className="ia-profile-actions";$("contactBtn").parentElement.append(actions);}
@@ -84,7 +84,7 @@
   const handle=getHandle(routePath);
   if(!handle){
    document.body.classList.remove("ia-profile-mode");document.body.classList.add("ia-home-mode");
-   $("eyebrow").textContent="UNA RED PARA CONECTAR";
+   $("eyebrow").textContent="UNA RED PARA CONECTAR";$("tagTopText").textContent="✦ BIENVENIDO A INTERACCIÓN";$("tagBottomText").textContent="PERFILES · IDEAS · CONEXIONES";
    $("name").innerHTML="Tu nombre.<br><em>Tu espacio.</em>";
    $("tagline").textContent="Crea tu perfil, comparte lo que te representa y conecta con otras personas.";
    $("contactBtn").textContent="Crear mi perfil ↗";$("contactBtn").href="#";
