@@ -124,6 +124,18 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:35px 0 45px;c
 .mbm-admin-actions{display:flex;gap:6px;flex:none}.mbm-admin-actions button{padding:8px 11px}.mbm-admin-actions button:last-child{background:#8b3343}
 @media(max-width:600px){.mbm-community{padding:35px 0 60px}.mbm-admin-row{flex-direction:column}.mbm-admin-actions{flex-wrap:wrap}.mbm-admin-stats{grid-template-columns:1fr 1fr}}
 
+
+.mbm-editor{background:#fffefa;border:1px solid var(--line);border-radius:20px;padding:18px}
+.mbm-editor-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.mbm-editor-grid label,.mbm-editor-media strong{display:grid;gap:6px;font-size:11px;font-weight:800;color:#55594f}
+.mbm-editor-media{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.mbm-editor-media>div{min-width:0;padding:14px;border:1px solid var(--line);border-radius:15px;background:#fbfaf6}
+.mbm-editor-media .mbm-field{margin-top:8px;font-size:11px}
+.mbm-save{border:0;border-radius:99px;background:var(--ink);color:#fff;padding:14px 20px;font-weight:800;font-size:12px;cursor:pointer}
+.mbm-gallery-admin{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}
+.mbm-gallery-admin img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px}
+.mbm-gallery-admin button{border:0;border-radius:9px;background:#8b3343;color:white;padding:7px;font-size:10px;cursor:pointer}
+@media(max-width:560px){.mbm-editor-grid,.mbm-editor-media{grid-template-columns:1fr}.mbm-admin-box{max-height:95vh;padding:15px}}
 </style>
 </head>
 <body><div class="noise"></div>
@@ -205,6 +217,33 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:35px 0 45px;c
     <div class="mbm-admin-stat"><small>Me gusta</small><strong id="mbmAdminLikesCount">0</strong></div>
    </div>
    <p class="mbm-muted" id="mbmAdminDataMessage" aria-live="polite"></p>
+   <section class="mbm-admin-section mbm-editor">
+    <h3>Personalizar mi página</h3>
+    <p class="mbm-muted">Edita textos, títulos, mensajes y enlaces. Los cambios se publican al guardar.</p>
+    <div class="mbm-editor-grid">
+     <label>Nombre principal<input class="mbm-field" id="editName" maxlength="90"></label>
+     <label>Texto pequeño superior<input class="mbm-field" id="editEyebrow" maxlength="100"></label>
+     <label>Presentación inicial<textarea class="mbm-field" id="editTagline" rows="3" maxlength="500"></textarea></label>
+     <label>Biografía<textarea class="mbm-field" id="editBio" rows="4" maxlength="1500"></textarea></label>
+     <label>Título de la tarjeta destacada<textarea class="mbm-field" id="editStamp" rows="2" maxlength="180"></textarea></label>
+     <label>Texto pequeño de la tarjeta<input class="mbm-field" id="editStampSmall" maxlength="100"></label>
+     <label>Frase inferior de la tarjeta<input class="mbm-field" id="editStampFoot" maxlength="180"></label>
+     <label>Etiqueta flotante superior<input class="mbm-field" id="editTagTop" maxlength="100"></label>
+     <label>Etiqueta flotante inferior<input class="mbm-field" id="editTagBottom" maxlength="100"></label>
+     <label>Título de la sección acerca<textarea class="mbm-field" id="editAboutTitle" rows="2" maxlength="120"></textarea></label>
+     <label>Saludo de biografía<input class="mbm-field" id="editBioTitle" maxlength="100"></label>
+     <label>Título de galería<textarea class="mbm-field" id="editGalleryTitle" rows="2" maxlength="120"></textarea></label>
+     <label>Texto del pie de página<input class="mbm-field" id="editFooter" maxlength="180"></label>
+     <label>Enlace del botón principal<input class="mbm-field" id="editContact" type="url" maxlength="500" placeholder="https://..."></label>
+     <label>Intereses (separados por comas)<textarea class="mbm-field" id="editInterests" rows="2" maxlength="400"></textarea></label>
+    </div>
+    <div class="mbm-editor-media">
+     <div><strong>Foto de perfil</strong><p class="mbm-muted">Sube una imagen para reemplazar el retrato principal.</p><input class="mbm-field" id="editAvatarFile" type="file" accept="image/jpeg,image/png,image/webp"></div>
+     <div><strong>Galería de fotos</strong><p class="mbm-muted">Puedes seleccionar varias imágenes a la vez.</p><input class="mbm-field" id="editGalleryFiles" type="file" accept="image/jpeg,image/png,image/webp,image/gif" multiple><div id="editGalleryList" class="mbm-gallery-admin"></div></div>
+    </div>
+    <p class="mbm-muted" id="mbmEditorMessage" aria-live="polite"></p>
+    <button class="mbm-save" id="mbmSaveContent" type="button">Guardar cambios de la página ↗</button>
+   </section>
    <section class="mbm-admin-section"><h3>Comentarios y moderación</h3><div id="mbmAdminComments"></div></section>
    <section class="mbm-admin-section"><h3>Registro de visitas</h3><p class="mbm-muted">Fecha, hora, navegador, tipo de dispositivo e IP aproximada anonimizada.</p><div id="mbmAdminVisits"></div></section>
    <button class="mbm-admin-logout" id="mbmAdminLogout" type="button">Cerrar sesión</button>
