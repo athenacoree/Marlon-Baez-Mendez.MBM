@@ -14,17 +14,10 @@
     "url": "https://www.netflix.com/title/810일"
   },
   {
-    "title": "The Call",
-    "tag": "MISTERIO · THRILLER",
-    "description": "Una llamada conecta a dos personas separadas por el tiempo.",
-    "image": "https://imagecloud.thepaper.cn/thepaper/image/102/263/166.jpg",
-    "url": "https://www.netflix.com/"
-  },
-  {
-    "title": "Train to Busan",
-    "tag": "ACCIÓN · SUPERVIVENCIA",
-    "description": "Un viaje en tren se convierte en una carrera por llegar a un lugar seguro.",
-    "image": "https://image.tmdb.org/t/p/original/b1FH4oZ4cHW6XnT0wSQ0TcazCfG.jpg",
-    "url": "https://www.wellgousa.com/films/train-busan"
+    "title": "Little Forest",
+    "tag": "CINE · VIDA COTIDIANA",
+    "description": "Una joven vuelve a su pueblo y encuentra calma en la cocina, la naturaleza y sus amistades.",
+    "image": "https://pickcon.co.kr/site/data/img_dir/2018/02/20/2018022002422_0.jpg",
+    "url": "https://www.themoviedb.org/"
   }
 ]
