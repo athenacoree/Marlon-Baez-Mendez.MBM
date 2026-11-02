@@ -28,17 +28,21 @@
   async function loadLikes() {
     const countEl = $("mbmLikeCount");
     if (!countEl) return;
-    const { count } = await client.from("profile_likes").select("*", { count: "exact", head: true });
+    const [{ count }, { data: own }] = await Promise.all([
+      client.from("profile_likes").select("*", { count: "exact", head: true }),
+      client.from("profile_likes").select("id").eq("visitor_id", visitorId).maybeSingle()
+    ]);
     countEl.textContent = String(count || 0);
+    if (own) {
+      $("mbmLikeButton")?.classList.add("liked");
+      $("mbmLikeButton")?.setAttribute("aria-pressed", "true");
+    }
   }
   $("mbmLikeButton")?.addEventListener("click", async () => {
     const button = $("mbmLikeButton");
     button.disabled = true;
     const { data: existing } = await client.from("profile_likes").select("id").eq("visitor_id", visitorId).maybeSingle();
-    if (existing) {
-      const { error } = await client.from("profile_likes").delete().eq("visitor_id", visitorId);
-      if (!error) button.classList.remove("liked");
-    } else {
+    if (!existing) {
       const { error } = await client.from("profile_likes").insert({ visitor_id: visitorId });
       if (!error) button.classList.add("liked");
     }
