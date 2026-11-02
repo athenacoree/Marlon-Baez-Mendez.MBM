@@ -95,6 +95,35 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:35px 0 45px;c
 
 #artistFeatured{grid-template-columns:1fr}#artistFeatured .artist-tile{grid-template-columns:minmax(190px,280px) 1fr;min-height:260px}#artistFeatured .artist-art{min-height:260px}
 @media(max-width:700px){#artistFeatured .artist-tile{grid-template-columns:112px 1fr;min-height:170px}#artistFeatured .artist-art{min-height:170px}}
+
+/* MBM community and private administration */
+.mbm-community{padding:52px 0 90px;max-width:760px;margin:auto}
+.mbm-community-card{background:#fffefa;border:1px solid #fff;border-radius:26px;padding:clamp(20px,4vw,34px);box-shadow:0 15px 50px #2527190a}
+.mbm-community-title{font:800 clamp(25px,4vw,36px) Manrope;letter-spacing:-1.5px;margin:0 0 8px}
+.mbm-muted{color:#85897d;font-size:12px;line-height:1.7}
+.mbm-like{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:99px;background:#f8f8f2;padding:13px 19px;font-weight:800;font-size:13px;cursor:pointer;transition:.2s}
+.mbm-like.liked{background:#ffe9ee;border-color:#ffc6d2;color:#b52c54}.mbm-like:disabled{opacity:.6}
+.mbm-comments{margin-top:28px}.mbm-comment-form{display:grid;gap:10px;margin:18px 0 24px}
+.mbm-field{width:100%;border:1px solid var(--line);border-radius:14px;background:#fff;padding:13px 14px;font:inherit;font-size:13px;color:var(--ink)}
+.mbm-field:focus{outline:2px solid #d6fb68;outline-offset:1px}
+.mbm-comment-form button,.mbm-admin-actions button{border:0;border-radius:99px;background:var(--ink);color:white;padding:12px 17px;font-weight:800;font-size:11px;cursor:pointer;justify-self:start}
+.mbm-comment{padding:15px 0;border-bottom:1px solid var(--line)}.mbm-comment-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.mbm-comment-head strong{font-size:12px}.mbm-comment time{font-size:10px;color:#85897d}.mbm-comment p{font-size:13px;line-height:1.7;color:#55594f;margin:8px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.mbm-admin[hidden],.mbm-admin-login[hidden],.mbm-admin-dashboard[hidden]{display:none!important}
+.mbm-admin{position:fixed;inset:0;z-index:100;background:#111d;backdrop-filter:blur(18px);display:grid;place-items:center;padding:14px}
+.mbm-admin-box{width:min(760px,100%);max-height:92vh;overflow:auto;background:#f7f6f0;border-radius:24px;padding:clamp(18px,4vw,30px);box-shadow:0 30px 100px #0008}
+.mbm-admin-top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:22px}
+.mbm-admin-top h2{font:800 25px Manrope;letter-spacing:-1px;margin:0}
+.mbm-admin-close{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:white;font-size:22px;cursor:pointer}
+.mbm-admin-login{display:grid;gap:12px;max-width:420px}
+.mbm-admin-login button,.mbm-admin-logout{border:0;border-radius:99px;background:var(--ink);color:white;padding:13px 18px;font-weight:800;cursor:pointer}
+.mbm-admin-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:20px}
+.mbm-admin-stat{background:white;border:1px solid var(--line);border-radius:16px;padding:15px}
+.mbm-admin-stat small{display:block;color:#85897d;font-size:10px}.mbm-admin-stat strong{display:block;font:800 28px Manrope;margin-top:5px}
+.mbm-admin-section{margin:20px 0}.mbm-admin-section h3{font:800 17px Manrope;margin:0 0 10px}
+.mbm-admin-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:11px;line-height:1.6;overflow-wrap:anywhere}
+.mbm-admin-actions{display:flex;gap:6px;flex:none}.mbm-admin-actions button{padding:8px 11px}.mbm-admin-actions button:last-child{background:#8b3343}
+@media(max-width:600px){.mbm-community{padding:35px 0 60px}.mbm-admin-row{flex-direction:column}.mbm-admin-actions{flex-wrap:wrap}.mbm-admin-stats{grid-template-columns:1fr 1fr}}
+
 </style>
 </head>
 <body><div class="noise"></div>
@@ -141,7 +170,48 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:35px 0 45px;c
 <section class="section" id="connect"><div class="connect"><div class="connect-copy reveal"><div class="micro">02 — ENCUÉNTRAME</div><h2>Las buenas<br>conexiones<br>empiezan aquí.</h2><p>Mis espacios digitales, proyectos y lugares donde puedes encontrarme.</p></div><div class="social-list reveal" id="socialList"></div></div></section>
 
 <section class="end-card reveal"><div><div class="micro">GRACIAS POR PASAR</div><h2>Esto es solo<br>el comienzo.</h2></div><a class="pill pill-dark" href="#connect">Conectar conmigo ↗</a></section>
-</main><footer><span id="footerText">Hecho con dedicación.</span><strong>MBM. © <span id="year"></span></strong></footer></div>
+</main>
+<section class="mbm-community" id="mbmCommunity">
+ <div class="mbm-community-card">
+  <h2 class="mbm-community-title">Tu opinión cuenta</h2>
+  <p class="mbm-muted">Si te gusta este espacio, puedes dejar tu apoyo o compartir un comentario. Los comentarios se revisan antes de publicarse.</p>
+  <button class="mbm-like" id="mbmLikeButton" type="button" aria-label="Me gusta este perfil">♡ <span>Me gusta</span> · <strong id="mbmLikeCount">0</strong></button>
+  <div class="mbm-comments">
+   <h3 class="mbm-community-title" style="font-size:22px">Comentarios</h3>
+   <form class="mbm-comment-form" id="mbmCommentForm">
+    <input class="mbm-field" id="mbmCommentName" maxlength="40" placeholder="Tu nombre" required>
+    <textarea class="mbm-field" id="mbmCommentBody" maxlength="600" rows="3" placeholder="Escribe un comentario respetuoso..." required></textarea>
+    <button id="mbmCommentSubmit" type="submit">Enviar comentario ↗</button>
+    <p class="mbm-muted" id="mbmCommentMessage" aria-live="polite">Tu comentario quedará pendiente de aprobación.</p>
+   </form>
+   <div id="mbmCommentsList" aria-live="polite"><p class="mbm-muted">Cargando comentarios...</p></div>
+  </div>
+ </div>
+</section>
+<div class="mbm-admin" id="mbmAdminPanel" hidden>
+ <div class="mbm-admin-box" role="dialog" aria-modal="true" aria-labelledby="mbmAdminTitle">
+  <div class="mbm-admin-top"><h2 id="mbmAdminTitle">MBM · Administración</h2><button class="mbm-admin-close" id="mbmAdminClose" type="button" aria-label="Cerrar">×</button></div>
+  <form class="mbm-admin-login" id="mbmAdminLogin">
+   <p class="mbm-muted">Acceso privado. Solo las cuentas autorizadas pueden administrar el perfil.</p>
+   <input class="mbm-field" id="mbmAdminEmail" type="email" autocomplete="username" placeholder="Correo de administrador" required>
+   <input class="mbm-field" id="mbmAdminPassword" type="password" autocomplete="current-password" placeholder="Contraseña" required>
+   <button type="submit">Iniciar sesión ↗</button>
+   <p class="mbm-muted" id="mbmAdminMessage" aria-live="polite"></p>
+  </form>
+  <div class="mbm-admin-dashboard" id="mbmAdminDashboard" hidden>
+   <div class="mbm-admin-stats">
+    <div class="mbm-admin-stat"><small>Visitas recientes</small><strong id="mbmAdminVisitsCount">0</strong></div>
+    <div class="mbm-admin-stat"><small>Me gusta</small><strong id="mbmAdminLikesCount">0</strong></div>
+   </div>
+   <p class="mbm-muted" id="mbmAdminDataMessage" aria-live="polite"></p>
+   <section class="mbm-admin-section"><h3>Comentarios y moderación</h3><div id="mbmAdminComments"></div></section>
+   <section class="mbm-admin-section"><h3>Registro de visitas</h3><p class="mbm-muted">Fecha, hora, navegador, tipo de dispositivo e IP aproximada anonimizada.</p><div id="mbmAdminVisits"></div></section>
+   <button class="mbm-admin-logout" id="mbmAdminLogout" type="button">Cerrar sesión</button>
+  </div>
+ </div>
+</div>
+
+<footer><span id="footerText">Hecho con dedicación.</span><strong>MBM. © <span id="year"></span></strong></footer></div>
 <div class="lightbox" id="lightbox"><button type="button" aria-label="Cerrar">×</button><img alt="Fotografía ampliada"></div>
 <script src="profile.js"></script>
 <script>
@@ -255,4 +325,8 @@ if('serviceWorker' in navigator){
   }catch(error){console.warn('No se pudo comprobar la actualización:',error)}
  });
  }
-</script></body></html>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="mbm-community.js"></script>
+</body></html>
