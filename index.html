@@ -137,9 +137,41 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:35px 0 45px;c
 .mbm-gallery-admin img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px}
 .mbm-gallery-admin button{border:0;border-radius:9px;background:#8b3343;color:white;padding:7px;font-size:10px;cursor:pointer}
 @media(max-width:560px){.mbm-editor-grid,.mbm-editor-media{grid-template-columns:1fr}.mbm-admin-box{max-height:95vh;padding:15px}}
-.extra-info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.extra-info-card{padding:24px;border:1px solid var(--line);border-radius:22px;background:#fffefa;box-shadow:0 12px 35px #25271908}.extra-info-card h3{font:800 19px Manrope;letter-spacing:-.7px;margin:0 0 10px}.extra-info-card p{font-size:13px;line-height:1.8;color:var(--muted);margin:0;white-space:pre-wrap}@media(max-width:650px){.extra-info-grid{grid-template-columns:1fr}}</style>
+.extra-info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.extra-info-card{padding:24px;border:1px solid var(--line);border-radius:22px;background:#fffefa;box-shadow:0 12px 35px #25271908}.extra-info-card h3{font:800 19px Manrope;letter-spacing:-.7px;margin:0 0 10px}.extra-info-card p{font-size:13px;line-height:1.8;color:var(--muted);margin:0;white-space:pre-wrap}@media(max-width:650px){.extra-info-grid{grid-template-columns:1fr}}
+/* MBM monochrome signature + touch-responsive motion canvas */
+:root{--lime:#171916;--accent:#171916}
+.brand span,h1 em,.spark,.music-play{color:#171916}
+.eyebrow:before{background:#171916}
+.orbit-dot{background:#171916;box-shadow:0 0 0 8px #17191618}
+.photo-back{background:#171916}
+.ticker{background:#171916;border-color:#171916;color:#fff}
+.ticker span,.ticker b{color:#fff}
+.social:hover{background:#171916;color:#fff}
+.social:hover .social-icon{background:#ffffff20}
+.social:hover .social-icon svg{filter:brightness(0) invert(1)}
+.end-card{background:#171916;color:#fff}
+.end-card .micro,.end-card h2{color:#fff}
+.end-card:after{color:#ffffff12}
+.artist-kicker,.artist-tile-copy small,.artist-tile-copy em,.music-youtube-link{color:#171916}
+.artist-play{background:#171916;color:#fff}
+.artist-play:hover{box-shadow:0 10px 25px #17191625}
+.music-item:hover,.music-item.active{background:#171916;color:#fff;border-color:#171916}
+.music-item:hover .music-num,.music-item.active .music-num{background:#ffffff20;color:#fff}
+.music-item:hover .music-meta small,.music-item.active .music-meta small{color:#d5d5d0}
+.music-item:hover .music-play,.music-item.active .music-play{color:#fff}
+.artist-art,.artist-tile:nth-child(2) .artist-art,.artist-tile:nth-child(3) .artist-art,.artist-tile:nth-child(4) .artist-art{background:#171916;color:#fff}
+.mbm-field:focus{outline-color:#171916}
+.taste-more:hover{background:#171916;border-color:#171916;color:#fff}
+.media-feature-copy a{background:#171916;color:#fff}
+#mbm-motion-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:18;pointer-events:none;opacity:.8;mix-blend-mode:multiply}
+.visual,.photo,.artist-tile,.social,.pill,.mbm-community-card{transform-style:preserve-3d}
+.photo,.artist-tile,.social,.pill{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,background .25s}
+.photo:active,.artist-tile:active,.social:active,.pill:active{transform:scale(.985)}
+@media(prefers-reduced-motion:reduce){#mbm-motion-canvas{display:none}}
+</style>
 </head>
-<body><div class="noise"></div>
+<body><canvas id="mbm-motion-canvas" aria-hidden="true"></canvas>
+<div class="noise"></div>
 <div class="wrap">
 <header class="top"><button class="brand" type="button" aria-label="Abrir acceso de administrador">MBM<span>.</span></button><nav class="nav"><a href="#about">ACERCA</a><a href="#connect">REDES</a><a href="#gustos">GUSTOS</a><a href="#gallery">FOTOS</a><a class="nav-cta" href="#connect">HABLEMOS ↗</a></nav></header>
 <main>
@@ -356,6 +388,29 @@ loadTasteMedia('series');
 loadTasteMedia('movies');
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches){const visual=document.querySelector('.visual');visual.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;const r=visual.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;visual.querySelector('.photo-stack').style.transform='rotateY('+x*10+'deg) rotateX('+(-y*8)+'deg) rotate(3deg)'});visual.addEventListener('pointerleave',()=>visual.querySelector('.photo-stack').style.transform='')}
+
+// Touch / pointer ink-trail canvas: a soft, responsive motion layer.
+(()=>{
+ const canvas=document.getElementById('mbm-motion-canvas');
+ if(!canvas||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ const ctx=canvas.getContext('2d',{alpha:true});if(!ctx)return;
+ let w=0,h=0,dpr=1,raf=0,last=0;
+ const points=[],ripples=[];
+ const resize=()=>{dpr=Math.min(window.devicePixelRatio||1,1.7);w=window.innerWidth;h=window.innerHeight;canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);canvas.style.width=w+'px';canvas.style.height=h+'px';ctx.setTransform(dpr,0,0,dpr,0,0)};
+ const addPoint=(x,y,force=1)=>{const prev=points[points.length-1];points.push({x,y,life:1,force,angle:prev?Math.atan2(y-prev.y,x-prev.x):0});if(points.length>34)points.shift();if(!raf)raf=requestAnimationFrame(draw)};
+ const locate=e=>{if(e.pointerType==='mouse'&&e.buttons===0)addPoint(e.clientX,e.clientY,.45);else addPoint(e.clientX,e.clientY,e.pointerType==='touch'?1.2:1)};
+ window.addEventListener('pointermove',locate,{passive:true});
+ window.addEventListener('pointerdown',e=>{ripples.push({x:e.clientX,y:e.clientY,r:2,life:1});addPoint(e.clientX,e.clientY,1.4);if(!raf)raf=requestAnimationFrame(draw)},{passive:true});
+ window.addEventListener('touchmove',e=>{const t=e.touches&&e.touches[0];if(t)addPoint(t.clientX,t.clientY,1.2)},{passive:true});
+ window.addEventListener('resize',resize,{passive:true});resize();
+ function draw(time){raf=0;ctx.clearRect(0,0,w,h);let alive=false;
+  for(let i=points.length-1;i>=0;i--){const p=points[i];p.life-=.018;if(p.life<=0){points.splice(i,1);continue}alive=true}
+  for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i];const alpha=Math.min(a.life,b.life)*.18;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.quadraticCurveTo((a.x+b.x)/2,(a.y+b.y)/2,b.x,b.y);ctx.strokeStyle='rgba(20,22,20,'+alpha+')';ctx.lineWidth=1+Math.min(3,b.force);ctx.lineCap='round';ctx.stroke();if(i%3===0){ctx.beginPath();ctx.arc(b.x,b.y,1.3*b.life,0,Math.PI*2);ctx.fillStyle='rgba(20,22,20,'+(alpha*1.7)+')';ctx.fill()}}
+  for(let i=ripples.length-1;i>=0;i--){const p=ripples[i];p.r+=1.9;p.life-=.025;if(p.life<=0){ripples.splice(i,1);continue}alive=true;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.strokeStyle='rgba(20,22,20,'+(p.life*.16)+')';ctx.lineWidth=1;ctx.stroke()}
+  if(alive)raf=requestAnimationFrame(draw);
+ }
+})();
+
 if('serviceWorker' in navigator){
  window.addEventListener('load',async()=>{
   try{
