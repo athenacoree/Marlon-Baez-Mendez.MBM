@@ -186,7 +186,7 @@
     }catch(error){console.error(error);status(msg,"No se pudieron guardar los cambios: "+(error.message||"revisa permisos y conexión"))}
     finally{btn.disabled=false}
   });
-  loadSiteContent();
+  // Interacción uses one profile row per account; do not apply legacy global site content here.
 
   async function refreshAdmin() {
     const [visits, visitTotal, comments, likes] = await Promise.all([
