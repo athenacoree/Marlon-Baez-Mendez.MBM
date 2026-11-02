@@ -97,6 +97,8 @@
     if (error) { status(message, "No se pudo iniciar sesión. Comprueba tus datos y autorización."); return; }
     $("mbmAdminLogin").hidden = true;
     $("mbmAdminDashboard").hidden = false;
+    await loadSiteContent();
+    fillEditor();
     await refreshAdmin();
   });
   $("mbmAdminLogout")?.addEventListener("click", async () => {
@@ -104,6 +106,81 @@
     $("mbmAdminDashboard").hidden = true;
     $("mbmAdminLogin").hidden = false;
   });
+
+  const contentFields = ["name","eyebrow","tagline","bio","stamp","stampSmall","stampFoot","tagTop","tagBottom","aboutTitle","bioTitle","galleryTitle","footer","contact","interests"];
+  const defaults = {
+    name:"Marlon Báez Méndez", eyebrow:"MI ESPACIO PERSONAL",
+    tagline:"Bienvenido a mi espacio personal. Conoce mis ideas, mis proyectos y un poco más sobre mí.",
+    bio:"Soy una persona curiosa, creativa y apasionada por aprender y construir cosas nuevas. Este espacio es una pequeña ventana a mi mundo.",
+    stamp:"Siempre hay algo nuevo por crear.", stampSmall:"NOTAS PERSONALES · 2026",
+    stampFoot:"Curiosidad como punto de partida.", tagTop:"✦ BIENVENIDO A MBM",
+    tagBottom:"CREATIVIDAD · IDEAS · VIDA", aboutTitle:"Un poco de mi universo.",
+    bioTitle:"Hola, soy Marlon.", galleryTitle:"Momentos que cuentan.",
+    footer:"Hecho con dedicación", contact:"",
+    interests:["Tecnología","Creatividad","Proyectos","Aprendizaje"], avatar:"", photos:[]
+  };
+  let siteContent = {...defaults};
+  const fieldIds = {name:"editName",eyebrow:"editEyebrow",tagline:"editTagline",bio:"editBio",stamp:"editStamp",stampSmall:"editStampSmall",stampFoot:"editStampFoot",tagTop:"editTagTop",tagBottom:"editTagBottom",aboutTitle:"editAboutTitle",bioTitle:"editBioTitle",galleryTitle:"editGalleryTitle",footer:"editFooter",contact:"editContact"};
+  function applySiteContent(data) {
+    siteContent = {...defaults,...(data||{})};
+    const put=(id,value)=>{const el=$(id);if(el&&value!==undefined)el.textContent=value};
+    put("name",siteContent.name);put("eyebrow",siteContent.eyebrow);put("tagline",siteContent.tagline);
+    put("bio",siteContent.bio);put("footerText",siteContent.footer);
+    put("aboutTitle",siteContent.aboutTitle);put("bioTitle",siteContent.bioTitle);
+    put("galleryTitle",siteContent.galleryTitle);
+    put("stampText",siteContent.stamp);put("stampSmall",siteContent.stampSmall);put("stampFoot",siteContent.stampFoot);
+    put("tagTopText",siteContent.tagTop);put("tagBottomText",siteContent.tagBottom);
+    if(siteContent.avatar) $("avatar").src=siteContent.avatar;
+    if(siteContent.contact) $("contactBtn").href=siteContent.contact;
+    const interests=$("interests");if(interests){interests.replaceChildren();(siteContent.interests||[]).forEach(v=>{const e=document.createElement("span");e.className="chip";e.textContent=v;interests.append(e)})}
+    const gallery=$("photos");if(gallery&&siteContent.photos?.length){gallery.replaceChildren();siteContent.photos.forEach(src=>{const box=document.createElement("div");box.className="photo";const img=document.createElement("img");img.src=src;img.alt="Fotografía de la galería";img.loading="lazy";box.append(img);gallery.append(box)})}
+  }
+  async function loadSiteContent(){
+    const {data,error}=await client.from("mbm_site_settings").select("content").eq("id",1).maybeSingle();
+    if(!error&&data?.content)applySiteContent(data.content);
+  }
+  function fillEditor(){
+    Object.entries(fieldIds).forEach(([key,id])=>{if($(id))$(id).value=siteContent[key]??""});
+    $("editInterests").value=(siteContent.interests||[]).join(", ");
+    renderGalleryAdmin();
+  }
+  function renderGalleryAdmin(){
+    const box=$("editGalleryList");if(!box)return;box.replaceChildren();
+    (siteContent.photos||[]).forEach((url,index)=>{
+      const wrap=document.createElement("div");const img=document.createElement("img");img.src=url;img.alt="Foto "+(index+1);
+      const del=document.createElement("button");del.type="button";del.textContent="Quitar";del.addEventListener("click",()=>{siteContent.photos.splice(index,1);renderGalleryAdmin()});
+      wrap.append(img,del);box.append(wrap);
+    });
+  }
+  async function uploadImage(file,folder){
+    if(!file||!file.type.startsWith("image/"))throw new Error("Selecciona un archivo de imagen válido.");
+    if(file.size>10*1024*1024)throw new Error("Cada imagen debe pesar menos de 10 MB.");
+    const ext=(file.name.split(".").pop()||"jpg").toLowerCase().replace(/[^a-z0-9]/g,"")||"jpg";
+    const path=folder+"/"+Date.now()+"-"+uuid()+"."+ext;
+    const {error}=await client.storage.from("mbm-media").upload(path,file,{contentType:file.type,upsert:false});
+    if(error)throw error;
+    return client.storage.from("mbm-media").getPublicUrl(path).data.publicUrl;
+  }
+  $("mbmSaveContent")?.addEventListener("click",async()=>{
+    const msg=$("mbmEditorMessage"),btn=$("mbmSaveContent");btn.disabled=true;status(msg,"Guardando…");
+    try{
+      const next={...siteContent};
+      Object.entries(fieldIds).forEach(([key,id])=>next[key]=$(id).value.trim());
+      next.interests=$("editInterests").value.split(",").map(v=>v.trim()).filter(Boolean).slice(0,20);
+      const avatarFile=$("editAvatarFile").files[0];
+      if(avatarFile)next.avatar=await uploadImage(avatarFile,"profile");
+      const files=[...($("editGalleryFiles").files||[])];
+      for(const file of files){next.photos.push(await uploadImage(file,"gallery"))}
+      const {error}=await client.from("mbm_site_settings").upsert({id:1,content:next,updated_at:new Date().toISOString()});
+      if(error)throw error;
+      applySiteContent(next);fillEditor();
+      $("editAvatarFile").value="";$("editGalleryFiles").value="";
+      status(msg,"¡Cambios publicados correctamente!");
+    }catch(error){console.error(error);status(msg,"No se pudieron guardar los cambios: "+(error.message||"revisa permisos y conexión"))}
+    finally{btn.disabled=false}
+  });
+  loadSiteContent();
+
   async function refreshAdmin() {
     const [visits, comments, likes] = await Promise.all([
       client.from("profile_visits").select("id,visited_at,browser,device_type,ip_prefix").order("visited_at",{ascending:false}).limit(100),
