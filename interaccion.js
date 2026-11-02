@@ -102,5 +102,10 @@
  $("ia-account-open").addEventListener("click",()=>{if(currentProfile)routeTo(currentProfile.handle);});
  document.querySelector(".brand")?.addEventListener("click",()=>{history.pushState({},"",basePath);routePath=basePath;loadRoute();});
  window.addEventListener("popstate",()=>{routePath=location.pathname;basePath=findBase(routePath);loadRoute();});
- db.auth.onAuthStateChange((event,session)=>{\n  currentUser=session?.user||null;\n  if(!currentUser){currentProfile=null;$("ia-login-open").hidden=false;$("ia-signup-open").hidden=false;$("ia-account-open").hidden=true;}\n  else{$("ia-login-open").hidden=true;$("ia-signup-open").hidden=true;$("ia-account-open").hidden=false;}\n });\n refreshSession().then(loadRoute);
+ db.auth.onAuthStateChange((event,session)=>{
+  currentUser=session?.user||null;
+  if(!currentUser){currentProfile=null;$("ia-login-open").hidden=false;$("ia-signup-open").hidden=false;$("ia-account-open").hidden=true;}
+  else{$("ia-login-open").hidden=true;$("ia-signup-open").hidden=true;$("ia-account-open").hidden=false;}
+ });
+ refreshSession().then(loadRoute);
 })();
