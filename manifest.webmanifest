@@ -1,12 +1,12 @@
 {
-  "name": "MBM · Perfil personal",
-  "short_name": "MBM",
+  "name": "Interacción · Red social",
+  "short_name": "Interacción",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f7f8fc",
   "theme_color": "#f7f8fc",
-  "description": "Espacio personal de Marlon Báez Méndez.",
+  "description": "Crea tu perfil y conecta con otras personas en Interacción.",
   "icons": [
     {
       "src": "favicon.svg",
