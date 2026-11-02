@@ -1,0 +1,30 @@
+[
+  {
+    "title": "20th Century Girl",
+    "tag": "ROMANCE · NOSTALGIA",
+    "description": "Una amistad y un primer amor que comienzan en 1999.",
+    "image": "https://img.seriebox.com/films/101/101176/affich_101176_2.jpg",
+    "url": "https://www.netflix.com/title/81472752"
+  },
+  {
+    "title": "Space Sweepers",
+    "tag": "CIENCIA FICCIÓN · AVENTURA",
+    "description": "La tripulación de una nave espacial encuentra algo que cambiará su misión.",
+    "image": "https://media2.firstshowing.net/firstshowing/img11/SpaceSweepersnewUSPosterbig5992.jpg",
+    "url": "https://www.netflix.com/title/810일"
+  },
+  {
+    "title": "The Call",
+    "tag": "MISTERIO · THRILLER",
+    "description": "Una llamada conecta a dos personas separadas por el tiempo.",
+    "image": "https://imagecloud.thepaper.cn/thepaper/image/102/263/166.jpg",
+    "url": "https://www.netflix.com/"
+  },
+  {
+    "title": "Train to Busan",
+    "tag": "ACCIÓN · SUPERVIVENCIA",
+    "description": "Un viaje en tren se convierte en una carrera por llegar a un lugar seguro.",
+    "image": "https://image.tmdb.org/t/p/original/b1FH4oZ4cHW6XnT0wSQ0TcazCfG.jpg",
+    "url": "https://www.wellgousa.com/films/train-busan"
+  }
+]
