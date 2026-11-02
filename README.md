@@ -1,30 +1,38 @@
-# Perfil personal MBM
+# Interacción
 
-Página personal estática, adaptable a móviles y publicada con GitHub Pages. No usa servidor, base de datos ni servicios de pago.
+Plataforma web multiusuario para crear perfiles públicos individuales.
 
-## Personalizar el perfil
+## Cómo funciona
 
-1. Abre `profile.js` en GitHub.
-2. Pulsa el lápiz (**Edit this file**).
-3. Cambia nombre, descripción, intereses y enlaces de redes.
-4. Guarda con **Commit changes**. GitHub Pages publicará los cambios automáticamente cuando esté configurado.
+- Cualquier visitante puede crear una cuenta con correo, contraseña y un nombre público.
+- El nombre visible no requiere apellidos y puede repetirse.
+- Cada cuenta recibe un ID interno UUID vinculado a Supabase Auth.
+- Cada perfil tiene un identificador de dirección (`handle`) único. Si dos personas usan el mismo nombre, el sistema añade un sufijo al enlace sin cambiar el nombre público.
+- Las direcciones siguen el formato `/interaccion/usuario`.
+- El propietario puede editar su nombre público, dirección y descripción.
+- Los perfiles públicos se consultan desde la tabla `public.profiles`; las políticas RLS limitan las modificaciones al propietario.
 
-## Añadir tu fotografía
+## Servicios
 
-1. En el repositorio, crea o abre la carpeta `assets`.
-2. Sube tu foto principal con el nombre exacto `profile.jpg`.
-3. Para la galería, sube imágenes a `assets/` y añade sus rutas en el arreglo `photos` de `profile.js`, por ejemplo: `"assets/foto-1.jpg"`.
+- **Frontend:** GitHub Pages (rama `main`, carpeta raíz).
+- **Autenticación y base de datos:** Supabase.
+- **Clave del navegador:** publishable key en `supabase-config.js`. Nunca colocar una service-role/secret key en el frontend.
 
-## Publicar con GitHub Pages
+## Publicación
 
-En el repositorio ve a **Settings → Pages**. En **Build and deployment**, selecciona **Deploy from a branch**, elige la rama **main** y la carpeta **/(root)**, y pulsa **Save**. La dirección será:
+En GitHub abre **Settings → Pages**. En **Build and deployment**, selecciona **Deploy from a branch**, rama **main** y carpeta **/(root)**. El archivo `404.html` permite resolver los enlaces de perfil en este alojamiento estático.
 
-`https://athenacoree.github.io/Marlon-Baez-Mendez.MBM/`
+La primera publicación puede tardar unos minutos. Los commits posteriores a `main` actualizan la web.
 
-La primera publicación puede tardar unos minutos. Cada commit posterior a `main` actualiza la página.
+## Archivos principales
 
-## Archivos
+- `index.html`: interfaz de Interacción, acceso y formularios.
+- `interaccion.js`: registro, inicio de sesión, lectura y edición de perfiles.
+- `404.html`: recuperación de enlaces directos a perfiles.
+- `supabase-config.js`: URL y clave publicable de Supabase.
+- `mbm-community.js`: funciones heredadas de la página anterior; el contenido global antiguo ya no se aplica a los perfiles multiusuario.
+- `sw.js`: caché y actualización de la aplicación.
 
-- `index.html`: diseño, estilos, animaciones e interacción.
-- `profile.js`: contenido editable del perfil.
-- `assets/`: fotografías que subas.
+## Datos de perfil
+
+La tabla `public.profiles` usa `id` como UUID relacionado con `auth.users.id`. El nombre público se guarda en `name`; el enlace único se guarda en `handle`. Un trigger crea automáticamente el perfil al registrarse una cuenta.
