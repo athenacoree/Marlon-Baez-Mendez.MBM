@@ -21,6 +21,37 @@
 footer{text-align:center;padding:28px 0 4px;color:#98a4b9;font-size:11px}.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
 @media(max-width:720px){.wrap{width:min(100% - 24px,560px);padding-top:12px}.nav{padding-bottom:16px}.nav a{margin-left:12px;font-size:12px}.hero{grid-template-columns:1fr;gap:22px}.avatar-wrap{grid-row:1;width:112px}.hero h1{letter-spacing:-1.8px}.grid{grid-template-columns:1fr}.panel,.gallery{padding:22px}.gallery-grid{grid-template-columns:repeat(2,1fr)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+
+/* Refinamiento visual */
+:root{--ink:#17213a;--muted:#69758e;--blue:#668cf0;--shadow:0 26px 80px rgba(69,91,145,.14)}
+body{background:radial-gradient(ellipse at 15% 8%,#e6efff 0,transparent 38%),radial-gradient(ellipse at 88% 28%,#eee5ff 0,transparent 36%),linear-gradient(145deg,#f9fbff,#eff4ff 58%,#f9f6ff)}
+.wrap{width:min(1120px,calc(100% - 36px))}
+.nav{padding:16px 4px 30px}.brand{font-size:18px;letter-spacing:-.8px}
+.hero{min-height:360px;border-radius:34px;background:linear-gradient(120deg,rgba(255,255,255,.78),rgba(255,255,255,.43));border-color:rgba(255,255,255,.92);box-shadow:0 28px 90px rgba(79,105,165,.15)}
+.hero h1{font-size:clamp(38px,6.5vw,68px);letter-spacing:-3px}
+.hero p{font-size:15.5px;max-width:580px}
+.eyebrow{letter-spacing:2.6px;font-size:10px}
+.glass{backdrop-filter:blur(30px) saturate(175%);-webkit-backdrop-filter:blur(30px) saturate(175%)}
+.avatar-wrap{border-radius:32%;padding:6px;box-shadow:0 24px 60px rgba(82,111,184,.25)}
+.avatar{border-radius:29%}
+.panel,.gallery{border-radius:26px;background:rgba(255,255,255,.64)}
+.panel h2,.gallery-head h2{font-size:20px}
+.socials{grid-template-columns:1fr;gap:11px}
+.social{min-height:58px;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.7);color:#344563;border-color:rgba(255,255,255,.95);box-shadow:0 8px 22px rgba(77,99,151,.055)}
+.social:hover{box-shadow:0 14px 28px rgba(77,99,151,.12)}
+.social-icon{width:30px;height:30px;display:grid;place-items:center;border-radius:11px;background:#eef3ff;color:#5479d6;flex:0 0 30px}
+.social-icon svg{width:18px;height:18px;display:block}
+.social-meta{display:flex;flex-direction:column;gap:2px}
+.social-meta small{font-size:11px;font-weight:500;color:#8390a7}
+.social-static{cursor:default}
+.social-static:hover{transform:none;background:rgba(255,255,255,.7)}
+.photo{aspect-ratio:4/3;border-radius:20px}
+.gallery{margin-top:20px}
+.empty-gallery{grid-column:1/-1;min-height:115px;border:1px dashed rgba(122,148,205,.35);border-radius:20px;display:grid;place-items:center;text-align:center;padding:20px;color:#8492ad;background:rgba(255,255,255,.34);font-size:13px;line-height:1.7}
+.btn{border-radius:16px;padding:13px 19px}
+.primary{background:linear-gradient(135deg,#7199fb,#5279e5)}
+footer{padding-top:34px}
+@media(max-width:720px){.hero{border-radius:28px}.hero h1{letter-spacing:-2px}.nav{padding-bottom:20px}.nav a{margin-left:10px}.panel,.gallery{border-radius:23px}}
 </style></head>
 <body><div class="bg-orb orb1"></div><div class="bg-orb orb2"></div><div class="bg-orb orb3"></div>
 <div class="wrap">
@@ -40,9 +71,25 @@ if(p.contactUrl)document.getElementById('contactBtn').href=p.contactUrl;
 document.title=(p.name||'Mi perfil')+' · Perfil personal';
 document.getElementById('year').textContent=new Date().getFullYear();
 (p.interests||['Creatividad','Tecnología','Nuevas ideas']).forEach(x=>{const e=document.createElement('span');e.className='chip';e.textContent=x;document.getElementById('interests').append(e)});
-const socials=p.socials||[{name:'WhatsApp',url:'#'},{name:'Instagram',url:'#'},{name:'GitHub',url:'https://github.com/athenacoree'},{name:'Correo',url:'mailto:hello@example.com'}];
-socials.filter(x=>x.url&&x.url!=='#').forEach(x=>{const a=document.createElement('a');a.className='social';a.href=x.url;a.target='_blank';a.rel='noopener noreferrer';const d=document.createElement('i');d.className='dot';a.append(d,document.createTextNode(x.name));document.getElementById('socials').append(a)});
+const socials=p.socials||[];
+const iconFor=(platform)=>({
+ instagram:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>',
+ whatsapp:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.5l6-1.6A11.8 11.8 0 0 0 20.5 3.5ZM12 21a9.7 9.7 0 0 1-4.9-1.3l-.4-.2-3.6 1 1-3.5-.2-.4A9.7 9.7 0 1 1 12 21Zm5.3-7.3c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2-.8 1-1 1.1-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.7l.5-.6.2-.5c.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4a11 11 0 0 0 4.2 3.7c.6.3 1.1.5 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/></svg>',
+ github:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.76-1.32-3.76-1.32-.5-1.3-1.24-1.65-1.24-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.71 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.16-3-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.16 1.78 1.16 3 0 4.3-2.61 5.25-5.1 5.52.4.35.76 1.03.76 2.08v3.1c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg>'
+})[platform]||'<span class="dot"></span>';
+socials.forEach(x=>{
+ const isLink=!!(x.url&&x.url!=='#');
+ const a=document.createElement(isLink?'a':'div');
+ a.className='social'+(isLink?'':' social-static');
+ if(isLink){a.href=x.url;a.target='_blank';a.rel='noopener noreferrer'}
+ const ic=document.createElement('span');ic.className='social-icon';ic.innerHTML=iconFor(x.platform);
+ const meta=document.createElement('span');meta.className='social-meta';
+ const label=document.createElement('strong');label.textContent=x.name;
+ meta.append(label);
+ if(x.handle){const small=document.createElement('small');small.textContent=x.handle;meta.append(small)}
+ a.append(ic,meta);document.getElementById('socials').append(a);
+});
 (p.photos||[]).slice(0,9).forEach(src=>{const box=document.createElement('div');box.className='photo';const img=document.createElement('img');img.src=src;img.alt='Fotografía de la galería';img.loading='lazy';box.append(img);document.getElementById('photos').append(box)});
-if(!(p.photos||[]).length){for(let i=0;i<3;i++){const box=document.createElement('div');box.className='photo';box.innerHTML='<div class="empty">Añade tus fotos aquí</div>';document.getElementById('photos').append(box)}}
+if(!(p.photos||[]).length){const box=document.createElement('div');box.className='empty-gallery';box.textContent='Próximamente compartiré aquí algunos momentos y fotografías.';document.getElementById('photos').append(box)}
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 </script></body></html>
