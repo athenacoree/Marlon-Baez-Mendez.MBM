@@ -192,7 +192,7 @@ body.ia-profile-mode #about,body.ia-profile-mode #gustos,body.ia-profile-mode #g
 body.ia-profile-mode .hero{min-height:580px}
 body.ia-profile-mode .hero-actions .pill-light{display:none}
 body.ia-profile-mode .hero-profile-like{display:none}
-body.ia-home-mode #about,body.ia-home-mode #gustos,body.ia-home-mode #gallery,body.ia-home-mode #connect,body.ia-home-mode #extraInfo,body.ia-home-mode #mbmCommunity,body.ia-home-mode .ticker{display:none!important}
+body.ia-home-mode .photo-stack{display:none!important}body.ia-home-mode #about,body.ia-home-mode #gustos,body.ia-home-mode #gallery,body.ia-home-mode #connect,body.ia-home-mode #extraInfo,body.ia-home-mode #mbmCommunity,body.ia-home-mode .ticker{display:none!important}
 body.ia-home-mode .hero{min-height:580px}
 @media(max-width:760px){.ia-nav{gap:5px}.ia-nav button{padding:9px 10px;font-size:10px}.ia-panel{padding:22px}.ia-home-mode .hero{min-height:550px}}
 
@@ -201,7 +201,7 @@ body.ia-home-mode .hero{min-height:580px}
 <body><canvas id="mbm-motion-canvas" aria-hidden="true"></canvas>
 <div class="noise"></div>
 <div class="wrap">
-<header class="top"><button class="brand" type="button" aria-label="Ir al inicio de Interacción">Interacción</button><nav class="nav"><a href="#about">ACERCA</a><a href="#connect">REDES</a><a href="#gustos">GUSTOS</a><a href="#gallery">FOTOS</a><a class="nav-cta" href="#connect">HABLEMOS ↗</a><span class="ia-nav"><button id="ia-login-open" type="button">ENTRAR</button><button id="ia-signup-open" class="ia-primary" type="button">CREAR PERFIL</button><button id="ia-account-open" type="button" hidden>MI PERFIL</button></span></nav></header>
+<header class="top"><button class="brand" type="button" aria-label="Ir al inicio de Interacción">Interacción</button><nav class="nav"><a href="./">INICIO</a><span class="ia-nav"><button id="ia-login-open" type="button">ENTRAR</button><button id="ia-signup-open" class="ia-primary" type="button">CREAR PERFIL</button><button id="ia-account-open" type="button" hidden>MI PERFIL</button></span></nav></header>
 <main>
 <section class="hero">
 <div class="hero-copy"><div class="eyebrow" id="eyebrow">UN ESPACIO PROPIO</div><h1 id="name">Marlon Báez<br><em>Méndez.</em></h1><p class="intro" id="tagline">Un lugar para compartir mis ideas, proyectos, intereses y algunos momentos de mi vida.</p><div class="hero-actions"><a class="pill pill-dark" id="contactBtn" href="#connect">Descubrir mi mundo ↗</a><a class="pill pill-light" href="#about">Un poco sobre mí ↓</a></div></div>
@@ -314,7 +314,7 @@ body.ia-home-mode .hero{min-height:580px}
  </div>
 </div>
 
-<footer><span id="footerText">Hecho con dedicación.</span><strong>MBM. © <span id="year"></span></strong></footer></div>
+<footer><span id="footerText">Hecho con dedicación.</span><strong>Interacción © <span id="year"></span></strong></footer></div>
 <div class="ia-modal" id="ia-auth-modal" role="dialog" aria-modal="true" aria-labelledby="ia-auth-title"><div class="ia-panel"><button class="ia-close" id="ia-auth-close" type="button" aria-label="Cerrar">×</button><div class="micro">INTERACCIÓN · TU ESPACIO</div><h2 id="ia-auth-title">Crea tu perfil</h2><p id="ia-auth-subtitle">Elige cómo quieres aparecer. No necesitas poner apellidos.</p><form class="ia-form" id="ia-auth-form"><label id="ia-name-label">Nombre público<input id="ia-name" maxlength="40" autocomplete="name" placeholder="Ej. Marlon" required></label><label>Correo electrónico<input id="ia-email" type="email" autocomplete="email" required></label><label>Contraseña<input id="ia-password" type="password" minlength="8" autocomplete="new-password" required></label><button id="ia-auth-submit" type="submit">Crear mi perfil</button><div class="ia-message" id="ia-auth-message" role="status"></div></form><button class="ia-switch" id="ia-auth-switch" type="button">Ya tengo una cuenta · Entrar</button></div></div><div class="ia-modal" id="ia-edit-modal" role="dialog" aria-modal="true" aria-labelledby="ia-edit-title"><div class="ia-panel"><button class="ia-close" id="ia-edit-close" type="button" aria-label="Cerrar">×</button><div class="micro">PERSONALIZA TU PERFIL</div><h2 id="ia-edit-title">Editar perfil</h2><form class="ia-form" id="ia-edit-form"><label>Nombre público<input id="ia-edit-name" maxlength="40" required></label><label>Dirección única<input id="ia-edit-handle" maxlength="40" required></label><label>Descripción<textarea id="ia-edit-bio" maxlength="280" rows="4"></textarea></label><button type="submit">Guardar cambios</button><div class="ia-message" id="ia-edit-message" role="status"></div></form></div></div><div class="lightbox" id="lightbox"><button type="button" aria-label="Cerrar">×</button><img alt="Fotografía ampliada"></div>
 <script src="profile.js"></script>
 <script>
