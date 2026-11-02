@@ -103,6 +103,7 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:35px 0 45px;c
 .mbm-muted{color:#85897d;font-size:12px;line-height:1.7}
 .mbm-like{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:99px;background:#f8f8f2;padding:13px 19px;font-weight:800;font-size:13px;cursor:pointer;transition:.2s}
 .mbm-like.liked{background:#ffe9ee;border-color:#ffc6d2;color:#b52c54}.mbm-like:disabled{opacity:.6}
+.hero-profile-like{position:absolute;left:50%;bottom:0;transform:translateX(-50%);z-index:6;white-space:nowrap}.hero-profile-like .mbm-like{background:#fffefa;box-shadow:0 12px 32px #25271920;border-color:#ffffff;padding:12px 17px}.hero-profile-like .mbm-like strong{font-variant-numeric:tabular-nums;font-size:14px;color:#171916}
 .mbm-comments{margin-top:28px}.mbm-comment-form{display:grid;gap:10px;margin:18px 0 24px}
 .mbm-field{width:100%;border:1px solid var(--line);border-radius:14px;background:#fff;padding:13px 14px;font:inherit;font-size:13px;color:var(--ink)}
 .mbm-field:focus{outline:2px solid #d6fb68;outline-offset:1px}
@@ -144,7 +145,7 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:35px 0 45px;c
 <main>
 <section class="hero">
 <div class="hero-copy"><div class="eyebrow" id="eyebrow">UN ESPACIO PROPIO</div><h1 id="name">Marlon Báez<br><em>Méndez.</em></h1><p class="intro" id="tagline">Un lugar para compartir mis ideas, proyectos, intereses y algunos momentos de mi vida.</p><div class="hero-actions"><a class="pill pill-dark" id="contactBtn" href="#connect">Descubrir mi mundo ↗</a><a class="pill pill-light" href="#about">Un poco sobre mí ↓</a></div></div>
-<div class="visual"><div class="orbit"><i class="orbit-dot"></i></div><div class="photo-stack"><div class="photo-back"></div><div class="photo-main"><img id="avatar" src="assets/profile.jpg" alt="Retrato de perfil"></div></div><div class="floating-tag tag-top" id="tagTopText">✦ BIENVENIDO A MBM</div><div class="floating-tag tag-bottom" id="tagBottomText">CREATIVIDAD · IDEAS · VIDA</div><div class="spark">✳</div></div>
+<div class="visual"><div class="orbit"><i class="orbit-dot"></i></div><div class="photo-stack"><div class="photo-back"></div><div class="photo-main"><img id="avatar" src="assets/profile.jpg" alt="Retrato de perfil"></div></div><div class="hero-profile-like"><button class="mbm-like" id="mbmLikeButton" type="button" aria-label="Me gusta este perfil" aria-pressed="false">♡ <span>Me gusta</span> · <strong id="mbmLikeCount">0</strong></button></div><div class="floating-tag tag-top" id="tagTopText">✦ BIENVENIDO A MBM</div><div class="floating-tag tag-bottom" id="tagBottomText">CREATIVIDAD · IDEAS · VIDA</div><div class="spark">✳</div></div>
 </section>
 </main></div>
 <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>IDEAS EN MOVIMIENTO <b>✳</b></span><span>CREAR · EXPLORAR · CRECER <b>✳</b></span><span>UN ESPACIO PROPIO <b>✳</b></span><span>IDEAS EN MOVIMIENTO <b>✳</b></span><span>CREAR · EXPLORAR · CRECER <b>✳</b></span><span>UN ESPACIO PROPIO <b>✳</b></span></div></div>
@@ -188,7 +189,6 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:35px 0 45px;c
  <div class="mbm-community-card">
   <h2 class="mbm-community-title">Tu opinión cuenta</h2>
   <p class="mbm-muted">Si te gusta este espacio, puedes dejar tu apoyo o compartir un comentario. Los comentarios se revisan antes de publicarse.</p><p class="mbm-muted">Aviso de privacidad: registramos fecha, hora, navegador, tipo de dispositivo e fragmento de IP truncado para estadísticas y seguridad. No recopilamos el modelo exacto del teléfono ni guardamos la IP completa.</p>
-  <button class="mbm-like" id="mbmLikeButton" type="button" aria-label="Me gusta este perfil">♡ <span>Me gusta</span> · <strong id="mbmLikeCount">0</strong></button>
   <div class="mbm-comments">
    <h3 class="mbm-community-title" style="font-size:22px">Comentarios</h3>
    <form class="mbm-comment-form" id="mbmCommentForm">
