@@ -123,7 +123,7 @@
     (visits.data || []).forEach(v => {
       const row = document.createElement("div"); row.className = "mbm-admin-row";
       const info = document.createElement("span");
-      info.textContent = new Date(v.visited_at).toLocaleString("es") + " · " + v.device_type + " · " + v.browser + (v.ip_prefix ? " · IP aprox. " + v.ip_prefix : "");
+      info.textContent = new Date(v.visited_at).toLocaleString("es") + " · " + v.device_type + " · " + v.browser + (v.ip_prefix ? " · IP parcial " + v.ip_prefix : "");
       row.append(info); visitList.append(row);
     });
     const commentList = $("mbmAdminComments"); commentList.replaceChildren();
