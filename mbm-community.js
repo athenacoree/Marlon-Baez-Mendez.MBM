@@ -79,18 +79,11 @@
     submit.disabled = false;
   });
 
-  // Entrada por triple toque/clic en el logotipo.
+  // Un solo toque en el logotipo abre el acceso de administrador.
   const logo = document.querySelector(".brand");
-  let taps = 0, tapTimer;
-  logo?.addEventListener("click", (event) => {
-    event.preventDefault();
-    taps++;
-    clearTimeout(tapTimer);
-    if (taps >= 3) {
-      taps = 0;
-      $("mbmAdminPanel").hidden = false;
-      $("mbmAdminEmail")?.focus();
-    } else tapTimer = setTimeout(() => taps = 0, 850);
+  logo?.addEventListener("click", () => {
+    $("mbmAdminPanel").hidden = false;
+    $("mbmAdminEmail")?.focus();
   });
 
   $("mbmAdminClose")?.addEventListener("click", () => $("mbmAdminPanel").hidden = true);
