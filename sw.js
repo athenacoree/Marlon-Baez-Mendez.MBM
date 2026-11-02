@@ -1,5 +1,5 @@
-const CACHE='mbm-profile-v14';
-const CORE=['./','./index.html','./profile.js','./supabase-config.js','./mbm-community.js','./interaccion.js','./manifest.webmanifest','./favicon.svg'];
+const CACHE='mbm-profile-v15';
+const CORE=['./','./index.html','./profile.js','./supabase-config.js','./mbm-community.js','./interaccion.js','./assets/default-avatar.svg','./manifest.webmanifest','./favicon.svg'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('mbm-profile-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
 async function networkFirst(request){const cache=await caches.open(CACHE);try{const response=await fetch(request,{cache:'no-store'});if(response&&response.ok)await cache.put(request,response.clone());return response;}catch(error){const cached=await cache.match(request)||await cache.match('./index.html');if(cached)return cached;throw error;}}
