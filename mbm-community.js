@@ -117,7 +117,7 @@
     tagBottom:"CREATIVIDAD · IDEAS · VIDA", aboutTitle:"Un poco de mi universo.",
     bioTitle:"Hola, soy Marlon.", galleryTitle:"Momentos que cuentan.",
     footer:"Hecho con dedicación", contact:"",
-    interests:["Tecnología","Creatividad","Proyectos","Aprendizaje"], avatar:"", photos:[]
+    interests:["Tecnología","Creatividad","Proyectos","Aprendizaje"], extraInfoTitle:"Más cosas de mi mundo.", extraInfo:[], avatar:"", photos:[]
   };
   let siteContent = {...defaults};
   const fieldIds = {name:"editName",eyebrow:"editEyebrow",tagline:"editTagline",bio:"editBio",stamp:"editStamp",stampSmall:"editStampSmall",stampFoot:"editStampFoot",tagTop:"editTagTop",tagBottom:"editTagBottom",aboutTitle:"editAboutTitle",bioTitle:"editBioTitle",galleryTitle:"editGalleryTitle",footer:"editFooter",contact:"editContact"};
@@ -127,12 +127,14 @@
     put("name",siteContent.name);put("eyebrow",siteContent.eyebrow);put("tagline",siteContent.tagline);
     put("bio",siteContent.bio);put("footerText",siteContent.footer);
     put("aboutTitle",siteContent.aboutTitle);put("bioTitle",siteContent.bioTitle);
-    put("galleryTitle",siteContent.galleryTitle);
+    put("galleryTitle",siteContent.galleryTitle);put("extraInfoTitle",siteContent.extraInfoTitle);
     put("stampText",siteContent.stamp);put("stampSmall",siteContent.stampSmall);put("stampFoot",siteContent.stampFoot);
     put("tagTopText",siteContent.tagTop);put("tagBottomText",siteContent.tagBottom);
     if(siteContent.avatar) $("avatar").src=siteContent.avatar;
     if(siteContent.contact) $("contactBtn").href=siteContent.contact;
     const interests=$("interests");if(interests){interests.replaceChildren();(siteContent.interests||[]).forEach(v=>{const e=document.createElement("span");e.className="chip";e.textContent=v;interests.append(e)})}
+    const extraSection=$("extraInfo"),extraCards=$("extraInfoCards");
+    if(extraSection&&extraCards){extraCards.replaceChildren();(siteContent.extraInfo||[]).forEach(item=>{const card=document.createElement("article");card.className="extra-info-card";const title=document.createElement("h3");title.textContent=item.title;const body=document.createElement("p");body.textContent=item.body;card.append(title,body);extraCards.append(card)});extraSection.hidden=!(siteContent.extraInfo||[]).length}
     const gallery=$("photos");if(gallery&&siteContent.photos?.length){gallery.replaceChildren();siteContent.photos.forEach(src=>{const box=document.createElement("div");box.className="photo";const img=document.createElement("img");img.src=src;img.alt="Fotografía de la galería";img.loading="lazy";box.append(img);gallery.append(box)})}
   }
   async function loadSiteContent(){
@@ -142,6 +144,8 @@
   function fillEditor(){
     Object.entries(fieldIds).forEach(([key,id])=>{if($(id))$(id).value=siteContent[key]??""});
     $("editInterests").value=(siteContent.interests||[]).join(", ");
+    $("editExtraInfoTitle").value=siteContent.extraInfoTitle||"";
+    $("editExtraInfo").value=(siteContent.extraInfo||[]).map(item=>item.title+" | "+item.body).join("\n");
     renderGalleryAdmin();
   }
   function renderGalleryAdmin(){
@@ -167,6 +171,8 @@
       const next={...siteContent};
       Object.entries(fieldIds).forEach(([key,id])=>next[key]=$(id).value.trim());
       next.interests=$("editInterests").value.split(",").map(v=>v.trim()).filter(Boolean).slice(0,20);
+      next.extraInfoTitle=$("editExtraInfoTitle").value.trim();
+      next.extraInfo=$("editExtraInfo").value.split("\n").map(line=>{const parts=line.split("|");return {title:(parts.shift()||"").trim(),body:parts.join("|").trim()}}).filter(item=>item.title&&item.body).slice(0,12);
       const avatarFile=$("editAvatarFile").files[0];
       if(avatarFile)next.avatar=await uploadImage(avatarFile,"profile");
       const files=[...($("editGalleryFiles").files||[])];
