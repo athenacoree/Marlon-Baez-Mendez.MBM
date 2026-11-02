@@ -30,11 +30,11 @@ footer{text-align:center;padding:28px 0 4px;color:#98a4b9;font-size:11px}.reveal
 <div class="grid"><section class="panel glass reveal" id="about"><h2>Un poco sobre mí</h2><p id="bio">Me gusta aprender, crear cosas nuevas y explorar ideas. Este espacio es una pequeña ventana para que puedas conocer quién soy.</p><div class="chips" id="interests"></div></section>
 <section class="panel glass reveal" id="contact"><h2>Encuéntrame</h2><p style="margin-bottom:16px">También puedes conectar conmigo a través de mis redes.</p><div class="socials" id="socials"></div></section></div>
 <section class="gallery glass reveal" id="gallery"><div class="gallery-head"><h2>Mi galería</h2><span class="eyebrow">MOMENTOS</span></div><div class="gallery-grid" id="photos"></div></section>
-</main><footer id="footer">Hecho con dedicación · <span id="year"></span></footer></div>
+</main><footer id="footer"><span id="footerText">Hecho con dedicación</span> · <span id="year"></span></footer></div>
 <script src="profile.js"></script>
 <script>
 const p=window.PROFILE||{};const set=(id,v)=>{if(v)document.getElementById(id).textContent=v};
-set('brand',p.brand||'MBM.');set('eyebrow',p.eyebrow||'MI ESPACIO PERSONAL');set('name',p.name||'Tu nombre aquí.');set('tagline',p.tagline);set('bio',p.bio);set('footer',p.footer);
+set('brand',p.brand||'MBM.');set('eyebrow',p.eyebrow||'MI ESPACIO PERSONAL');set('name',p.name||'Tu nombre aquí.');set('tagline',p.tagline);set('bio',p.bio);set('footerText',p.footer);
 if(p.avatar){document.getElementById('avatar').src=p.avatar}
 if(p.contactUrl)document.getElementById('contactBtn').href=p.contactUrl;
 document.title=(p.name||'Mi perfil')+' · Perfil personal';
