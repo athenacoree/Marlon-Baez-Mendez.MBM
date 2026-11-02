@@ -62,7 +62,7 @@
   $("eyebrow").textContent="PERFIL DE INTERACCIÓN";
   $("name").textContent=profile.name||"Usuario";
   $("tagline").textContent=profile.bio||"Este perfil todavía no tiene una descripción.";
-  $("contactBtn").textContent="Compartir perfil ↗";$("contactBtn").href=location.href;
+  $("contactBtn").textContent="Compartir perfil ↗";$("contactBtn").href=location.href;$("contactBtn").onclick=null;
   $("avatar").src=profile.avatar_url||"assets/profile.jpg";$("avatar").alt="Foto de "+(profile.name||"usuario");
   $("year").textContent=new Date().getFullYear();$("footerText").textContent="Perfil de "+(profile.name||"usuario");
   document.title=(profile.name||"Perfil")+" · Interacción";
@@ -93,8 +93,9 @@
    const actions=$("ia-profile-actions");if(actions)actions.remove();
    return;
   }
-  const {data,error}=await db.from("profiles").select("id,name,handle,bio,avatar_url,cover_url").eq("handle",handle).maybeSingle();
-  if(error||!data){document.body.classList.remove("ia-profile-mode");document.body.classList.add("ia-home-mode");$("eyebrow").textContent="PERFIL NO ENCONTRADO";$("name").textContent="Este perfil no está disponible."; $("tagline").textContent="Comprueba que el enlace esté escrito correctamente.";return;}
+  let {data,error}=await db.from("profiles").select("id,name,handle,bio,avatar_url,cover_url").eq("handle",handle).maybeSingle();
+  if(!error&&!data){const legacy=await db.from("profiles").select("id,name,handle,bio,avatar_url,cover_url").eq("handle","@"+handle).maybeSingle();data=legacy.data;error=legacy.error;}
+  if(error||!data){const oldActions=$("ia-profile-actions");if(oldActions)oldActions.remove();document.body.classList.remove("ia-profile-mode");document.body.classList.add("ia-home-mode");$("eyebrow").textContent="PERFIL NO ENCONTRADO";$("name").textContent="Este perfil no está disponible."; $("tagline").textContent="Comprueba que el enlace esté escrito correctamente.";return;}
   const owner=!!currentUser&&currentUser.id===data.id;currentProfile=owner?data:currentProfile;applyProfile(data,owner);
  }
  $("ia-account-open").addEventListener("click",()=>{if(currentProfile)routeTo(currentProfile.handle);});
