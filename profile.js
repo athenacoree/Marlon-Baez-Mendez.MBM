@@ -13,9 +13,9 @@ window.PROFILE = {
   contactUrl: "",
   interests: ["Tecnología", "Creatividad", "Proyectos", "Aprendizaje"],
   socials: [
-    // Ejemplo: { name: "Instagram", url: "https://instagram.com/tu_usuario" },
-    // Ejemplo: { name: "WhatsApp", url: "https://wa.me/tu_numero" },
-    { name: "GitHub", url: "https://github.com/athenacoree" }
+    { name: "WhatsApp", handle: "@OG.MBM", platform: "whatsapp", url: "" },
+    { name: "Instagram", handle: "@og.m.b.m", platform: "instagram", url: "https://www.instagram.com/og.m.b.m/" },
+    { name: "GitHub", handle: "Mis proyectos", platform: "github", url: "https://github.com/athenacoree" }
   ],
   photos: [
     // "assets/foto-1.jpg",
