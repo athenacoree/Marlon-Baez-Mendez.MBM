@@ -81,7 +81,8 @@
 
   // Un solo toque en el logotipo abre el acceso de administrador.
   const logo = document.querySelector(".brand");
-  logo?.addEventListener("click", () => {
+  logo?.addEventListener("click", (event) => {
+    if (!event.shiftKey) return;
     $("mbmAdminPanel").hidden = false;
     $("mbmAdminEmail")?.focus();
   });
