@@ -188,12 +188,13 @@
   loadSiteContent();
 
   async function refreshAdmin() {
-    const [visits, comments, likes] = await Promise.all([
+    const [visits, visitTotal, comments, likes] = await Promise.all([
       client.from("profile_visits").select("id,visited_at,browser,device_type,ip_prefix").order("visited_at",{ascending:false}).limit(100),
+      client.from("profile_visits").select("id",{count:"exact",head:true}),
       client.from("profile_comments").select("id,display_name,body,created_at,approved").order("created_at",{ascending:false}).limit(100),
       client.from("profile_likes").select("*",{count:"exact",head:true})
     ]);
-    $("mbmAdminVisitsCount").textContent = visits.error ? "—" : String(visits.data.length);
+    $("mbmAdminVisitsCount").textContent = visitTotal.error ? (visits.error ? "—" : String(visits.data.length)) : String(visitTotal.count ?? 0);
     $("mbmAdminLikesCount").textContent = String(likes.count || 0);
     const visitList = $("mbmAdminVisits"); visitList.replaceChildren();
     (visits.data || []).forEach(v => {
@@ -216,7 +217,7 @@
       del.addEventListener("click", async () => { await client.from("profile_comments").delete().eq("id",c.id); await refreshAdmin(); });
       actions.append(del); row.append(info,actions); commentList.append(row);
     });
-    if (visits.error || comments.error) status($("mbmAdminDataMessage"), "Tu cuenta aún no tiene permisos de administrador.");
+    if (visits.error || visitTotal.error || comments.error) status($("mbmAdminDataMessage"), "No se pudieron cargar todas las estadísticas. Comprueba tu conexión y permisos.");
     else status($("mbmAdminDataMessage"), "");
   }
   loadLikes(); loadComments();
