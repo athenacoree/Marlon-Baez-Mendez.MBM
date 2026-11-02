@@ -1,7 +1,7 @@
 (() => {
   const cfg = window.MBM_SUPABASE;
   if (!cfg || !window.supabase) return;
-  const client = window.supabase.createClient(cfg.url, cfg.key);
+  const client = window.supabase.createClient(cfg.url, cfg.key, { auth: { storageKey: "mbm_legacy_admin_auth_v1" } });
   const $ = (id) => document.getElementById(id);
   const status = (el, msg) => { if (el) el.textContent = msg; };
   const uuid = () => {
@@ -17,67 +17,10 @@
     if (!visitorId) { visitorId = uuid(); localStorage.setItem("mbm_visitor_id", visitorId); }
   } catch { visitorId = uuid(); }
 
-  // Registro básico y transparente: sin huella digital ni IP completa.
-  fetch(cfg.url + "/functions/v1/mbm-record-visit", {
-    method: "POST",
-    headers: { "Content-Type": "application/json", apikey: cfg.key, Authorization: "Bearer " + cfg.key },
-    body: "{}",
-    keepalive: true
-  }).catch(() => {});
+  // El registro global de visitas de MBM se desactiva en la plataforma multiusuario.
 
-  async function loadLikes() {
-    const countEl = $("mbmLikeCount");
-    if (!countEl) return;
-    const [{ count }, { data: own }] = await Promise.all([
-      client.from("profile_likes").select("*", { count: "exact", head: true }),
-      client.from("profile_likes").select("id").eq("visitor_id", visitorId).maybeSingle()
-    ]);
-    countEl.textContent = String(count || 0);
-    if (own) {
-      $("mbmLikeButton")?.classList.add("liked");
-      $("mbmLikeButton")?.setAttribute("aria-pressed", "true");
-    }
-  }
-  $("mbmLikeButton")?.addEventListener("click", async () => {
-    const button = $("mbmLikeButton");
-    button.disabled = true;
-    const { data: existing } = await client.from("profile_likes").select("id").eq("visitor_id", visitorId).maybeSingle();
-    if (!existing) {
-      const { error } = await client.from("profile_likes").insert({ visitor_id: visitorId });
-      if (!error) button.classList.add("liked");
-    }
-    await loadLikes();
-    button.disabled = false;
-  });
-  async function loadComments() {
-    const list = $("mbmCommentsList");
-    if (!list) return;
-    const { data, error } = await client.from("profile_comments").select("id,display_name,body,created_at").eq("approved", true).order("created_at", { ascending: false }).limit(50);
-    list.replaceChildren();
-    if (error || !data?.length) {
-      const empty = document.createElement("p"); empty.className = "mbm-muted"; empty.textContent = "Todavía no hay comentarios publicados."; list.append(empty); return;
-    }
-    data.forEach(item => {
-      const card = document.createElement("article"); card.className = "mbm-comment";
-      const head = document.createElement("div"); head.className = "mbm-comment-head";
-      const name = document.createElement("strong"); name.textContent = item.display_name;
-      const date = document.createElement("time"); date.dateTime = item.created_at; date.textContent = new Date(item.created_at).toLocaleDateString("es", {day:"numeric",month:"short",year:"numeric"});
-      const body = document.createElement("p"); body.textContent = item.body;
-      head.append(name,date); card.append(head,body); list.append(card);
-    });
-  }
-  $("mbmCommentForm")?.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const name = $("mbmCommentName").value.trim();
-    const body = $("mbmCommentBody").value.trim();
-    const message = $("mbmCommentMessage");
-    if (!name || !body) return;
-    const submit = $("mbmCommentSubmit"); submit.disabled = true;
-    const { error } = await client.from("profile_comments").insert({ display_name: name, body, approved: false });
-    status(message, error ? "No se pudo enviar. Inténtalo más tarde." : "¡Comentario enviado! Aparecerá cuando sea aprobado.");
-    if (!error) event.target.reset();
-    submit.disabled = false;
-  });
+
+  // Los antiguos likes y comentarios globales de MBM no se usan en perfiles individuales.
 
   // Un solo toque en el logotipo abre el acceso de administrador.
   const logo = document.querySelector(".brand");
@@ -221,5 +164,4 @@
     if (visits.error || visitTotal.error || comments.error) status($("mbmAdminDataMessage"), "No se pudieron cargar todas las estadísticas. Comprueba tu conexión y permisos.");
     else status($("mbmAdminDataMessage"), "");
   }
-  loadLikes(); loadComments();
 })();
