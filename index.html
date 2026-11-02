@@ -172,5 +172,16 @@ async function loadArtistLibrary(){
 loadArtistLibrary();
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches){const visual=document.querySelector('.visual');visual.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;const r=visual.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;visual.querySelector('.photo-stack').style.transform='rotateY('+x*10+'deg) rotateX('+(-y*8)+'deg) rotate(3deg)'});visual.addEventListener('pointerleave',()=>visual.querySelector('.photo-stack').style.transform='')}
-if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+if('serviceWorker' in navigator){
+ window.addEventListener('load',async()=>{
+  try{
+   const registration=await navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'});
+   registration.update().catch(()=>{});
+   document.addEventListener('visibilitychange',()=>{
+    if(document.visibilityState==='visible')registration.update().catch(()=>{});
+   });
+   window.addEventListener('focus',()=>registration.update().catch(()=>{}));
+  }catch(error){console.warn('No se pudo comprobar la actualización:',error)}
+ });
+ }
 </script></body></html>
