@@ -92,6 +92,9 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:35px 0 45px;c
 .media-loading{padding:28px;border:1px dashed var(--line);border-radius:20px;color:var(--muted);font-size:12px}
 @media(max-width:700px){.taste-category{margin-top:40px}.media-feature{grid-template-columns:1fr}.media-feature-art{height:240px;min-height:0}.media-feature-copy{padding:23px}.media-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.media-card-art{height:190px}.media-card-copy{padding:12px}.media-card-copy h4{font-size:15px}}
 @media(max-width:390px){.media-grid{grid-template-columns:1fr 1fr}.media-card-art{height:155px}}
+
+#artistFeatured{grid-template-columns:1fr}#artistFeatured .artist-tile{grid-template-columns:minmax(190px,280px) 1fr;min-height:260px}#artistFeatured .artist-art{min-height:260px}
+@media(max-width:700px){#artistFeatured .artist-tile{grid-template-columns:112px 1fr;min-height:170px}#artistFeatured .artist-art{min-height:170px}}
 </style>
 </head>
 <body><div class="noise"></div>
@@ -163,7 +166,7 @@ async function loadArtistLibrary(){
   artists=await res.json();
  }catch(err){grid.textContent='No se pudo cargar la biblioteca de artistas.';console.error(err);return;}
  const openProfile=artist=>{
-  grid.hidden=true;profile.hidden=false;
+  grid.hidden=true;featured.hidden=true;more.hidden=true;profile.hidden=false;
   $('artistName').textContent=artist.name;$('artistBio').textContent=artist.bio;
   $('artistMusicTitle').textContent='Canciones de '+artist.name;
   $('artistSongCount').textContent=artist.songs.length+' TEMAS';
@@ -211,7 +214,7 @@ async function loadArtistLibrary(){
  featured.replaceChildren(makeArtistCard(mainArtist));
  artists.filter(a=>a!==mainArtist).forEach(a=>grid.append(makeArtistCard(a)));
  more.addEventListener('click',()=>{const opening=grid.hidden;grid.hidden=!opening;more.setAttribute('aria-expanded',String(opening));more.innerHTML=opening?'OCULTAR ARTISTAS <span>−</span>':'VER MÁS ARTISTAS <span>＋</span>';});
- $('backArtists').addEventListener('click',()=>{profile.hidden=true;featured.hidden=false;grid.hidden=true;frame.src='';featured.scrollIntoView({behavior:'smooth',block:'start'})});
+ $('backArtists').addEventListener('click',()=>{profile.hidden=true;featured.hidden=false;more.hidden=false;grid.hidden=true;frame.src='';featured.scrollIntoView({behavior:'smooth',block:'start'})});
 }
 loadArtistLibrary();
 async function loadTasteMedia(kind){
@@ -223,7 +226,7 @@ async function loadTasteMedia(kind){
   const makeCard=(item,large=false)=>{
    const card=document.createElement('article');card.className=large?'media-feature':'media-card';
    const art=document.createElement('div');art.className=large?'media-feature-art':'media-card-art';
-   if(item.image){const img=document.createElement('img');img.alt='Póster de '+item.title;img.loading='lazy';img.decoding='async';img.src=item.image;art.append(img)}
+   if(item.image){const img=document.createElement('img');img.alt='Póster de '+item.title;img.loading=large?'eager':'lazy';if(large)img.fetchPriority='high';img.decoding='async';img.src=item.image;art.append(img)}
    const copy=document.createElement('div');copy.className=large?'media-feature-copy':'media-card-copy';
    const tag=document.createElement('small');tag.textContent=item.tag||'COREA DEL SUR';
    const title=document.createElement('h4');title.textContent=item.title;
