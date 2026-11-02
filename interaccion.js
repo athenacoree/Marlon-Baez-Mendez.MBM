@@ -100,6 +100,5 @@
  $("ia-account-open").addEventListener("click",()=>{if(currentProfile)routeTo(currentProfile.handle);});
  document.querySelector(".brand")?.addEventListener("click",()=>{history.pushState({},"",basePath);routePath=basePath;loadRoute();});
  window.addEventListener("popstate",()=>{routePath=location.pathname;basePath=findBase(routePath);loadRoute();});
- db.auth.onAuthStateChange((_event,session)=>{currentUser=session?.user||null;refreshSession();});
  refreshSession().then(loadRoute);
 })();
