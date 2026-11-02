@@ -41,7 +41,8 @@
   finally{button.disabled=false;}
  });
  async function ensureProfile(fallbackName){
-  const {data:userData}=await db.auth.getUser();currentUser=userData.user||currentUser;
+  currentProfile=null;
+  const {data:userData,error:userError}=await db.auth.getUser();if(userError)throw userError;currentUser=userData.user||currentUser;
   if(!currentUser)throw new Error("No se pudo validar la sesión.");
   let {data,error}=await db.from("profiles").select("id,name,handle,bio,avatar_url,cover_url").eq("id",currentUser.id).maybeSingle();
   if(error)throw error;
@@ -55,7 +56,7 @@
  async function refreshSession(){
   const {data}=await db.auth.getSession();currentUser=data.session?.user||null;
   if(currentUser){try{await ensureProfile();$("ia-login-open").hidden=true;$("ia-signup-open").hidden=true;$("ia-account-open").hidden=false;}catch(err){console.error("No se pudo cargar el perfil:",err);}}
-  else{$("ia-login-open").hidden=false;$("ia-signup-open").hidden=false;$("ia-account-open").hidden=true;}
+  else{currentProfile=null;$("ia-login-open").hidden=false;$("ia-signup-open").hidden=false;$("ia-account-open").hidden=true;}
  }
  function applyProfile(profile,isOwner){
   document.body.classList.remove("ia-home-mode");document.body.classList.add("ia-profile-mode");
@@ -96,10 +97,10 @@
   let {data,error}=await db.from("profiles").select("id,name,handle,bio,avatar_url,cover_url").eq("handle",handle).maybeSingle();
   if(!error&&!data){const legacy=await db.from("profiles").select("id,name,handle,bio,avatar_url,cover_url").eq("handle","@"+handle).maybeSingle();data=legacy.data;error=legacy.error;}
   if(error||!data){const oldActions=$("ia-profile-actions");if(oldActions)oldActions.remove();document.body.classList.remove("ia-profile-mode");document.body.classList.add("ia-home-mode");$("eyebrow").textContent="PERFIL NO ENCONTRADO";$("name").textContent="Este perfil no está disponible."; $("tagline").textContent="Comprueba que el enlace esté escrito correctamente.";return;}
-  const owner=!!currentUser&&currentUser.id===data.id;currentProfile=owner?data:currentProfile;applyProfile(data,owner);
+  const owner=!!currentUser&&currentUser.id===data.id;applyProfile(data,owner);
  }
  $("ia-account-open").addEventListener("click",()=>{if(currentProfile)routeTo(currentProfile.handle);});
  document.querySelector(".brand")?.addEventListener("click",()=>{history.pushState({},"",basePath);routePath=basePath;loadRoute();});
  window.addEventListener("popstate",()=>{routePath=location.pathname;basePath=findBase(routePath);loadRoute();});
- refreshSession().then(loadRoute);
+ db.auth.onAuthStateChange((event,session)=>{\n  currentUser=session?.user||null;\n  if(!currentUser){currentProfile=null;$("ia-login-open").hidden=false;$("ia-signup-open").hidden=false;$("ia-account-open").hidden=true;}\n  else{$("ia-login-open").hidden=true;$("ia-signup-open").hidden=true;$("ia-account-open").hidden=false;}\n });\n refreshSession().then(loadRoute);
 })();
