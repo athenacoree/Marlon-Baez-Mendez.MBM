@@ -493,5 +493,270 @@
     "name": "Chase Atlantic",
     "language": "Inglés",
     "genre": "Alternativo"
+  },
+  {
+    "name": "J. Cole",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "A$AP Rocky",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "Central Cee",
+    "language": "Inglés",
+    "genre": "UK rap"
+  },
+  {
+    "name": "Dave",
+    "language": "Inglés",
+    "genre": "UK rap"
+  },
+  {
+    "name": "Lil Uzi Vert",
+    "language": "Inglés",
+    "genre": "Rap"
+  },
+  {
+    "name": "Gunna",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "Don Toliver",
+    "language": "Inglés",
+    "genre": "R&B"
+  },
+  {
+    "name": "A Boogie wit da Hoodie",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "The Kid LAROI",
+    "language": "Inglés",
+    "genre": "Pop rap"
+  },
+  {
+    "name": "Tyga",
+    "language": "Inglés",
+    "genre": "Rap"
+  },
+  {
+    "name": "Pitbull",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "50 Cent",
+    "language": "Inglés",
+    "genre": "Rap"
+  },
+  {
+    "name": "Jay-Z",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "Nas",
+    "language": "Inglés",
+    "genre": "Rap"
+  },
+  {
+    "name": "Alicia Keys",
+    "language": "Inglés",
+    "genre": "R&B"
+  },
+  {
+    "name": "Kali Uchis",
+    "language": "Inglés",
+    "genre": "R&B"
+  },
+  {
+    "name": "PinkPantheress",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Tate McRae",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Halsey",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Lorde",
+    "language": "Inglés",
+    "genre": "Alternativo"
+  },
+  {
+    "name": "Labrinth",
+    "language": "Inglés",
+    "genre": "R&B"
+  },
+  {
+    "name": "Sia",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "The Chainsmokers",
+    "language": "Inglés",
+    "genre": "Electrónica"
+  },
+  {
+    "name": "Avicii",
+    "language": "Inglés",
+    "genre": "Electrónica"
+  },
+  {
+    "name": "David Guetta",
+    "language": "Inglés",
+    "genre": "Electrónica"
+  },
+  {
+    "name": "Calvin Harris",
+    "language": "Inglés",
+    "genre": "Electrónica"
+  },
+  {
+    "name": "Marshmello",
+    "language": "Inglés",
+    "genre": "Electrónica"
+  },
+  {
+    "name": "OneRepublic",
+    "language": "Inglés",
+    "genre": "Pop rock"
+  },
+  {
+    "name": "Twenty One Pilots",
+    "language": "Inglés",
+    "genre": "Alternativo"
+  },
+  {
+    "name": "Foo Fighters",
+    "language": "Inglés",
+    "genre": "Rock"
+  },
+  {
+    "name": "The Beatles",
+    "language": "Inglés",
+    "genre": "Rock"
+  },
+  {
+    "name": "Queen",
+    "language": "Inglés",
+    "genre": "Rock"
+  },
+  {
+    "name": "Metallica",
+    "language": "Inglés",
+    "genre": "Metal"
+  },
+  {
+    "name": "Nirvana",
+    "language": "Inglés",
+    "genre": "Rock"
+  },
+  {
+    "name": "AURORA",
+    "language": "Inglés",
+    "genre": "Alternativo"
+  },
+  {
+    "name": "Laufey",
+    "language": "Inglés",
+    "genre": "Jazz pop"
+  },
+  {
+    "name": "Joji",
+    "language": "Inglés",
+    "genre": "R&B"
+  },
+  {
+    "name": "Conan Gray",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Peso Pluma",
+    "language": "Español",
+    "genre": "Regional mexicano"
+  },
+  {
+    "name": "Junior H",
+    "language": "Español",
+    "genre": "Regional mexicano"
+  },
+  {
+    "name": "Natanael Cano",
+    "language": "Español",
+    "genre": "Regional mexicano"
+  },
+  {
+    "name": "Fuerza Regida",
+    "language": "Español",
+    "genre": "Regional mexicano"
+  },
+  {
+    "name": "Grupo Frontera",
+    "language": "Español",
+    "genre": "Regional mexicano"
+  },
+  {
+    "name": "Carín León",
+    "language": "Español",
+    "genre": "Regional mexicano"
+  },
+  {
+    "name": "Christian Nodal",
+    "language": "Español",
+    "genre": "Regional mexicano"
+  },
+  {
+    "name": "Alejandro Sanz",
+    "language": "Español",
+    "genre": "Pop"
+  },
+  {
+    "name": "Juanes",
+    "language": "Español",
+    "genre": "Rock pop"
+  },
+  {
+    "name": "Jesse & Joy",
+    "language": "Español",
+    "genre": "Pop"
+  },
+  {
+    "name": "Mon Laferte",
+    "language": "Español",
+    "genre": "Alternativo"
+  },
+  {
+    "name": "Pablo Alborán",
+    "language": "Español",
+    "genre": "Pop"
+  },
+  {
+    "name": "Danny Ocean",
+    "language": "Español",
+    "genre": "Pop latino"
+  },
+  {
+    "name": "Lasso",
+    "language": "Español",
+    "genre": "Pop"
+  },
+  {
+    "name": "DannyLux",
+    "language": "Español",
+    "genre": "Regional mexicano"
   }
 ]
