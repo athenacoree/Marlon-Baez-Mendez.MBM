@@ -18,7 +18,7 @@ const page=document.createElement("main");page.id="mbmConfessionsApp";
 function button(label,cls,fn){const b=$("button",cls,label);b.type="button";b.addEventListener("click",fn);return b}
 function makeOwnerButton(){
  const path=routePath();if(!path.includes("/interaccion/"))return;
- const match=path.match(/\/interaccion\/([^/]+)/);if(!match||document.querySelector(".mbm-conf-owner-trigger"))return;
+ const match=path.match(/\/interaccion\/([^/?#]+)/);if(!match||document.querySelector(".mbm-conf-owner-trigger"))return;
  if(window.__mbmConfOwnerChecking)return;window.__mbmConfOwnerChecking=true;
  (async()=>{try{
   const {data:{user}}=await db.auth.getUser();if(!user)return;
@@ -112,5 +112,5 @@ async function openDashboard(){
  }
 }
 async function loadPublic(slug){currentSlug=slug;currentToken=tokenFromHash();buildPage();page.append($("div","mc-loading","Cargando tu espacio…"));try{const data=await api({action:"get",slug,token:currentToken});await api({action:"visit",slug,visitor_id:visitor()}).catch(()=>{});renderPublic(data)}catch(e){page.replaceChildren($("div","mc-error-page","Este enlace no está disponible"),$("p","mc-subtle",e.message),button("Volver a Interacción","mc-send",()=>location.href=baseFrom(location.pathname)))}}
-const match=routePath().match(/\/confesiones\/([^/]+)/);if(match)loadPublic(decodeURIComponent(match[1]));
+const match=routePath().match(/\/confesiones\/([^/?#]+)/);if(match)loadPublic(decodeURIComponent(match[1]));
 })();
