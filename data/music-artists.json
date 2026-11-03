@@ -790,5 +790,191 @@
     "name": "A$AP Mob",
     "language": "en",
     "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-133",
+    "name": "Peso Pluma",
+    "language": "es",
+    "genre": "Regional mexicano"
+  },
+  {
+    "id": "artist-134",
+    "name": "Junior H",
+    "language": "es",
+    "genre": "Regional mexicano"
+  },
+  {
+    "id": "artist-135",
+    "name": "Natanael Cano",
+    "language": "es",
+    "genre": "Regional mexicano"
+  },
+  {
+    "id": "artist-136",
+    "name": "Fuerza Regida",
+    "language": "es",
+    "genre": "Regional mexicano"
+  },
+  {
+    "id": "artist-137",
+    "name": "Grupo Frontera",
+    "language": "es",
+    "genre": "Regional mexicano"
+  },
+  {
+    "id": "artist-138",
+    "name": "Carín León",
+    "language": "es",
+    "genre": "Regional mexicano"
+  },
+  {
+    "id": "artist-139",
+    "name": "Christian Nodal",
+    "language": "es",
+    "genre": "Regional mexicano"
+  },
+  {
+    "id": "artist-140",
+    "name": "Alejandro Sanz",
+    "language": "es",
+    "genre": "Pop latino"
+  },
+  {
+    "id": "artist-141",
+    "name": "Juanes",
+    "language": "es",
+    "genre": "Rock pop"
+  },
+  {
+    "id": "artist-142",
+    "name": "Jesse & Joy",
+    "language": "es",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-143",
+    "name": "Mon Laferte",
+    "language": "es",
+    "genre": "Alternativo"
+  },
+  {
+    "id": "artist-144",
+    "name": "Pablo Alborán",
+    "language": "es",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-145",
+    "name": "Danny Ocean",
+    "language": "es",
+    "genre": "Pop latino"
+  },
+  {
+    "id": "artist-146",
+    "name": "Lasso",
+    "language": "es",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-147",
+    "name": "DannyLux",
+    "language": "es",
+    "genre": "Regional mexicano"
+  },
+  {
+    "id": "artist-148",
+    "name": "The Kid LAROI",
+    "language": "en",
+    "genre": "Pop rap"
+  },
+  {
+    "id": "artist-149",
+    "name": "Alicia Keys",
+    "language": "en",
+    "genre": "R&B"
+  },
+  {
+    "id": "artist-150",
+    "name": "Kali Uchis",
+    "language": "en",
+    "genre": "R&B"
+  },
+  {
+    "id": "artist-151",
+    "name": "Sia",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-152",
+    "name": "Avicii",
+    "language": "en",
+    "genre": "Electrónica"
+  },
+  {
+    "id": "artist-153",
+    "name": "David Guetta",
+    "language": "en",
+    "genre": "Electrónica"
+  },
+  {
+    "id": "artist-154",
+    "name": "Calvin Harris",
+    "language": "en",
+    "genre": "Electrónica"
+  },
+  {
+    "id": "artist-155",
+    "name": "Foo Fighters",
+    "language": "en",
+    "genre": "Rock"
+  },
+  {
+    "id": "artist-156",
+    "name": "The Beatles",
+    "language": "en",
+    "genre": "Rock"
+  },
+  {
+    "id": "artist-157",
+    "name": "Queen",
+    "language": "en",
+    "genre": "Rock"
+  },
+  {
+    "id": "artist-158",
+    "name": "Metallica",
+    "language": "en",
+    "genre": "Metal"
+  },
+  {
+    "id": "artist-159",
+    "name": "Nirvana",
+    "language": "en",
+    "genre": "Rock"
+  },
+  {
+    "id": "artist-160",
+    "name": "AURORA",
+    "language": "en",
+    "genre": "Alternativo"
+  },
+  {
+    "id": "artist-161",
+    "name": "Laufey",
+    "language": "en",
+    "genre": "Jazz pop"
+  },
+  {
+    "id": "artist-162",
+    "name": "Joji",
+    "language": "en",
+    "genre": "R&B"
+  },
+  {
+    "id": "artist-163",
+    "name": "Conan Gray",
+    "language": "en",
+    "genre": "Pop"
   }
 ]
