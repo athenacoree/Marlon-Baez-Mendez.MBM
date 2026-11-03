@@ -11,7 +11,7 @@
  const sectionNames=[["about","Sobre mí"],["interests","Mis intereses"],["music","Mi música"],["watchlist","Películas y series"],["games","Videojuegos"],["videos","Vídeos"],["gallery","Galería"],["socials","Redes sociales"],["extras","Más información"]];
  const defaultData={tagline:"Un pequeño espacio para compartir lo que me representa.",about:"Cuéntale al mundo un poco sobre ti.",location:"",interests:[],artists:[],movies:[],series:[],games:[],videos:[],gallery:[],socials:[],extras:[],sections:["about","interests","music","watchlist","games","videos","gallery","socials","extras"]};
  let profile=null,owner=false,artistCatalog=[],editorOpen=false;
- const pathHandle=()=>{const m=location.pathname.match(/\/interaccion\/([^/?#]+)/);return m?decodeURIComponent(m[1]).replace(/^@/,"").toLowerCase():""};
+ const pathHandle=()=>{const currentPath=window.__MBM_ROUTE_PATH||location.pathname;const m=currentPath.match(/\/interaccion\/([^/?#]+)/);return m?decodeURIComponent(m[1]).replace(/^@/,"").toLowerCase():""};
  const cleanUrl=v=>{try{const u=new URL(v);return ["http:","https:"].includes(u.protocol)?u.href:""}catch{return ""}};
  const safeImage=v=>cleanUrl(v);
  const getData=()=>{const saved=profile?.profile_data||{},data={...defaultData,...saved};if(!saved.catalogVersion){data.sections=(saved.sections?.length?saved.sections:defaultData.sections).slice();for(const key of ["watchlist","games"])if(!data.sections.includes(key)){const at=data.sections.indexOf("videos");data.sections.splice(at<0?data.sections.length:at,0,key)}data.catalogVersion=2}return data};
