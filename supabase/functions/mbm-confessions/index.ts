@@ -1,8 +1,10 @@
 import { createClient } from "npm:@supabase/supabase-js@2.57.4";
 
 const URL = Deno.env.get("SUPABASE_URL")!;
-const SERVICE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-const ANON = Deno.env.get("SUPABASE_ANON_KEY") || "";
+const secretKeys = (() => { try { return JSON.parse(Deno.env.get("SUPABASE_SECRET_KEYS") || "{}"); } catch { return {}; } })();
+const publishableKeys = (() => { try { return JSON.parse(Deno.env.get("SUPABASE_PUBLISHABLE_KEYS") || "{}"); } catch { return {}; } })();
+const SERVICE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || secretKeys.default;
+const ANON = Deno.env.get("SUPABASE_ANON_KEY") || publishableKeys.default || "";
 const admin = createClient(URL, SERVICE, { auth: { persistSession: false, autoRefreshToken: false } });
 const cors = {
   "Access-Control-Allow-Origin": "*",
