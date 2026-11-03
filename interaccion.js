@@ -8,10 +8,11 @@
  let mode="signup",currentUser=null,currentProfile=null;
  const decodePath=()=>{const u=new URL(location.href);const forwarded=u.searchParams.get("__interaccion_path");if(forwarded){u.searchParams.delete("__interaccion_path");history.replaceState({}, "",u.pathname+(u.search?u.search:"")+u.hash);return forwarded;}return location.pathname;};
  let routePath=decodePath();
+ window.__MBM_ROUTE_PATH=routePath;
  const findBase=path=>{const marker="/interaccion/";const at=path.indexOf(marker);if(at>=0)return path.slice(0,at+1)||"/";const clean=path.endsWith("/")?path:path.slice(0,path.lastIndexOf("/")+1);return clean||"/";};
  let basePath=findBase(routePath);
  const getHandle=path=>{const m=path.match(/\/interaccion\/([^/?#]+)/);return m?decodeURIComponent(m[1]).replace(/^@/,"").toLowerCase():"";};
- const routeTo=(handle,replace=false)=>{const path=basePath+"interaccion/"+encodeURIComponent(handle);history[replace?"replaceState":"pushState"]({}, "",path);routePath=path;loadRoute();};
+ const routeTo=(handle,replace=false)=>{const path=basePath+"interaccion/"+encodeURIComponent(handle);history[replace?"replaceState":"pushState"]({}, "",path);routePath=path;window.__MBM_ROUTE_PATH=routePath;loadRoute();};
  const show=(el,on)=>el.classList.toggle("open",!!on);
  const setMsg=(id,msg)=>{const el=$(id);if(el)el.textContent=msg||""};
  function authMode(next){mode=next;$("ia-auth-title").textContent=next==="signup"?"Crea tu perfil":"Bienvenido de nuevo";$("ia-auth-subtitle").textContent=next==="signup"?"Elige cómo quieres aparecer. No necesitas poner apellidos.":"Entra con el correo y la contraseña de tu cuenta."; $("ia-name-label").hidden=next!=="signup";$("ia-name").required=next==="signup";$("ia-password").autocomplete=next==="signup"?"new-password":"current-password";$("ia-auth-submit").textContent=next==="signup"?"Crear mi perfil":"Entrar";$("ia-auth-switch").textContent=next==="signup"?"Ya tengo una cuenta · Entrar":"Soy nuevo · Crear perfil";$("ia-auth-form").reset();setMsg("ia-auth-message","");show(authModal,true);}
@@ -82,6 +83,8 @@
   currentProfile=data;show(editModal,false);routeTo(data.handle,true);if(btn)btn.disabled=false;
  });
  async function loadRoute(){
+  if(routePath.includes("/confesiones/")){document.body.classList.remove("ia-home-mode","ia-profile-mode");document.body.classList.add("mbm-confession-page");return;}
+  if(routePath.includes("/confesiones/")){document.body.classList.remove("ia-home-mode","ia-profile-mode");document.body.classList.add("mbm-confession-page");return;}
   const handle=getHandle(routePath);
   if(!handle){
    document.body.classList.remove("ia-profile-mode");document.body.classList.add("ia-home-mode");
@@ -101,7 +104,7 @@
  }
  $("ia-account-open").addEventListener("click",()=>{if(currentProfile)routeTo(currentProfile.handle);});
  document.querySelector(".brand")?.addEventListener("click",()=>{history.pushState({},"",basePath);routePath=basePath;loadRoute();});
- window.addEventListener("popstate",()=>{routePath=location.pathname;basePath=findBase(routePath);loadRoute();});
+ window.addEventListener("popstate",()=>{routePath=location.pathname;window.__MBM_ROUTE_PATH=routePath;basePath=findBase(routePath);loadRoute();});
  db.auth.onAuthStateChange((event,session)=>{
   currentUser=session?.user||null;
   if(!currentUser){currentProfile=null;$("ia-login-open").hidden=false;$("ia-signup-open").hidden=false;$("ia-account-open").hidden=true;}

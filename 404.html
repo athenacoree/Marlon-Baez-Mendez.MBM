@@ -1,9 +1,1 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Abriendo perfil · Interacción</title></head><body><p>Abriendo perfil…</p><script>
-(function(){
- var path=location.pathname;
- var marker="/interaccion/";
- var index=path.indexOf(marker);
- var base=index>=0?path.slice(0,index+1):"/";
- location.replace(base+"?__interaccion_path="+encodeURIComponent(path+location.search+location.hash));
-})();
-</script></body></html>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Abriendo enlace · Interacción</title></head><body><p>Abriendo…</p><script>(function(){var path=location.pathname;var markers=["/interaccion/","/confesiones/"];var index=-1;markers.forEach(function(m){var i=path.indexOf(m);if(i>=0&&(index<0||i<index))index=i;});var base=index>=0?path.slice(0,index+1):(path.slice(0,path.lastIndexOf("/")+1)||"/");location.replace(base+"?__interaccion_path="+encodeURIComponent(path+location.search+location.hash));})();</script></body></html>

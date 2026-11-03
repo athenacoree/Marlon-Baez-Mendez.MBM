@@ -1,0 +1,2 @@
+[functions.mbm-confessions]
+verify_jwt = false
