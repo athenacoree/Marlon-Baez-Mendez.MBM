@@ -16,7 +16,7 @@
  const safeImage=v=>cleanUrl(v);
  const getData=()=>({...defaultData,...(profile?.profile_data||{})});
  const currentTemplate=()=>templates.find(t=>t[0]===profile?.template_id)||templates[0];
- function injectCss(){if(document.getElementById("mbm-studio-css"))return;const l=$("link");l.id="mbm-studio-css";l.rel="stylesheet";l.href="./profile-studio.css?v=14";document.head.append(l)}
+ function injectCss(){if(document.getElementById("mbm-studio-css"))return;const existing=document.querySelector('link[href*="profile-studio.css"]');if(existing){existing.id="mbm-studio-css";return}const l=$("link");l.id="mbm-studio-css";l.rel="stylesheet";l.href="./profile-studio.css?v=14";document.head.append(l)}
  function sectionTitle(k){return sectionNames.find(x=>x[0]===k)?.[1]||k}
  function addSection(root,k,data){
   const sec=$("section","ps-section ps-"+k);sec.dataset.section=k;
