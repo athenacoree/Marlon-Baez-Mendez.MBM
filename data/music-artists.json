@@ -1,0 +1,794 @@
+[
+  {
+    "id": "artist-1",
+    "name": "Omar Courtz",
+    "language": "es",
+    "genre": "Urbano latino"
+  },
+  {
+    "id": "artist-2",
+    "name": "Luar La L",
+    "language": "es",
+    "genre": "Trap latino"
+  },
+  {
+    "id": "artist-3",
+    "name": "Bryant Myers",
+    "language": "es",
+    "genre": "Trap latino"
+  },
+  {
+    "id": "artist-4",
+    "name": "Bad Bunny",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-5",
+    "name": "Feid",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-6",
+    "name": "Rauw Alejandro",
+    "language": "es",
+    "genre": "Pop urbano"
+  },
+  {
+    "id": "artist-7",
+    "name": "Karol G",
+    "language": "es",
+    "genre": "Pop urbano"
+  },
+  {
+    "id": "artist-8",
+    "name": "Myke Towers",
+    "language": "es",
+    "genre": "Trap latino"
+  },
+  {
+    "id": "artist-9",
+    "name": "Eladio Carrión",
+    "language": "es",
+    "genre": "Trap latino"
+  },
+  {
+    "id": "artist-10",
+    "name": "Mora",
+    "language": "es",
+    "genre": "Urbano latino"
+  },
+  {
+    "id": "artist-11",
+    "name": "Quevedo",
+    "language": "es",
+    "genre": "Urbano latino"
+  },
+  {
+    "id": "artist-12",
+    "name": "Duki",
+    "language": "es",
+    "genre": "Trap argentino"
+  },
+  {
+    "id": "artist-13",
+    "name": "Bizarrap",
+    "language": "es",
+    "genre": "Productor"
+  },
+  {
+    "id": "artist-14",
+    "name": "Young Miko",
+    "language": "es",
+    "genre": "Urbano latino"
+  },
+  {
+    "id": "artist-15",
+    "name": "Dei V",
+    "language": "es",
+    "genre": "Urbano latino"
+  },
+  {
+    "id": "artist-16",
+    "name": "Yovngchimi",
+    "language": "es",
+    "genre": "Trap latino"
+  },
+  {
+    "id": "artist-17",
+    "name": "Anuel AA",
+    "language": "es",
+    "genre": "Trap latino"
+  },
+  {
+    "id": "artist-18",
+    "name": "Arcángel",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-19",
+    "name": "De La Ghetto",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-20",
+    "name": "Ozuna",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-21",
+    "name": "J Balvin",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-22",
+    "name": "Maluma",
+    "language": "es",
+    "genre": "Pop urbano"
+  },
+  {
+    "id": "artist-23",
+    "name": "Nicky Jam",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-24",
+    "name": "Wisin",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-25",
+    "name": "Yandel",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-26",
+    "name": "Don Omar",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-27",
+    "name": "Daddy Yankee",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-28",
+    "name": "Ivy Queen",
+    "language": "es",
+    "genre": "Reguetón"
+  },
+  {
+    "id": "artist-29",
+    "name": "Tainy",
+    "language": "es",
+    "genre": "Productor"
+  },
+  {
+    "id": "artist-30",
+    "name": "Jhayco",
+    "language": "es",
+    "genre": "Urbano latino"
+  },
+  {
+    "id": "artist-31",
+    "name": "Cazzu",
+    "language": "es",
+    "genre": "Trap latino"
+  },
+  {
+    "id": "artist-32",
+    "name": "Nicki Nicole",
+    "language": "es",
+    "genre": "Pop urbano"
+  },
+  {
+    "id": "artist-33",
+    "name": "Trueno",
+    "language": "es",
+    "genre": "Rap"
+  },
+  {
+    "id": "artist-34",
+    "name": "Paulo Londra",
+    "language": "es",
+    "genre": "Pop urbano"
+  },
+  {
+    "id": "artist-35",
+    "name": "Tiago PZK",
+    "language": "es",
+    "genre": "Pop urbano"
+  },
+  {
+    "id": "artist-36",
+    "name": "YSY A",
+    "language": "es",
+    "genre": "Trap argentino"
+  },
+  {
+    "id": "artist-37",
+    "name": "Khea",
+    "language": "es",
+    "genre": "Trap argentino"
+  },
+  {
+    "id": "artist-38",
+    "name": "LIT killah",
+    "language": "es",
+    "genre": "Trap argentino"
+  },
+  {
+    "id": "artist-39",
+    "name": "C.R.O",
+    "language": "es",
+    "genre": "Trap argentino"
+  },
+  {
+    "id": "artist-40",
+    "name": "Milo J",
+    "language": "es",
+    "genre": "Pop urbano"
+  },
+  {
+    "id": "artist-41",
+    "name": "Delaossa",
+    "language": "es",
+    "genre": "Rap"
+  },
+  {
+    "id": "artist-42",
+    "name": "C. Tangana",
+    "language": "es",
+    "genre": "Pop alternativo"
+  },
+  {
+    "id": "artist-43",
+    "name": "Rosalía",
+    "language": "es",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-44",
+    "name": "Aitana",
+    "language": "es",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-45",
+    "name": "Quevedo",
+    "language": "es",
+    "genre": "Urbano latino"
+  },
+  {
+    "id": "artist-46",
+    "name": "Manuel Turizo",
+    "language": "es",
+    "genre": "Pop latino"
+  },
+  {
+    "id": "artist-47",
+    "name": "Camilo",
+    "language": "es",
+    "genre": "Pop latino"
+  },
+  {
+    "id": "artist-48",
+    "name": "Sebastián Yatra",
+    "language": "es",
+    "genre": "Pop latino"
+  },
+  {
+    "id": "artist-49",
+    "name": "Morat",
+    "language": "es",
+    "genre": "Pop latino"
+  },
+  {
+    "id": "artist-50",
+    "name": "Ricky Martin",
+    "language": "es",
+    "genre": "Pop latino"
+  },
+  {
+    "id": "artist-51",
+    "name": "Enrique Iglesias",
+    "language": "es",
+    "genre": "Pop latino"
+  },
+  {
+    "id": "artist-52",
+    "name": "Shakira",
+    "language": "es",
+    "genre": "Pop latino"
+  },
+  {
+    "id": "artist-53",
+    "name": "Bad Gyal",
+    "language": "es",
+    "genre": "Urbano"
+  },
+  {
+    "id": "artist-54",
+    "name": "Lola Índigo",
+    "language": "es",
+    "genre": "Pop urbano"
+  },
+  {
+    "id": "artist-55",
+    "name": "Nathy Peluso",
+    "language": "es",
+    "genre": "Alternativo"
+  },
+  {
+    "id": "artist-56",
+    "name": "Rels B",
+    "language": "es",
+    "genre": "Urbano"
+  },
+  {
+    "id": "artist-57",
+    "name": "Cris MJ",
+    "language": "es",
+    "genre": "Reguetón chileno"
+  },
+  {
+    "id": "artist-58",
+    "name": "Pablo Chill-E",
+    "language": "es",
+    "genre": "Trap chileno"
+  },
+  {
+    "id": "artist-59",
+    "name": "FloyyMenor",
+    "language": "es",
+    "genre": "Urbano chileno"
+  },
+  {
+    "id": "artist-60",
+    "name": "Gino Mella",
+    "language": "es",
+    "genre": "Urbano chileno"
+  },
+  {
+    "id": "artist-61",
+    "name": "Jere Klein",
+    "language": "es",
+    "genre": "Urbano chileno"
+  },
+  {
+    "id": "artist-62",
+    "name": "Eladio Carrión",
+    "language": "es",
+    "genre": "Trap latino"
+  },
+  {
+    "id": "artist-63",
+    "name": "Drake",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-64",
+    "name": "The Weeknd",
+    "language": "en",
+    "genre": "R&B / Pop"
+  },
+  {
+    "id": "artist-65",
+    "name": "Travis Scott",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-66",
+    "name": "Kendrick Lamar",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-67",
+    "name": "J. Cole",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-68",
+    "name": "21 Savage",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-69",
+    "name": "Future",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-70",
+    "name": "Metro Boomin",
+    "language": "en",
+    "genre": "Productor"
+  },
+  {
+    "id": "artist-71",
+    "name": "Lil Baby",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-72",
+    "name": "Gunna",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-73",
+    "name": "Playboi Carti",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-74",
+    "name": "Tyler, The Creator",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-75",
+    "name": "A$AP Rocky",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-76",
+    "name": "Post Malone",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-77",
+    "name": "Eminem",
+    "language": "en",
+    "genre": "Rap"
+  },
+  {
+    "id": "artist-78",
+    "name": "50 Cent",
+    "language": "en",
+    "genre": "Rap"
+  },
+  {
+    "id": "artist-79",
+    "name": "Snoop Dogg",
+    "language": "en",
+    "genre": "Rap"
+  },
+  {
+    "id": "artist-80",
+    "name": "Kanye West",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-81",
+    "name": "Jay-Z",
+    "language": "en",
+    "genre": "Rap"
+  },
+  {
+    "id": "artist-82",
+    "name": "Lil Wayne",
+    "language": "en",
+    "genre": "Rap"
+  },
+  {
+    "id": "artist-83",
+    "name": "Nicki Minaj",
+    "language": "en",
+    "genre": "Rap"
+  },
+  {
+    "id": "artist-84",
+    "name": "Cardi B",
+    "language": "en",
+    "genre": "Rap"
+  },
+  {
+    "id": "artist-85",
+    "name": "Doja Cat",
+    "language": "en",
+    "genre": "Pop / Rap"
+  },
+  {
+    "id": "artist-86",
+    "name": "Beyoncé",
+    "language": "en",
+    "genre": "R&B / Pop"
+  },
+  {
+    "id": "artist-87",
+    "name": "Rihanna",
+    "language": "en",
+    "genre": "Pop / R&B"
+  },
+  {
+    "id": "artist-88",
+    "name": "SZA",
+    "language": "en",
+    "genre": "R&B"
+  },
+  {
+    "id": "artist-89",
+    "name": "Frank Ocean",
+    "language": "en",
+    "genre": "R&B"
+  },
+  {
+    "id": "artist-90",
+    "name": "Brent Faiyaz",
+    "language": "en",
+    "genre": "R&B"
+  },
+  {
+    "id": "artist-91",
+    "name": "PARTYNEXTDOOR",
+    "language": "en",
+    "genre": "R&B"
+  },
+  {
+    "id": "artist-92",
+    "name": "Chris Brown",
+    "language": "en",
+    "genre": "R&B / Pop"
+  },
+  {
+    "id": "artist-93",
+    "name": "Justin Bieber",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-94",
+    "name": "Justin Timberlake",
+    "language": "en",
+    "genre": "Pop / R&B"
+  },
+  {
+    "id": "artist-95",
+    "name": "Bruno Mars",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-96",
+    "name": "Ed Sheeran",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-97",
+    "name": "Harry Styles",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-98",
+    "name": "Zayn",
+    "language": "en",
+    "genre": "Pop / R&B"
+  },
+  {
+    "id": "artist-99",
+    "name": "Ariana Grande",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-100",
+    "name": "Taylor Swift",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-101",
+    "name": "Billie Eilish",
+    "language": "en",
+    "genre": "Alternative pop"
+  },
+  {
+    "id": "artist-102",
+    "name": "Olivia Rodrigo",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-103",
+    "name": "Sabrina Carpenter",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-104",
+    "name": "Dua Lipa",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-105",
+    "name": "Lady Gaga",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-106",
+    "name": "Miley Cyrus",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-107",
+    "name": "The Neighbourhood",
+    "language": "en",
+    "genre": "Alternative"
+  },
+  {
+    "id": "artist-108",
+    "name": "Arctic Monkeys",
+    "language": "en",
+    "genre": "Indie rock"
+  },
+  {
+    "id": "artist-109",
+    "name": "Imagine Dragons",
+    "language": "en",
+    "genre": "Pop rock"
+  },
+  {
+    "id": "artist-110",
+    "name": "Coldplay",
+    "language": "en",
+    "genre": "Pop rock"
+  },
+  {
+    "id": "artist-111",
+    "name": "Linkin Park",
+    "language": "en",
+    "genre": "Rock"
+  },
+  {
+    "id": "artist-112",
+    "name": "Twenty One Pilots",
+    "language": "en",
+    "genre": "Alternative"
+  },
+  {
+    "id": "artist-113",
+    "name": "Chase Atlantic",
+    "language": "en",
+    "genre": "Alternative R&B"
+  },
+  {
+    "id": "artist-114",
+    "name": "Lana Del Rey",
+    "language": "en",
+    "genre": "Alternative pop"
+  },
+  {
+    "id": "artist-115",
+    "name": "Adele",
+    "language": "en",
+    "genre": "Pop / Soul"
+  },
+  {
+    "id": "artist-116",
+    "name": "A$AP Ferg",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-117",
+    "name": "Lil Uzi Vert",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-118",
+    "name": "Don Toliver",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-119",
+    "name": "Quavo",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-120",
+    "name": "Offset",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-121",
+    "name": "Migos",
+    "language": "en",
+    "genre": "Hip-hop"
+  },
+  {
+    "id": "artist-122",
+    "name": "Central Cee",
+    "language": "en",
+    "genre": "UK rap"
+  },
+  {
+    "id": "artist-123",
+    "name": "Dave",
+    "language": "en",
+    "genre": "UK rap"
+  },
+  {
+    "id": "artist-124",
+    "name": "Stormzy",
+    "language": "en",
+    "genre": "UK rap"
+  },
+  {
+    "id": "artist-125",
+    "name": "Jorja Smith",
+    "language": "en",
+    "genre": "R&B"
+  },
+  {
+    "id": "artist-126",
+    "name": "Tate McRae",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-127",
+    "name": "Tyla",
+    "language": "en",
+    "genre": "Pop / Amapiano"
+  },
+  {
+    "id": "artist-128",
+    "name": "PinkPantheress",
+    "language": "en",
+    "genre": "Pop"
+  },
+  {
+    "id": "artist-129",
+    "name": "FKA twigs",
+    "language": "en",
+    "genre": "Alternative R&B"
+  },
+  {
+    "id": "artist-130",
+    "name": "Halsey",
+    "language": "en",
+    "genre": "Alternative pop"
+  },
+  {
+    "id": "artist-131",
+    "name": "Lorde",
+    "language": "en",
+    "genre": "Alternative pop"
+  },
+  {
+    "id": "artist-132",
+    "name": "A$AP Mob",
+    "language": "en",
+    "genre": "Hip-hop"
+  }
+]
