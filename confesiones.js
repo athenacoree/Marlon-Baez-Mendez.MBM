@@ -8,15 +8,16 @@ const $=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=
 const api=async body=>{const {data,error}=await db.functions.invoke(FN,{body});if(error)throw new Error(data?.error||error.message||"No se pudo conectar con el servicio.");if(data?.error)throw new Error(data.error);return data};
 const visitor=()=>{let v=localStorage.getItem("mbm_conf_visitor");if(!v){v=crypto.randomUUID?crypto.randomUUID():Math.random().toString(36).slice(2)+Date.now();localStorage.setItem("mbm_conf_visitor",v)}return v};
 const date=v=>new Date(v).toLocaleString("es-ES",{dateStyle:"medium",timeStyle:"short"});
+const routePath=()=>window.__MBM_ROUTE_PATH||location.pathname;
 const baseFrom=path=>{const marks=["/interaccion/","/confesiones/"].map(m=>path.indexOf(m)).filter(i=>i>=0);const at=marks.length?Math.min(...marks):-1;return at>=0?(path.slice(0,at+1)||"/"):(path.slice(0,path.lastIndexOf("/")+1)||"/")};
 const tokenFromHash=()=>{const m=location.hash.match(/(?:^#|&)access=([^&]+)/);return m?decodeURIComponent(m[1]):""};
-const shareUrl=token=>location.origin+location.pathname+(token?"#access="+encodeURIComponent(token):"");
+const shareUrl=token=>location.origin+baseFrom(routePath())+"confesiones/"+currentSlug+(token?"#access="+encodeURIComponent(token):"");
 const copy=async(v)=>{try{await navigator.clipboard.writeText(v);return true}catch{const t=document.createElement("textarea");t.value=v;document.body.append(t);t.select();const ok=document.execCommand("copy");t.remove();return ok}};
 const showError=(box,msg)=>{box.textContent=msg;box.classList.add("error")};
 const page=document.createElement("main");page.id="mbmConfessionsApp";
 function button(label,cls,fn){const b=$("button",cls,label);b.type="button";b.addEventListener("click",fn);return b}
 function makeOwnerButton(){
- const path=location.pathname;if(!path.includes("/interaccion/"))return;
+ const path=routePath();if(!path.includes("/interaccion/"))return;
  const match=path.match(/\/interaccion\/([^/]+)/);if(!match||document.querySelector(".mbm-conf-owner-trigger"))return;
  if(window.__mbmConfOwnerChecking)return;window.__mbmConfOwnerChecking=true;
  (async()=>{try{
@@ -87,7 +88,7 @@ async function openDashboard(){
  const {data:{user}}=await db.auth.getUser();if(!user)throw new Error("Inicia sesión en tu perfil para administrar este enlace.");
  const result=await api({action:"create_link"}),link=result.link,modal=$("div","mc-admin-modal");modal.id="mc-admin-modal";
  const panel=$("section","mc-admin-panel"),head=$("div","mc-admin-head"),title=$("div","");title.append($("div","mc-kicker","INTERACCIÓN · PANEL PRIVADO"),$("h2","","Tu enlace de confesiones"));head.append(title,button("×","mc-admin-close",()=>modal.remove()));panel.append(head);
- const linkBox=$("div","mc-link-box"),linkInput=$("input","");linkInput.readOnly=true;linkInput.value=location.origin+baseFrom(location.pathname)+"confesiones/"+link.slug;
+ const linkBox=$("div","mc-link-box"),linkInput=$("input","");linkInput.readOnly=true;linkInput.value=location.origin+baseFrom(routePath())+"confesiones/"+link.slug;
  linkBox.append(linkInput,button("Copiar","mc-copy",async()=>{await copy(linkInput.value)}),button("Abrir ↗","mc-quiet",()=>window.open(linkInput.value,"_blank","noopener")));panel.append(linkBox);
  const settings=$("form","mc-settings"),titleField=$("label","","Título del enlace"),ti=$("input","");ti.maxLength=70;ti.value=link.title||"Confesiones";titleField.append(ti);
  const descField=$("label","","Descripción"),de=$("textarea","");de.rows=2;de.maxLength=240;de.value=link.description||"";descField.append(de);
@@ -107,5 +108,5 @@ async function openDashboard(){
  }
 }
 async function loadPublic(slug){currentSlug=slug;currentToken=tokenFromHash();buildPage();page.append($("div","mc-loading","Cargando tu espacio…"));try{const data=await api({action:"get",slug,token:currentToken});await api({action:"visit",slug,visitor_id:visitor()}).catch(()=>{});renderPublic(data)}catch(e){page.replaceChildren($("div","mc-error-page","Este enlace no está disponible"),$("p","mc-subtle",e.message),button("Volver a Interacción","mc-send",()=>location.href=baseFrom(location.pathname)))}}
-const match=location.pathname.match(/\/confesiones\/([^/]+)/);if(match)loadPublic(decodeURIComponent(match[1]));
+const match=routePath().match(/\/confesiones\/([^/]+)/);if(match)loadPublic(decodeURIComponent(match[1]));
 })();
