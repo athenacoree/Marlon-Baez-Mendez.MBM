@@ -1250,60 +1250,6 @@
     ]
   },
   {
-    "id": "media-119",
-    "type": "series",
-    "title": "The Scarecrow",
-    "year": 2026,
-    "origin": "Corea del Sur",
-    "genres": [
-      "Misterio",
-      "Crimen"
-    ]
-  },
-  {
-    "id": "media-120",
-    "type": "series",
-    "title": "Yumi's Cells 3",
-    "year": 2026,
-    "origin": "Corea del Sur",
-    "genres": [
-      "Romance",
-      "Comedia"
-    ]
-  },
-  {
-    "id": "media-121",
-    "type": "series",
-    "title": "Phantom Lawyer",
-    "year": 2026,
-    "origin": "Corea del Sur",
-    "genres": [
-      "Fantasía",
-      "Legal"
-    ]
-  },
-  {
-    "id": "media-122",
-    "type": "series",
-    "title": "We Are All Trying Here",
-    "year": 2026,
-    "origin": "Corea del Sur",
-    "genres": [
-      "Drama"
-    ]
-  },
-  {
-    "id": "media-123",
-    "type": "series",
-    "title": "My Royal Nemesis",
-    "year": 2026,
-    "origin": "Corea del Sur",
-    "genres": [
-      "Fantasía",
-      "Romance"
-    ]
-  },
-  {
     "id": "media-124",
     "type": "game",
     "title": "Roblox",
