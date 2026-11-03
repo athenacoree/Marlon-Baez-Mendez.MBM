@@ -1,0 +1,497 @@
+[
+  {
+    "name": "Bad Bunny",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Omar Courtz",
+    "language": "Español",
+    "genre": "Urbano"
+  },
+  {
+    "name": "Feid",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Rauw Alejandro",
+    "language": "Español",
+    "genre": "Pop urbano"
+  },
+  {
+    "name": "Karol G",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Myke Towers",
+    "language": "Español",
+    "genre": "Trap latino"
+  },
+  {
+    "name": "Luar La L",
+    "language": "Español",
+    "genre": "Trap latino"
+  },
+  {
+    "name": "Bryant Myers",
+    "language": "Español",
+    "genre": "Trap latino"
+  },
+  {
+    "name": "Eladio Carrión",
+    "language": "Español",
+    "genre": "Trap latino"
+  },
+  {
+    "name": "Mora",
+    "language": "Español",
+    "genre": "Urbano"
+  },
+  {
+    "name": "Quevedo",
+    "language": "Español",
+    "genre": "Pop urbano"
+  },
+  {
+    "name": "Duki",
+    "language": "Español",
+    "genre": "Trap latino"
+  },
+  {
+    "name": "Anuel AA",
+    "language": "Español",
+    "genre": "Trap latino"
+  },
+  {
+    "name": "Arcángel",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "De La Ghetto",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "J Balvin",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Maluma",
+    "language": "Español",
+    "genre": "Pop latino"
+  },
+  {
+    "name": "Ozuna",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Daddy Yankee",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Wisin",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Yandel",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Don Omar",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Nicky Jam",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Jhayco",
+    "language": "Español",
+    "genre": "Urbano"
+  },
+  {
+    "name": "Young Miko",
+    "language": "Español",
+    "genre": "Trap latino"
+  },
+  {
+    "name": "Villano Antillano",
+    "language": "Español",
+    "genre": "Rap"
+  },
+  {
+    "name": "Tokischa",
+    "language": "Español",
+    "genre": "Urbano"
+  },
+  {
+    "name": "Yovngchimi",
+    "language": "Español",
+    "genre": "Trap latino"
+  },
+  {
+    "name": "Hades66",
+    "language": "Español",
+    "genre": "Trap latino"
+  },
+  {
+    "name": "Dei V",
+    "language": "Español",
+    "genre": "Urbano"
+  },
+  {
+    "name": "Ñengo Flow",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Plan B",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Zion",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Lennox",
+    "language": "Español",
+    "genre": "Reguetón"
+  },
+  {
+    "name": "Cazzu",
+    "language": "Español",
+    "genre": "Trap latino"
+  },
+  {
+    "name": "Nicki Nicole",
+    "language": "Español",
+    "genre": "Pop urbano"
+  },
+  {
+    "name": "Tiago PZK",
+    "language": "Español",
+    "genre": "Pop urbano"
+  },
+  {
+    "name": "Paulo Londra",
+    "language": "Español",
+    "genre": "Pop urbano"
+  },
+  {
+    "name": "Bizarrap",
+    "language": "Español",
+    "genre": "Electrónica"
+  },
+  {
+    "name": "TINI",
+    "language": "Español",
+    "genre": "Pop"
+  },
+  {
+    "name": "Emilia",
+    "language": "Español",
+    "genre": "Pop"
+  },
+  {
+    "name": "Danna",
+    "language": "Español",
+    "genre": "Pop"
+  },
+  {
+    "name": "Shakira",
+    "language": "Español",
+    "genre": "Pop latino"
+  },
+  {
+    "name": "Rosalía",
+    "language": "Español",
+    "genre": "Alternativo"
+  },
+  {
+    "name": "Enrique Iglesias",
+    "language": "Español",
+    "genre": "Pop latino"
+  },
+  {
+    "name": "Sebastián Yatra",
+    "language": "Español",
+    "genre": "Pop latino"
+  },
+  {
+    "name": "Manuel Turizo",
+    "language": "Español",
+    "genre": "Pop latino"
+  },
+  {
+    "name": "Camilo",
+    "language": "Español",
+    "genre": "Pop latino"
+  },
+  {
+    "name": "Morat",
+    "language": "Español",
+    "genre": "Pop rock"
+  },
+  {
+    "name": "Aitana",
+    "language": "Español",
+    "genre": "Pop"
+  },
+  {
+    "name": "Rels B",
+    "language": "Español",
+    "genre": "R&B"
+  },
+  {
+    "name": "C. Tangana",
+    "language": "Español",
+    "genre": "Alternativo"
+  },
+  {
+    "name": "Kidd Keo",
+    "language": "Español",
+    "genre": "Trap"
+  },
+  {
+    "name": "Santa Fe Klan",
+    "language": "Español",
+    "genre": "Rap"
+  },
+  {
+    "name": "Canserbero",
+    "language": "Español",
+    "genre": "Rap"
+  },
+  {
+    "name": "Residente",
+    "language": "Español",
+    "genre": "Rap"
+  },
+  {
+    "name": "Trueno",
+    "language": "Español",
+    "genre": "Rap"
+  },
+  {
+    "name": "Wos",
+    "language": "Español",
+    "genre": "Rap"
+  },
+  {
+    "name": "Alemán",
+    "language": "Español",
+    "genre": "Rap"
+  },
+  {
+    "name": "Drake",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "The Weeknd",
+    "language": "Inglés",
+    "genre": "R&B"
+  },
+  {
+    "name": "Travis Scott",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "Kendrick Lamar",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "Eminem",
+    "language": "Inglés",
+    "genre": "Rap"
+  },
+  {
+    "name": "Post Malone",
+    "language": "Inglés",
+    "genre": "Pop rap"
+  },
+  {
+    "name": "Justin Bieber",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Taylor Swift",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Billie Eilish",
+    "language": "Inglés",
+    "genre": "Pop alternativo"
+  },
+  {
+    "name": "Ariana Grande",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Dua Lipa",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Rihanna",
+    "language": "Inglés",
+    "genre": "R&B"
+  },
+  {
+    "name": "Beyoncé",
+    "language": "Inglés",
+    "genre": "R&B"
+  },
+  {
+    "name": "SZA",
+    "language": "Inglés",
+    "genre": "R&B"
+  },
+  {
+    "name": "Frank Ocean",
+    "language": "Inglés",
+    "genre": "R&B"
+  },
+  {
+    "name": "Bruno Mars",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Ed Sheeran",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Harry Styles",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Olivia Rodrigo",
+    "language": "Inglés",
+    "genre": "Pop rock"
+  },
+  {
+    "name": "Sabrina Carpenter",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Lana Del Rey",
+    "language": "Inglés",
+    "genre": "Alternativo"
+  },
+  {
+    "name": "Adele",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Lady Gaga",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Miley Cyrus",
+    "language": "Inglés",
+    "genre": "Pop"
+  },
+  {
+    "name": "Doja Cat",
+    "language": "Inglés",
+    "genre": "Pop rap"
+  },
+  {
+    "name": "Nicki Minaj",
+    "language": "Inglés",
+    "genre": "Rap"
+  },
+  {
+    "name": "Cardi B",
+    "language": "Inglés",
+    "genre": "Rap"
+  },
+  {
+    "name": "Future",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "21 Savage",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "Lil Baby",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "Metro Boomin",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "Playboi Carti",
+    "language": "Inglés",
+    "genre": "Rap"
+  },
+  {
+    "name": "Tyler, The Creator",
+    "language": "Inglés",
+    "genre": "Hip-hop"
+  },
+  {
+    "name": "Childish Gambino",
+    "language": "Inglés",
+    "genre": "Alternativo"
+  },
+  {
+    "name": "Imagine Dragons",
+    "language": "Inglés",
+    "genre": "Pop rock"
+  },
+  {
+    "name": "Coldplay",
+    "language": "Inglés",
+    "genre": "Pop rock"
+  },
+  {
+    "name": "The Neighbourhood",
+    "language": "Inglés",
+    "genre": "Alternativo"
+  },
+  {
+    "name": "Arctic Monkeys",
+    "language": "Inglés",
+    "genre": "Rock"
+  },
+  {
+    "name": "Linkin Park",
+    "language": "Inglés",
+    "genre": "Rock"
+  },
+  {
+    "name": "Chase Atlantic",
+    "language": "Inglés",
+    "genre": "Alternativo"
+  }
+]
