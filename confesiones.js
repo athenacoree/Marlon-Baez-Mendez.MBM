@@ -63,7 +63,7 @@ async function refreshAfterChange(){if(currentSlug)await refreshAfterChange();if
 function renderPublic(data){
  page.replaceChildren();const [header,hero]=publicHeader(data);page.append(header,hero);
  if(data.isOwner)page.append(button("Abrir panel de administración","mc-owner-open",openOwnerDashboard));
- const formCard=$("section","mc-compose");formCard.append($("div","mc-section-kicker","TU MENSAJE"),$("h2","mc-section-title","Deja algo que quieras decir"),$("p","mc-subtle","No necesitas registrarte. Si no escribes un nombre, aparecerás como Anónimo."));
+ const formCard=$("section","mc-compose");formCard.append($("div","mc-section-kicker","TU MENSAJE"),$("h2","mc-section-title","Deja algo que quieras decir"),$("p","mc-subtle","No necesitas registrarte. Si no escribes un nombre, aparecerás como Anónimo."),$("p","mc-safety-note","Mantén el respeto. No compartas datos personales, amenazas ni contenido íntimo. Puedes reportar mensajes que incumplan estas reglas."));
  const form=$("form","mc-form"),name=$("input","");name.maxLength=40;name.placeholder="Tu nombre (opcional)";
  const body=$("textarea","");body.rows=5;body.maxLength=1200;body.minLength=2;body.placeholder="Escribe aquí tu mensaje…";body.required=true;
  const visibility=$("div","mc-visibility-picker"),publicLabel=$("label","mc-choice selected"),pub=$("input",""),privateLabel=$("label","mc-choice"),priv=$("input","");
