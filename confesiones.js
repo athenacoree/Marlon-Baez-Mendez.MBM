@@ -44,6 +44,7 @@ function renderMessage(m,ownerMode=false,token=""){
  const card=$("article","mc-message"+(m.visibility==="private"?" private":""));
  const top=$("div","mc-message-top");top.append($("strong","mc-author",m.author_name||"Anónimo"),$("span","mc-visibility",m.visibility==="private"?"PRIVADO":"PÚBLICO"),$("time","mc-time",date(m.created_at)));card.append(top,$("p","mc-message-body",m.body));
  if(m.status==="hidden")card.append($("span","mc-hidden-label","Oculto para visitantes"));
+ if(ownerMode&&m.report_count)card.append($("span","mc-hidden-label","Reportes recibidos: "+m.report_count));
  const reactions=$("div","mc-reactions");
  ["❤️","😂","😮","🥹","🔥","👏","💜"].forEach(emoji=>{const count=m.reactions?.[emoji]||0;const b=button(emoji+(count?" "+count:""),"mc-reaction",async()=>{b.classList.add("pop");try{await api({action:"react",confession_id:m.id,emoji,visitor_id:visitor(),token});await refreshAfterChange()}catch(e){alert(e.message)}});reactions.append(b)});card.append(reactions);
  const replies=$("div","mc-replies");(m.replies||[]).forEach(r=>{const row=$("div","mc-reply"+(r.author_role==="owner"?" owner":""));row.append($("strong","mc-reply-author",r.author_role==="owner"?"Propietario":"Respuesta anónima"),$("p","",r.body),$("time","",date(r.created_at)));replies.append(row)});if((m.replies||[]).length)card.append(replies);
@@ -102,6 +103,7 @@ async function openDashboard(){
  modal.append(panel);document.body.append(modal);modal.addEventListener("click",e=>{if(e.target===modal){modal.remove();delete window.__mcRefreshDashboard}});window.__mcRefreshDashboard=refreshDashboard;await refreshDashboard();
  async function refreshDashboard(){
   const [s,g]=await Promise.all([api({action:"stats"}),api({action:"get",slug:link.slug})]),t=s.totals||{};
+  const summaries=new Map((s.messages||[]).map(x=>[x.id,x]));(g.messages||[]).forEach(m=>{m.report_count=summaries.get(m.id)?.report_count||0});
   stats.replaceChildren();[["Visitas",t.visits],["Mensajes",t.messages],["Públicos",t.public],["Privados",t.private],["Respuestas",t.replies],["Reacciones",t.reactions],["Reportes",t.reports]].forEach(([k,v])=>{const c=$("div","mc-stat");c.append($("small","",k),$("strong","",String(v||0)));stats.append(c)});
   chart.replaceChildren($("h3","","Actividad · últimos 14 días"));const days=s.daily||[],max=Math.max(1,...days.map(d=>Math.max(d.visits,d.messages,d.replies))),graph=$("div","mc-bars");
   days.forEach(d=>{const col=$("div","mc-bar-col"),bars=$("div","mc-bar-stack");[["visits",d.visits],["messages",d.messages],["replies",d.replies]].forEach(([key,val])=>{const bar=$("i","mc-bar mc-"+key);bar.style.height=Math.max(2,(val/max)*100)+"%";bar.title=key+": "+val;bars.append(bar)});col.append(bars,$("small","",d.date.slice(5)));graph.append(col)});
