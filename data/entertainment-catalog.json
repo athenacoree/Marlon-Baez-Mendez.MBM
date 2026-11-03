@@ -1,0 +1,1587 @@
+[
+  {
+    "id": "media-1",
+    "type": "movie",
+    "title": "Interstellar",
+    "year": 2014,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Ciencia ficción",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-2",
+    "type": "movie",
+    "title": "Inception",
+    "year": 2010,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Ciencia ficción",
+      "Misterio"
+    ]
+  },
+  {
+    "id": "media-3",
+    "type": "movie",
+    "title": "The Dark Knight",
+    "year": 2008,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Acción",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-4",
+    "type": "movie",
+    "title": "Titanic",
+    "year": 1997,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Romance",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-5",
+    "type": "movie",
+    "title": "Avatar",
+    "year": 2009,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Ciencia ficción",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-6",
+    "type": "movie",
+    "title": "Avatar: The Way of Water",
+    "year": 2022,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Aventura",
+      "Ciencia ficción"
+    ]
+  },
+  {
+    "id": "media-7",
+    "type": "movie",
+    "title": "Dune",
+    "year": 2021,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Ciencia ficción"
+    ]
+  },
+  {
+    "id": "media-8",
+    "type": "movie",
+    "title": "Dune: Part Two",
+    "year": 2024,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Ciencia ficción"
+    ]
+  },
+  {
+    "id": "media-9",
+    "type": "movie",
+    "title": "The Matrix",
+    "year": 1999,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Ciencia ficción"
+    ]
+  },
+  {
+    "id": "media-10",
+    "type": "movie",
+    "title": "Back to the Future",
+    "year": 1985,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Ciencia ficción",
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-11",
+    "type": "movie",
+    "title": "Jurassic Park",
+    "year": 1993,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-12",
+    "type": "movie",
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "year": 2003,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-13",
+    "type": "movie",
+    "title": "Home Alone",
+    "year": 1990,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia familiar"
+    ]
+  },
+  {
+    "id": "media-14",
+    "type": "movie",
+    "title": "The Truman Show",
+    "year": 1998,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-15",
+    "type": "movie",
+    "title": "Forrest Gump",
+    "year": 1994,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-16",
+    "type": "movie",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-17",
+    "type": "movie",
+    "title": "The Green Mile",
+    "year": 1999,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama",
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-18",
+    "type": "movie",
+    "title": "Gladiator",
+    "year": 2000,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama histórico"
+    ]
+  },
+  {
+    "id": "media-19",
+    "type": "movie",
+    "title": "Top Gun: Maverick",
+    "year": 2022,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Acción",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-20",
+    "type": "movie",
+    "title": "Barbie",
+    "year": 2023,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-21",
+    "type": "movie",
+    "title": "Oppenheimer",
+    "year": 2023,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama histórico"
+    ]
+  },
+  {
+    "id": "media-22",
+    "type": "movie",
+    "title": "La La Land",
+    "year": 2016,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Musical",
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-23",
+    "type": "movie",
+    "title": "Coco",
+    "year": 2017,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Familia"
+    ]
+  },
+  {
+    "id": "media-24",
+    "type": "movie",
+    "title": "Inside Out",
+    "year": 2015,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Familia"
+    ]
+  },
+  {
+    "id": "media-25",
+    "type": "movie",
+    "title": "Inside Out 2",
+    "year": 2024,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Familia"
+    ]
+  },
+  {
+    "id": "media-26",
+    "type": "movie",
+    "title": "Up",
+    "year": 2009,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-27",
+    "type": "movie",
+    "title": "WALL-E",
+    "year": 2008,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Ciencia ficción"
+    ]
+  },
+  {
+    "id": "media-28",
+    "type": "movie",
+    "title": "Frozen",
+    "year": 2013,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Musical"
+    ]
+  },
+  {
+    "id": "media-29",
+    "type": "movie",
+    "title": "How to Train Your Dragon",
+    "year": 2010,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-30",
+    "type": "movie",
+    "title": "The Lion King",
+    "year": 1994,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-31",
+    "type": "movie",
+    "title": "The Super Mario Bros. Movie",
+    "year": 2023,
+    "origin": "Estados Unidos;Japón",
+    "genres": [
+      "Animación",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-32",
+    "type": "movie",
+    "title": "The Wild Robot",
+    "year": 2024,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Ciencia ficción"
+    ]
+  },
+  {
+    "id": "media-33",
+    "type": "movie",
+    "title": "A Minecraft Movie",
+    "year": 2025,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Aventura",
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-34",
+    "type": "movie",
+    "title": "Superman",
+    "year": 2025,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Superhéroes"
+    ]
+  },
+  {
+    "id": "media-35",
+    "type": "movie",
+    "title": "Spider-Man: Into the Spider-Verse",
+    "year": 2018,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Acción"
+    ]
+  },
+  {
+    "id": "media-36",
+    "type": "movie",
+    "title": "Spider-Man: Across the Spider-Verse",
+    "year": 2023,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Animación",
+      "Acción"
+    ]
+  },
+  {
+    "id": "media-37",
+    "type": "movie",
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "origin": "Nueva Zelanda;Estados Unidos",
+    "genres": [
+      "Fantasía",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-38",
+    "type": "movie",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "year": 2001,
+    "origin": "Reino Unido",
+    "genres": [
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-39",
+    "type": "movie",
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-40",
+    "type": "movie",
+    "title": "The Devil Wears Prada",
+    "year": 2006,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-41",
+    "type": "movie",
+    "title": "Mean Girls",
+    "year": 2004,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-42",
+    "type": "movie",
+    "title": "The Notebook",
+    "year": 2004,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Romance",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-43",
+    "type": "movie",
+    "title": "Pride & Prejudice",
+    "year": 2005,
+    "origin": "Reino Unido",
+    "genres": [
+      "Romance",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-44",
+    "type": "movie",
+    "title": "The Fault in Our Stars",
+    "year": 2014,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Romance",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-45",
+    "type": "movie",
+    "title": "The Greatest Showman",
+    "year": 2017,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Musical",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-46",
+    "type": "movie",
+    "title": "Knives Out",
+    "year": 2019,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Misterio",
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-47",
+    "type": "movie",
+    "title": "Everything Everywhere All at Once",
+    "year": 2022,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Ciencia ficción",
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-48",
+    "type": "series",
+    "title": "Friends",
+    "year": 1994,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-49",
+    "type": "series",
+    "title": "The Office",
+    "year": 2005,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-50",
+    "type": "series",
+    "title": "Breaking Bad",
+    "year": 2008,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama",
+      "Crimen"
+    ]
+  },
+  {
+    "id": "media-51",
+    "type": "series",
+    "title": "Stranger Things",
+    "year": 2016,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Misterio",
+      "Ciencia ficción"
+    ]
+  },
+  {
+    "id": "media-52",
+    "type": "series",
+    "title": "Wednesday",
+    "year": 2022,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Misterio",
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-53",
+    "type": "series",
+    "title": "Game of Thrones",
+    "year": 2011,
+    "origin": "Estados Unidos;Reino Unido",
+    "genres": [
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-54",
+    "type": "series",
+    "title": "The Walking Dead",
+    "year": 2010,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-55",
+    "type": "series",
+    "title": "Sherlock",
+    "year": 2010,
+    "origin": "Reino Unido",
+    "genres": [
+      "Misterio"
+    ]
+  },
+  {
+    "id": "media-56",
+    "type": "series",
+    "title": "The Big Bang Theory",
+    "year": 2007,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-57",
+    "type": "series",
+    "title": "How I Met Your Mother",
+    "year": 2005,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-58",
+    "type": "series",
+    "title": "The Last of Us",
+    "year": 2023,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-59",
+    "type": "series",
+    "title": "The Bear",
+    "year": 2022,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama",
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-60",
+    "type": "series",
+    "title": "Cobra Kai",
+    "year": 2018,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama",
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-61",
+    "type": "series",
+    "title": "The Good Place",
+    "year": 2016,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia",
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-62",
+    "type": "series",
+    "title": "Anne with an E",
+    "year": 2017,
+    "origin": "Canadá",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-63",
+    "type": "series",
+    "title": "Modern Family",
+    "year": 2009,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-64",
+    "type": "series",
+    "title": "Lost",
+    "year": 2004,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Misterio",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-65",
+    "type": "series",
+    "title": "Yellowstone",
+    "year": 2018,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-66",
+    "type": "series",
+    "title": "The Queen's Gambit",
+    "year": 2020,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-67",
+    "type": "series",
+    "title": "The Sandman",
+    "year": 2022,
+    "origin": "Reino Unido;Estados Unidos",
+    "genres": [
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-68",
+    "type": "series",
+    "title": "One Piece (Live Action)",
+    "year": 2023,
+    "origin": "Estados Unidos;Japón",
+    "genres": [
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-69",
+    "type": "series",
+    "title": "Avatar: The Last Airbender",
+    "year": 2024,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Fantasía",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-70",
+    "type": "series",
+    "title": "The Gentlemen",
+    "year": 2024,
+    "origin": "Reino Unido",
+    "genres": [
+      "Comedia",
+      "Crimen"
+    ]
+  },
+  {
+    "id": "media-71",
+    "type": "series",
+    "title": "Nobody Wants This",
+    "year": 2024,
+    "origin": "Estados Unidos",
+    "genres": [
+      "Comedia",
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-72",
+    "type": "series",
+    "title": "Peaky Blinders",
+    "year": 2013,
+    "origin": "Reino Unido",
+    "genres": [
+      "Drama",
+      "Crimen"
+    ]
+  },
+  {
+    "id": "media-73",
+    "type": "series",
+    "title": "The Crown",
+    "year": 2016,
+    "origin": "Reino Unido",
+    "genres": [
+      "Drama histórico"
+    ]
+  },
+  {
+    "id": "media-74",
+    "type": "series",
+    "title": "Black Mirror",
+    "year": 2011,
+    "origin": "Reino Unido",
+    "genres": [
+      "Ciencia ficción"
+    ]
+  },
+  {
+    "id": "media-75",
+    "type": "series",
+    "title": "Downton Abbey",
+    "year": 2010,
+    "origin": "Reino Unido",
+    "genres": [
+      "Drama histórico"
+    ]
+  },
+  {
+    "id": "media-76",
+    "type": "series",
+    "title": "Boys Over Flowers",
+    "year": 2009,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-77",
+    "type": "series",
+    "title": "My Love from the Star",
+    "year": 2013,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance",
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-78",
+    "type": "series",
+    "title": "Reply 1988",
+    "year": 2015,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Drama",
+      "Familia"
+    ]
+  },
+  {
+    "id": "media-79",
+    "type": "series",
+    "title": "Descendants of the Sun",
+    "year": 2016,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-80",
+    "type": "series",
+    "title": "Goblin",
+    "year": 2016,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Fantasía",
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-81",
+    "type": "series",
+    "title": "Moon Lovers: Scarlet Heart Ryeo",
+    "year": 2016,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Histórico",
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-82",
+    "type": "series",
+    "title": "The Heirs",
+    "year": 2013,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-83",
+    "type": "series",
+    "title": "What's Wrong with Secretary Kim",
+    "year": 2018,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Comedia",
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-84",
+    "type": "series",
+    "title": "Crash Landing on You",
+    "year": 2019,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-85",
+    "type": "series",
+    "title": "Itaewon Class",
+    "year": 2020,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-86",
+    "type": "series",
+    "title": "Vincenzo",
+    "year": 2021,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Comedia",
+      "Crimen"
+    ]
+  },
+  {
+    "id": "media-87",
+    "type": "series",
+    "title": "True Beauty",
+    "year": 2020,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance",
+      "Comedia"
+    ]
+  },
+  {
+    "id": "media-88",
+    "type": "series",
+    "title": "Kingdom",
+    "year": 2019,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Histórico",
+      "Misterio"
+    ]
+  },
+  {
+    "id": "media-89",
+    "type": "series",
+    "title": "Extraordinary Attorney Woo",
+    "year": 2022,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-90",
+    "type": "series",
+    "title": "Business Proposal",
+    "year": 2022,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Comedia",
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-91",
+    "type": "series",
+    "title": "Twenty-Five Twenty-One",
+    "year": 2022,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-92",
+    "type": "series",
+    "title": "Big Mouth",
+    "year": 2022,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Misterio",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "media-93",
+    "type": "series",
+    "title": "Weak Hero Class 1",
+    "year": 2022,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Drama escolar"
+    ]
+  },
+  {
+    "id": "media-94",
+    "type": "series",
+    "title": "Weak Hero Class 2",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Drama escolar"
+    ]
+  },
+  {
+    "id": "media-95",
+    "type": "series",
+    "title": "Squid Game",
+    "year": 2021,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Suspense"
+    ]
+  },
+  {
+    "id": "media-96",
+    "type": "series",
+    "title": "My Name",
+    "year": 2021,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Acción",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-97",
+    "type": "series",
+    "title": "Hometown Cha-Cha-Cha",
+    "year": 2021,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-98",
+    "type": "series",
+    "title": "Our Beloved Summer",
+    "year": 2021,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-99",
+    "type": "series",
+    "title": "Alchemy of Souls",
+    "year": 2022,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-100",
+    "type": "series",
+    "title": "The Glory",
+    "year": 2022,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-101",
+    "type": "series",
+    "title": "Moving",
+    "year": 2023,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Acción",
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-102",
+    "type": "series",
+    "title": "My Demon",
+    "year": 2023,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Fantasía",
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-103",
+    "type": "series",
+    "title": "Doona!",
+    "year": 2023,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-104",
+    "type": "series",
+    "title": "Lovely Runner",
+    "year": 2024,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance",
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-105",
+    "type": "series",
+    "title": "Queen of Tears",
+    "year": 2024,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance",
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-106",
+    "type": "series",
+    "title": "Marry My Husband",
+    "year": 2024,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance",
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-107",
+    "type": "series",
+    "title": "A Shop for Killers",
+    "year": 2024,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Acción",
+      "Misterio"
+    ]
+  },
+  {
+    "id": "media-108",
+    "type": "series",
+    "title": "The Atypical Family",
+    "year": 2024,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Fantasía",
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-109",
+    "type": "series",
+    "title": "When Life Gives You Tangerines",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-110",
+    "type": "series",
+    "title": "The Trauma Code: Heroes on Call",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Drama médico"
+    ]
+  },
+  {
+    "id": "media-111",
+    "type": "series",
+    "title": "The Price of Confession",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Misterio",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "media-112",
+    "type": "series",
+    "title": "Nine Puzzles",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Misterio"
+    ]
+  },
+  {
+    "id": "media-113",
+    "type": "series",
+    "title": "Dear X",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "id": "media-114",
+    "type": "series",
+    "title": "Love Scout",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-115",
+    "type": "series",
+    "title": "Head Over Heels",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Romance",
+      "Fantasía"
+    ]
+  },
+  {
+    "id": "media-116",
+    "type": "series",
+    "title": "Bon Appétit, Your Majesty",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Histórico",
+      "Romance"
+    ]
+  },
+  {
+    "id": "media-117",
+    "type": "series",
+    "title": "Dear Hongrang",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Histórico",
+      "Misterio"
+    ]
+  },
+  {
+    "id": "media-118",
+    "type": "series",
+    "title": "The Haunted Palace",
+    "year": 2025,
+    "origin": "Corea del Sur",
+    "genres": [
+      "Fantasía",
+      "Histórico"
+    ]
+  },
+  {
+    "id": "media-124",
+    "type": "game",
+    "title": "Roblox",
+    "platform": "Android / iOS",
+    "genres": [
+      "Creatividad",
+      "Social"
+    ]
+  },
+  {
+    "id": "media-125",
+    "type": "game",
+    "title": "Block Blast!",
+    "platform": "Android / iOS",
+    "genres": [
+      "Puzzle"
+    ]
+  },
+  {
+    "id": "media-126",
+    "type": "game",
+    "title": "Subway Surfers",
+    "platform": "Android / iOS",
+    "genres": [
+      "Arcade"
+    ]
+  },
+  {
+    "id": "media-127",
+    "type": "game",
+    "title": "Brawl Stars",
+    "platform": "Android / iOS",
+    "genres": [
+      "Acción",
+      "Estrategia"
+    ]
+  },
+  {
+    "id": "media-128",
+    "type": "game",
+    "title": "Clash of Clans",
+    "platform": "Android / iOS",
+    "genres": [
+      "Estrategia"
+    ]
+  },
+  {
+    "id": "media-129",
+    "type": "game",
+    "title": "Clash Royale",
+    "platform": "Android / iOS",
+    "genres": [
+      "Estrategia"
+    ]
+  },
+  {
+    "id": "media-130",
+    "type": "game",
+    "title": "Mobile Legends: Bang Bang",
+    "platform": "Android / iOS",
+    "genres": [
+      "MOBA"
+    ]
+  },
+  {
+    "id": "media-131",
+    "type": "game",
+    "title": "Minecraft",
+    "platform": "Android / iOS",
+    "genres": [
+      "Construcción",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-132",
+    "type": "game",
+    "title": "Stumble Guys",
+    "platform": "Android / iOS",
+    "genres": [
+      "Fiesta",
+      "Plataformas"
+    ]
+  },
+  {
+    "id": "media-133",
+    "type": "game",
+    "title": "EA SPORTS FC Mobile",
+    "platform": "Android / iOS",
+    "genres": [
+      "Deportes"
+    ]
+  },
+  {
+    "id": "media-134",
+    "type": "game",
+    "title": "eFootball",
+    "platform": "Android / iOS",
+    "genres": [
+      "Deportes"
+    ]
+  },
+  {
+    "id": "media-135",
+    "type": "game",
+    "title": "Among Us",
+    "platform": "Android / iOS",
+    "genres": [
+      "Social",
+      "Deducción"
+    ]
+  },
+  {
+    "id": "media-136",
+    "type": "game",
+    "title": "Pokémon GO",
+    "platform": "Android / iOS",
+    "genres": [
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-137",
+    "type": "game",
+    "title": "8 Ball Pool",
+    "platform": "Android / iOS",
+    "genres": [
+      "Deportes"
+    ]
+  },
+  {
+    "id": "media-138",
+    "type": "game",
+    "title": "Chess.com",
+    "platform": "Android / iOS",
+    "genres": [
+      "Estrategia"
+    ]
+  },
+  {
+    "id": "media-139",
+    "type": "game",
+    "title": "Ludo King",
+    "platform": "Android / iOS",
+    "genres": [
+      "Mesa"
+    ]
+  },
+  {
+    "id": "media-140",
+    "type": "game",
+    "title": "Candy Crush Saga",
+    "platform": "Android / iOS",
+    "genres": [
+      "Puzzle"
+    ]
+  },
+  {
+    "id": "media-141",
+    "type": "game",
+    "title": "My Talking Tom 2",
+    "platform": "Android / iOS",
+    "genres": [
+      "Mascotas virtuales"
+    ]
+  },
+  {
+    "id": "media-142",
+    "type": "game",
+    "title": "Asphalt Legends",
+    "platform": "Android / iOS",
+    "genres": [
+      "Carreras"
+    ]
+  },
+  {
+    "id": "media-143",
+    "type": "game",
+    "title": "Sky: Children of the Light",
+    "platform": "Android / iOS",
+    "genres": [
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-144",
+    "type": "game",
+    "title": "Monument Valley",
+    "platform": "Android / iOS",
+    "genres": [
+      "Puzzle",
+      "Arte"
+    ]
+  },
+  {
+    "id": "media-145",
+    "type": "game",
+    "title": "Plants vs. Zombies 2",
+    "platform": "Android / iOS",
+    "genres": [
+      "Estrategia"
+    ]
+  },
+  {
+    "id": "media-146",
+    "type": "game",
+    "title": "Terraria",
+    "platform": "Android / iOS",
+    "genres": [
+      "Aventura",
+      "Construcción"
+    ]
+  },
+  {
+    "id": "media-147",
+    "type": "game",
+    "title": "Stardew Valley",
+    "platform": "Android / iOS",
+    "genres": [
+      "Simulación"
+    ]
+  },
+  {
+    "id": "media-148",
+    "type": "game",
+    "title": "Hill Climb Racing 2",
+    "platform": "Android / iOS",
+    "genres": [
+      "Carreras"
+    ]
+  },
+  {
+    "id": "media-149",
+    "type": "game",
+    "title": "Geometry Dash",
+    "platform": "Android / iOS",
+    "genres": [
+      "Ritmo",
+      "Plataformas"
+    ]
+  },
+  {
+    "id": "media-150",
+    "type": "game",
+    "title": "The Sims Mobile",
+    "platform": "Android / iOS",
+    "genres": [
+      "Simulación"
+    ]
+  },
+  {
+    "id": "media-151",
+    "type": "game",
+    "title": "Pokémon TCG Pocket",
+    "platform": "Android / iOS",
+    "genres": [
+      "Cartas"
+    ]
+  },
+  {
+    "id": "media-152",
+    "type": "game",
+    "title": "Free Fire",
+    "platform": "Android / iOS",
+    "genres": [
+      "Acción"
+    ]
+  },
+  {
+    "id": "media-153",
+    "type": "game",
+    "title": "Call of Duty: Mobile",
+    "platform": "Android / iOS",
+    "genres": [
+      "Acción"
+    ]
+  },
+  {
+    "id": "media-154",
+    "type": "game",
+    "title": "Genshin Impact",
+    "platform": "Android / iOS",
+    "genres": [
+      "RPG",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-155",
+    "type": "game",
+    "title": "Honkai: Star Rail",
+    "platform": "Android / iOS",
+    "genres": [
+      "RPG"
+    ]
+  },
+  {
+    "id": "media-156",
+    "type": "game",
+    "title": "Pokémon Unite",
+    "platform": "Android / iOS",
+    "genres": [
+      "MOBA"
+    ]
+  },
+  {
+    "id": "media-157",
+    "type": "game",
+    "title": "Guardian Tales",
+    "platform": "Android / iOS",
+    "genres": [
+      "RPG",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "media-158",
+    "type": "game",
+    "title": "Marvel Snap",
+    "platform": "Android / iOS",
+    "genres": [
+      "Cartas"
+    ]
+  },
+  {
+    "id": "media-159",
+    "type": "game",
+    "title": "Duet Cats",
+    "platform": "Android / iOS",
+    "genres": [
+      "Música",
+      "Casual"
+    ]
+  }
+]
