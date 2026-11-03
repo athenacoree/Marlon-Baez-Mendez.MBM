@@ -59,7 +59,7 @@ function renderMessage(m,ownerMode=false,token=""){
 }
 let currentSlug="",currentToken="";
 async function reloadCurrent(){if(!currentSlug)return;const data=await api({action:"get",slug:currentSlug,token:currentToken});renderPublic(data)}
-async function refreshAfterChange(){if(currentSlug)await refreshAfterChange();if(window.__mcRefreshDashboard)await window.__mcRefreshDashboard()}
+async function refreshAfterChange(){if(currentSlug)await reloadCurrent();if(window.__mcRefreshDashboard)await window.__mcRefreshDashboard()}
 function renderPublic(data){
  page.replaceChildren();const [header,hero]=publicHeader(data);page.append(header,hero);
  if(data.isOwner)page.append(button("Abrir panel de administración","mc-owner-open",openOwnerDashboard));
