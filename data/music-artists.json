@@ -3,978 +3,1878 @@
     "id": "artist-1",
     "name": "Omar Courtz",
     "language": "es",
-    "genre": "Urbano latino"
+    "genre": "Urbano latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Omar%20Courtz",
+    "spotifySearchUrl": "https://open.spotify.com/search/Omar%20Courtz",
+    "featuredSongs": [
+      {
+        "title": "En Alta",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Omar%20Courtz%20En%20Alta",
+        "spotifySearchUrl": "https://open.spotify.com/search/Omar%20Courtz%20En%20Alta"
+      },
+      {
+        "title": "Luces de Colores",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Omar%20Courtz%20Luces%20de%20Colores",
+        "spotifySearchUrl": "https://open.spotify.com/search/Omar%20Courtz%20Luces%20de%20Colores"
+      },
+      {
+        "title": "Una Noti",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Omar%20Courtz%20Una%20Noti",
+        "spotifySearchUrl": "https://open.spotify.com/search/Omar%20Courtz%20Una%20Noti"
+      }
+    ]
   },
   {
     "id": "artist-2",
     "name": "Luar La L",
     "language": "es",
-    "genre": "Trap latino"
+    "genre": "Trap latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Luar%20La%20L",
+    "spotifySearchUrl": "https://open.spotify.com/search/Luar%20La%20L",
+    "featuredSongs": [
+      {
+        "title": "Caile",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Luar%20La%20L%20Caile",
+        "spotifySearchUrl": "https://open.spotify.com/search/Luar%20La%20L%20Caile"
+      },
+      {
+        "title": "100 Sentimientos",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Luar%20La%20L%20100%20Sentimientos",
+        "spotifySearchUrl": "https://open.spotify.com/search/Luar%20La%20L%20100%20Sentimientos"
+      }
+    ]
   },
   {
     "id": "artist-3",
     "name": "Bryant Myers",
     "language": "es",
-    "genre": "Trap latino"
+    "genre": "Trap latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bryant%20Myers",
+    "spotifySearchUrl": "https://open.spotify.com/search/Bryant%20Myers",
+    "featuredSongs": [
+      {
+        "title": "Esclava",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bryant%20Myers%20Esclava",
+        "spotifySearchUrl": "https://open.spotify.com/search/Bryant%20Myers%20Esclava"
+      },
+      {
+        "title": "Cuatro Babys",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bryant%20Myers%20Cuatro%20Babys",
+        "spotifySearchUrl": "https://open.spotify.com/search/Bryant%20Myers%20Cuatro%20Babys"
+      }
+    ]
   },
   {
     "id": "artist-4",
     "name": "Bad Bunny",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bad%20Bunny",
+    "spotifySearchUrl": "https://open.spotify.com/search/Bad%20Bunny",
+    "featuredSongs": [
+      {
+        "title": "Tití Me Preguntó",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bad%20Bunny%20Tit%C3%AD%20Me%20Pregunt%C3%B3",
+        "spotifySearchUrl": "https://open.spotify.com/search/Bad%20Bunny%20Tit%C3%AD%20Me%20Pregunt%C3%B3"
+      },
+      {
+        "title": "Moscow Mule",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bad%20Bunny%20Moscow%20Mule",
+        "spotifySearchUrl": "https://open.spotify.com/search/Bad%20Bunny%20Moscow%20Mule"
+      },
+      {
+        "title": "Me Porto Bonito",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bad%20Bunny%20Me%20Porto%20Bonito",
+        "spotifySearchUrl": "https://open.spotify.com/search/Bad%20Bunny%20Me%20Porto%20Bonito"
+      },
+      {
+        "title": "Ojitos Lindos",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bad%20Bunny%20Ojitos%20Lindos",
+        "spotifySearchUrl": "https://open.spotify.com/search/Bad%20Bunny%20Ojitos%20Lindos"
+      }
+    ]
   },
   {
     "id": "artist-5",
     "name": "Feid",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Feid",
+    "spotifySearchUrl": "https://open.spotify.com/search/Feid",
+    "featuredSongs": [
+      {
+        "title": "LUNA",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Feid%20LUNA",
+        "spotifySearchUrl": "https://open.spotify.com/search/Feid%20LUNA"
+      },
+      {
+        "title": "Classy 101",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Feid%20Classy%20101",
+        "spotifySearchUrl": "https://open.spotify.com/search/Feid%20Classy%20101"
+      },
+      {
+        "title": "Normal",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Feid%20Normal",
+        "spotifySearchUrl": "https://open.spotify.com/search/Feid%20Normal"
+      }
+    ]
   },
   {
     "id": "artist-6",
     "name": "Rauw Alejandro",
     "language": "es",
-    "genre": "Pop urbano"
+    "genre": "Pop urbano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rauw%20Alejandro",
+    "spotifySearchUrl": "https://open.spotify.com/search/Rauw%20Alejandro",
+    "featuredSongs": [
+      {
+        "title": "Todo de Ti",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rauw%20Alejandro%20Todo%20de%20Ti",
+        "spotifySearchUrl": "https://open.spotify.com/search/Rauw%20Alejandro%20Todo%20de%20Ti"
+      },
+      {
+        "title": "Desesperados",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rauw%20Alejandro%20Desesperados",
+        "spotifySearchUrl": "https://open.spotify.com/search/Rauw%20Alejandro%20Desesperados"
+      },
+      {
+        "title": "Punto 40",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rauw%20Alejandro%20Punto%2040",
+        "spotifySearchUrl": "https://open.spotify.com/search/Rauw%20Alejandro%20Punto%2040"
+      }
+    ]
   },
   {
     "id": "artist-7",
     "name": "Karol G",
     "language": "es",
-    "genre": "Pop urbano"
+    "genre": "Pop urbano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Karol%20G",
+    "spotifySearchUrl": "https://open.spotify.com/search/Karol%20G",
+    "featuredSongs": [
+      {
+        "title": "TQG",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Karol%20G%20TQG",
+        "spotifySearchUrl": "https://open.spotify.com/search/Karol%20G%20TQG"
+      },
+      {
+        "title": "Provenza",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Karol%20G%20Provenza",
+        "spotifySearchUrl": "https://open.spotify.com/search/Karol%20G%20Provenza"
+      },
+      {
+        "title": "Si Antes Te Hubiera Conocido",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Karol%20G%20Si%20Antes%20Te%20Hubiera%20Conocido",
+        "spotifySearchUrl": "https://open.spotify.com/search/Karol%20G%20Si%20Antes%20Te%20Hubiera%20Conocido"
+      }
+    ]
   },
   {
     "id": "artist-8",
     "name": "Myke Towers",
     "language": "es",
-    "genre": "Trap latino"
+    "genre": "Trap latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Myke%20Towers",
+    "spotifySearchUrl": "https://open.spotify.com/search/Myke%20Towers",
+    "featuredSongs": [
+      {
+        "title": "LALA",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Myke%20Towers%20LALA",
+        "spotifySearchUrl": "https://open.spotify.com/search/Myke%20Towers%20LALA"
+      },
+      {
+        "title": "La Falda",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Myke%20Towers%20La%20Falda",
+        "spotifySearchUrl": "https://open.spotify.com/search/Myke%20Towers%20La%20Falda"
+      },
+      {
+        "title": "Diosa",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Myke%20Towers%20Diosa",
+        "spotifySearchUrl": "https://open.spotify.com/search/Myke%20Towers%20Diosa"
+      }
+    ]
   },
   {
     "id": "artist-9",
     "name": "Eladio Carrión",
     "language": "es",
-    "genre": "Trap latino"
+    "genre": "Trap latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eladio%20Carri%C3%B3n",
+    "spotifySearchUrl": "https://open.spotify.com/search/Eladio%20Carri%C3%B3n",
+    "featuredSongs": [
+      {
+        "title": "Coco Chanel",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eladio%20Carri%C3%B3n%20Coco%20Chanel",
+        "spotifySearchUrl": "https://open.spotify.com/search/Eladio%20Carri%C3%B3n%20Coco%20Chanel"
+      },
+      {
+        "title": "Mbappé",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eladio%20Carri%C3%B3n%20Mbapp%C3%A9",
+        "spotifySearchUrl": "https://open.spotify.com/search/Eladio%20Carri%C3%B3n%20Mbapp%C3%A9"
+      },
+      {
+        "title": "Si La Calle Llama",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eladio%20Carri%C3%B3n%20Si%20La%20Calle%20Llama",
+        "spotifySearchUrl": "https://open.spotify.com/search/Eladio%20Carri%C3%B3n%20Si%20La%20Calle%20Llama"
+      }
+    ]
   },
   {
     "id": "artist-10",
     "name": "Mora",
     "language": "es",
-    "genre": "Urbano latino"
+    "genre": "Urbano latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Mora",
+    "spotifySearchUrl": "https://open.spotify.com/search/Mora",
+    "featuredSongs": [
+      {
+        "title": "512",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Mora%20512",
+        "spotifySearchUrl": "https://open.spotify.com/search/Mora%20512"
+      },
+      {
+        "title": "La Inocente",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Mora%20La%20Inocente",
+        "spotifySearchUrl": "https://open.spotify.com/search/Mora%20La%20Inocente"
+      },
+      {
+        "title": "Memorias",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Mora%20Memorias",
+        "spotifySearchUrl": "https://open.spotify.com/search/Mora%20Memorias"
+      }
+    ]
   },
   {
     "id": "artist-11",
     "name": "Quevedo",
     "language": "es",
-    "genre": "Urbano latino"
+    "genre": "Urbano latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Quevedo",
+    "spotifySearchUrl": "https://open.spotify.com/search/Quevedo",
+    "featuredSongs": [
+      {
+        "title": "Quédate",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Quevedo%20Qu%C3%A9date",
+        "spotifySearchUrl": "https://open.spotify.com/search/Quevedo%20Qu%C3%A9date"
+      },
+      {
+        "title": "Columbia",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Quevedo%20Columbia",
+        "spotifySearchUrl": "https://open.spotify.com/search/Quevedo%20Columbia"
+      },
+      {
+        "title": "Vista al Mar",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Quevedo%20Vista%20al%20Mar",
+        "spotifySearchUrl": "https://open.spotify.com/search/Quevedo%20Vista%20al%20Mar"
+      }
+    ]
   },
   {
     "id": "artist-12",
     "name": "Duki",
     "language": "es",
-    "genre": "Trap argentino"
+    "genre": "Trap argentino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Duki",
+    "spotifySearchUrl": "https://open.spotify.com/search/Duki",
+    "featuredSongs": [
+      {
+        "title": "Givenchy",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Duki%20Givenchy",
+        "spotifySearchUrl": "https://open.spotify.com/search/Duki%20Givenchy"
+      },
+      {
+        "title": "She Don't Give a FO",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Duki%20She%20Don't%20Give%20a%20FO",
+        "spotifySearchUrl": "https://open.spotify.com/search/Duki%20She%20Don't%20Give%20a%20FO"
+      }
+    ]
   },
   {
     "id": "artist-13",
     "name": "Bizarrap",
     "language": "es",
-    "genre": "Productor"
+    "genre": "Productor",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bizarrap",
+    "spotifySearchUrl": "https://open.spotify.com/search/Bizarrap",
+    "featuredSongs": [
+      {
+        "title": "Music Sessions #53",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bizarrap%20Music%20Sessions%20%2353",
+        "spotifySearchUrl": "https://open.spotify.com/search/Bizarrap%20Music%20Sessions%20%2353"
+      },
+      {
+        "title": "Music Sessions #52",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bizarrap%20Music%20Sessions%20%2352",
+        "spotifySearchUrl": "https://open.spotify.com/search/Bizarrap%20Music%20Sessions%20%2352"
+      }
+    ]
   },
   {
     "id": "artist-14",
     "name": "Young Miko",
     "language": "es",
-    "genre": "Urbano latino"
+    "genre": "Urbano latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Young%20Miko",
+    "spotifySearchUrl": "https://open.spotify.com/search/Young%20Miko",
+    "featuredSongs": [
+      {
+        "title": "Lisa",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Young%20Miko%20Lisa",
+        "spotifySearchUrl": "https://open.spotify.com/search/Young%20Miko%20Lisa"
+      },
+      {
+        "title": "Wiggy",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Young%20Miko%20Wiggy",
+        "spotifySearchUrl": "https://open.spotify.com/search/Young%20Miko%20Wiggy"
+      },
+      {
+        "title": "Riri",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Young%20Miko%20Riri",
+        "spotifySearchUrl": "https://open.spotify.com/search/Young%20Miko%20Riri"
+      }
+    ]
   },
   {
     "id": "artist-15",
     "name": "Dei V",
     "language": "es",
-    "genre": "Urbano latino"
+    "genre": "Urbano latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Dei%20V",
+    "spotifySearchUrl": "https://open.spotify.com/search/Dei%20V"
   },
   {
     "id": "artist-16",
     "name": "Yovngchimi",
     "language": "es",
-    "genre": "Trap latino"
+    "genre": "Trap latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Yovngchimi",
+    "spotifySearchUrl": "https://open.spotify.com/search/Yovngchimi"
   },
   {
     "id": "artist-17",
     "name": "Anuel AA",
     "language": "es",
-    "genre": "Trap latino"
+    "genre": "Trap latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Anuel%20AA",
+    "spotifySearchUrl": "https://open.spotify.com/search/Anuel%20AA",
+    "featuredSongs": [
+      {
+        "title": "China",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Anuel%20AA%20China",
+        "spotifySearchUrl": "https://open.spotify.com/search/Anuel%20AA%20China"
+      },
+      {
+        "title": "Más Rica Que Ayer",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Anuel%20AA%20M%C3%A1s%20Rica%20Que%20Ayer",
+        "spotifySearchUrl": "https://open.spotify.com/search/Anuel%20AA%20M%C3%A1s%20Rica%20Que%20Ayer"
+      },
+      {
+        "title": "Secreto",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Anuel%20AA%20Secreto",
+        "spotifySearchUrl": "https://open.spotify.com/search/Anuel%20AA%20Secreto"
+      }
+    ]
   },
   {
     "id": "artist-18",
     "name": "Arcángel",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Arc%C3%A1ngel",
+    "spotifySearchUrl": "https://open.spotify.com/search/Arc%C3%A1ngel",
+    "featuredSongs": [
+      {
+        "title": "La Jumpa",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Arc%C3%A1ngel%20La%20Jumpa",
+        "spotifySearchUrl": "https://open.spotify.com/search/Arc%C3%A1ngel%20La%20Jumpa"
+      },
+      {
+        "title": "Me Prefieres a Mí",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Arc%C3%A1ngel%20Me%20Prefieres%20a%20M%C3%AD",
+        "spotifySearchUrl": "https://open.spotify.com/search/Arc%C3%A1ngel%20Me%20Prefieres%20a%20M%C3%AD"
+      }
+    ]
   },
   {
     "id": "artist-19",
     "name": "De La Ghetto",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=De%20La%20Ghetto",
+    "spotifySearchUrl": "https://open.spotify.com/search/De%20La%20Ghetto"
   },
   {
     "id": "artist-20",
     "name": "Ozuna",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Ozuna",
+    "spotifySearchUrl": "https://open.spotify.com/search/Ozuna",
+    "featuredSongs": [
+      {
+        "title": "Se Preparó",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Ozuna%20Se%20Prepar%C3%B3",
+        "spotifySearchUrl": "https://open.spotify.com/search/Ozuna%20Se%20Prepar%C3%B3"
+      },
+      {
+        "title": "Caramelo",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Ozuna%20Caramelo",
+        "spotifySearchUrl": "https://open.spotify.com/search/Ozuna%20Caramelo"
+      }
+    ]
   },
   {
     "id": "artist-21",
     "name": "J Balvin",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=J%20Balvin",
+    "spotifySearchUrl": "https://open.spotify.com/search/J%20Balvin"
   },
   {
     "id": "artist-22",
     "name": "Maluma",
     "language": "es",
-    "genre": "Pop urbano"
+    "genre": "Pop urbano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Maluma",
+    "spotifySearchUrl": "https://open.spotify.com/search/Maluma"
   },
   {
     "id": "artist-23",
     "name": "Nicky Jam",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Nicky%20Jam",
+    "spotifySearchUrl": "https://open.spotify.com/search/Nicky%20Jam"
   },
   {
     "id": "artist-24",
     "name": "Wisin",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Wisin",
+    "spotifySearchUrl": "https://open.spotify.com/search/Wisin"
   },
   {
     "id": "artist-25",
     "name": "Yandel",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Yandel",
+    "spotifySearchUrl": "https://open.spotify.com/search/Yandel"
   },
   {
     "id": "artist-26",
     "name": "Don Omar",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Don%20Omar",
+    "spotifySearchUrl": "https://open.spotify.com/search/Don%20Omar",
+    "featuredSongs": [
+      {
+        "title": "Danza Kuduro",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Don%20Omar%20Danza%20Kuduro",
+        "spotifySearchUrl": "https://open.spotify.com/search/Don%20Omar%20Danza%20Kuduro"
+      },
+      {
+        "title": "Dile",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Don%20Omar%20Dile",
+        "spotifySearchUrl": "https://open.spotify.com/search/Don%20Omar%20Dile"
+      }
+    ]
   },
   {
     "id": "artist-27",
     "name": "Daddy Yankee",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Daddy%20Yankee",
+    "spotifySearchUrl": "https://open.spotify.com/search/Daddy%20Yankee",
+    "featuredSongs": [
+      {
+        "title": "Gasolina",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Daddy%20Yankee%20Gasolina",
+        "spotifySearchUrl": "https://open.spotify.com/search/Daddy%20Yankee%20Gasolina"
+      },
+      {
+        "title": "Limbo",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Daddy%20Yankee%20Limbo",
+        "spotifySearchUrl": "https://open.spotify.com/search/Daddy%20Yankee%20Limbo"
+      }
+    ]
   },
   {
     "id": "artist-28",
     "name": "Ivy Queen",
     "language": "es",
-    "genre": "Reguetón"
+    "genre": "Reguetón",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Ivy%20Queen",
+    "spotifySearchUrl": "https://open.spotify.com/search/Ivy%20Queen"
   },
   {
     "id": "artist-29",
     "name": "Tainy",
     "language": "es",
-    "genre": "Productor"
+    "genre": "Productor",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Tainy",
+    "spotifySearchUrl": "https://open.spotify.com/search/Tainy"
   },
   {
     "id": "artist-30",
     "name": "Jhayco",
     "language": "es",
-    "genre": "Urbano latino"
+    "genre": "Urbano latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Jhayco",
+    "spotifySearchUrl": "https://open.spotify.com/search/Jhayco"
   },
   {
     "id": "artist-31",
     "name": "Cazzu",
     "language": "es",
-    "genre": "Trap latino"
+    "genre": "Trap latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Cazzu",
+    "spotifySearchUrl": "https://open.spotify.com/search/Cazzu"
   },
   {
     "id": "artist-32",
     "name": "Nicki Nicole",
     "language": "es",
-    "genre": "Pop urbano"
+    "genre": "Pop urbano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Nicki%20Nicole",
+    "spotifySearchUrl": "https://open.spotify.com/search/Nicki%20Nicole"
   },
   {
     "id": "artist-33",
     "name": "Trueno",
     "language": "es",
-    "genre": "Rap"
+    "genre": "Rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Trueno",
+    "spotifySearchUrl": "https://open.spotify.com/search/Trueno"
   },
   {
     "id": "artist-34",
     "name": "Paulo Londra",
     "language": "es",
-    "genre": "Pop urbano"
+    "genre": "Pop urbano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Paulo%20Londra",
+    "spotifySearchUrl": "https://open.spotify.com/search/Paulo%20Londra"
   },
   {
     "id": "artist-35",
     "name": "Tiago PZK",
     "language": "es",
-    "genre": "Pop urbano"
+    "genre": "Pop urbano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Tiago%20PZK",
+    "spotifySearchUrl": "https://open.spotify.com/search/Tiago%20PZK"
   },
   {
     "id": "artist-36",
     "name": "YSY A",
     "language": "es",
-    "genre": "Trap argentino"
+    "genre": "Trap argentino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=YSY%20A",
+    "spotifySearchUrl": "https://open.spotify.com/search/YSY%20A"
   },
   {
     "id": "artist-37",
     "name": "Khea",
     "language": "es",
-    "genre": "Trap argentino"
+    "genre": "Trap argentino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Khea",
+    "spotifySearchUrl": "https://open.spotify.com/search/Khea"
   },
   {
     "id": "artist-38",
     "name": "LIT killah",
     "language": "es",
-    "genre": "Trap argentino"
+    "genre": "Trap argentino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=LIT%20killah",
+    "spotifySearchUrl": "https://open.spotify.com/search/LIT%20killah"
   },
   {
     "id": "artist-39",
     "name": "C.R.O",
     "language": "es",
-    "genre": "Trap argentino"
+    "genre": "Trap argentino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=C.R.O",
+    "spotifySearchUrl": "https://open.spotify.com/search/C.R.O"
   },
   {
     "id": "artist-40",
     "name": "Milo J",
     "language": "es",
-    "genre": "Pop urbano"
+    "genre": "Pop urbano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Milo%20J",
+    "spotifySearchUrl": "https://open.spotify.com/search/Milo%20J"
   },
   {
     "id": "artist-41",
     "name": "Delaossa",
     "language": "es",
-    "genre": "Rap"
+    "genre": "Rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Delaossa",
+    "spotifySearchUrl": "https://open.spotify.com/search/Delaossa"
   },
   {
     "id": "artist-42",
     "name": "C. Tangana",
     "language": "es",
-    "genre": "Pop alternativo"
+    "genre": "Pop alternativo",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=C.%20Tangana",
+    "spotifySearchUrl": "https://open.spotify.com/search/C.%20Tangana"
   },
   {
     "id": "artist-43",
     "name": "Rosalía",
     "language": "es",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rosal%C3%ADa",
+    "spotifySearchUrl": "https://open.spotify.com/search/Rosal%C3%ADa",
+    "featuredSongs": [
+      {
+        "title": "DESPECHÁ",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rosal%C3%ADa%20DESPECH%C3%81",
+        "spotifySearchUrl": "https://open.spotify.com/search/Rosal%C3%ADa%20DESPECH%C3%81"
+      },
+      {
+        "title": "SAOKO",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rosal%C3%ADa%20SAOKO",
+        "spotifySearchUrl": "https://open.spotify.com/search/Rosal%C3%ADa%20SAOKO"
+      }
+    ]
   },
   {
     "id": "artist-44",
     "name": "Aitana",
     "language": "es",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Aitana",
+    "spotifySearchUrl": "https://open.spotify.com/search/Aitana",
+    "featuredSongs": [
+      {
+        "title": "Mon Amour",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Aitana%20Mon%20Amour",
+        "spotifySearchUrl": "https://open.spotify.com/search/Aitana%20Mon%20Amour"
+      },
+      {
+        "title": "Los Ángeles",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Aitana%20Los%20%C3%81ngeles",
+        "spotifySearchUrl": "https://open.spotify.com/search/Aitana%20Los%20%C3%81ngeles"
+      }
+    ]
   },
   {
     "id": "artist-45",
     "name": "Quevedo",
     "language": "es",
-    "genre": "Urbano latino"
+    "genre": "Urbano latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Quevedo",
+    "spotifySearchUrl": "https://open.spotify.com/search/Quevedo",
+    "featuredSongs": [
+      {
+        "title": "Quédate",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Quevedo%20Qu%C3%A9date",
+        "spotifySearchUrl": "https://open.spotify.com/search/Quevedo%20Qu%C3%A9date"
+      },
+      {
+        "title": "Columbia",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Quevedo%20Columbia",
+        "spotifySearchUrl": "https://open.spotify.com/search/Quevedo%20Columbia"
+      },
+      {
+        "title": "Vista al Mar",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Quevedo%20Vista%20al%20Mar",
+        "spotifySearchUrl": "https://open.spotify.com/search/Quevedo%20Vista%20al%20Mar"
+      }
+    ]
   },
   {
     "id": "artist-46",
     "name": "Manuel Turizo",
     "language": "es",
-    "genre": "Pop latino"
+    "genre": "Pop latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Manuel%20Turizo",
+    "spotifySearchUrl": "https://open.spotify.com/search/Manuel%20Turizo",
+    "featuredSongs": [
+      {
+        "title": "La Bachata",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Manuel%20Turizo%20La%20Bachata",
+        "spotifySearchUrl": "https://open.spotify.com/search/Manuel%20Turizo%20La%20Bachata"
+      },
+      {
+        "title": "El Merengue",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Manuel%20Turizo%20El%20Merengue",
+        "spotifySearchUrl": "https://open.spotify.com/search/Manuel%20Turizo%20El%20Merengue"
+      }
+    ]
   },
   {
     "id": "artist-47",
     "name": "Camilo",
     "language": "es",
-    "genre": "Pop latino"
+    "genre": "Pop latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Camilo",
+    "spotifySearchUrl": "https://open.spotify.com/search/Camilo"
   },
   {
     "id": "artist-48",
     "name": "Sebastián Yatra",
     "language": "es",
-    "genre": "Pop latino"
+    "genre": "Pop latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Sebasti%C3%A1n%20Yatra",
+    "spotifySearchUrl": "https://open.spotify.com/search/Sebasti%C3%A1n%20Yatra"
   },
   {
     "id": "artist-49",
     "name": "Morat",
     "language": "es",
-    "genre": "Pop latino"
+    "genre": "Pop latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Morat",
+    "spotifySearchUrl": "https://open.spotify.com/search/Morat"
   },
   {
     "id": "artist-50",
     "name": "Ricky Martin",
     "language": "es",
-    "genre": "Pop latino"
+    "genre": "Pop latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Ricky%20Martin",
+    "spotifySearchUrl": "https://open.spotify.com/search/Ricky%20Martin"
   },
   {
     "id": "artist-51",
     "name": "Enrique Iglesias",
     "language": "es",
-    "genre": "Pop latino"
+    "genre": "Pop latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Enrique%20Iglesias",
+    "spotifySearchUrl": "https://open.spotify.com/search/Enrique%20Iglesias"
   },
   {
     "id": "artist-52",
     "name": "Shakira",
     "language": "es",
-    "genre": "Pop latino"
+    "genre": "Pop latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Shakira",
+    "spotifySearchUrl": "https://open.spotify.com/search/Shakira",
+    "featuredSongs": [
+      {
+        "title": "Hips Don't Lie",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Shakira%20Hips%20Don't%20Lie",
+        "spotifySearchUrl": "https://open.spotify.com/search/Shakira%20Hips%20Don't%20Lie"
+      },
+      {
+        "title": "Waka Waka",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Shakira%20Waka%20Waka",
+        "spotifySearchUrl": "https://open.spotify.com/search/Shakira%20Waka%20Waka"
+      }
+    ]
   },
   {
     "id": "artist-53",
     "name": "Bad Gyal",
     "language": "es",
-    "genre": "Urbano"
+    "genre": "Urbano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bad%20Gyal",
+    "spotifySearchUrl": "https://open.spotify.com/search/Bad%20Gyal"
   },
   {
     "id": "artist-54",
     "name": "Lola Índigo",
     "language": "es",
-    "genre": "Pop urbano"
+    "genre": "Pop urbano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Lola%20%C3%8Dndigo",
+    "spotifySearchUrl": "https://open.spotify.com/search/Lola%20%C3%8Dndigo"
   },
   {
     "id": "artist-55",
     "name": "Nathy Peluso",
     "language": "es",
-    "genre": "Alternativo"
+    "genre": "Alternativo",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Nathy%20Peluso",
+    "spotifySearchUrl": "https://open.spotify.com/search/Nathy%20Peluso"
   },
   {
     "id": "artist-56",
     "name": "Rels B",
     "language": "es",
-    "genre": "Urbano"
+    "genre": "Urbano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rels%20B",
+    "spotifySearchUrl": "https://open.spotify.com/search/Rels%20B"
   },
   {
     "id": "artist-57",
     "name": "Cris MJ",
     "language": "es",
-    "genre": "Reguetón chileno"
+    "genre": "Reguetón chileno",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Cris%20MJ",
+    "spotifySearchUrl": "https://open.spotify.com/search/Cris%20MJ"
   },
   {
     "id": "artist-58",
     "name": "Pablo Chill-E",
     "language": "es",
-    "genre": "Trap chileno"
+    "genre": "Trap chileno",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Pablo%20Chill-E",
+    "spotifySearchUrl": "https://open.spotify.com/search/Pablo%20Chill-E"
   },
   {
     "id": "artist-59",
     "name": "FloyyMenor",
     "language": "es",
-    "genre": "Urbano chileno"
+    "genre": "Urbano chileno",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=FloyyMenor",
+    "spotifySearchUrl": "https://open.spotify.com/search/FloyyMenor"
   },
   {
     "id": "artist-60",
     "name": "Gino Mella",
     "language": "es",
-    "genre": "Urbano chileno"
+    "genre": "Urbano chileno",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Gino%20Mella",
+    "spotifySearchUrl": "https://open.spotify.com/search/Gino%20Mella"
   },
   {
     "id": "artist-61",
     "name": "Jere Klein",
     "language": "es",
-    "genre": "Urbano chileno"
+    "genre": "Urbano chileno",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Jere%20Klein",
+    "spotifySearchUrl": "https://open.spotify.com/search/Jere%20Klein"
   },
   {
     "id": "artist-62",
     "name": "Eladio Carrión",
     "language": "es",
-    "genre": "Trap latino"
+    "genre": "Trap latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eladio%20Carri%C3%B3n",
+    "spotifySearchUrl": "https://open.spotify.com/search/Eladio%20Carri%C3%B3n",
+    "featuredSongs": [
+      {
+        "title": "Coco Chanel",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eladio%20Carri%C3%B3n%20Coco%20Chanel",
+        "spotifySearchUrl": "https://open.spotify.com/search/Eladio%20Carri%C3%B3n%20Coco%20Chanel"
+      },
+      {
+        "title": "Mbappé",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eladio%20Carri%C3%B3n%20Mbapp%C3%A9",
+        "spotifySearchUrl": "https://open.spotify.com/search/Eladio%20Carri%C3%B3n%20Mbapp%C3%A9"
+      },
+      {
+        "title": "Si La Calle Llama",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eladio%20Carri%C3%B3n%20Si%20La%20Calle%20Llama",
+        "spotifySearchUrl": "https://open.spotify.com/search/Eladio%20Carri%C3%B3n%20Si%20La%20Calle%20Llama"
+      }
+    ]
   },
   {
     "id": "artist-63",
     "name": "Drake",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Drake",
+    "spotifySearchUrl": "https://open.spotify.com/search/Drake",
+    "featuredSongs": [
+      {
+        "title": "God's Plan",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Drake%20God's%20Plan",
+        "spotifySearchUrl": "https://open.spotify.com/search/Drake%20God's%20Plan"
+      },
+      {
+        "title": "One Dance",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Drake%20One%20Dance",
+        "spotifySearchUrl": "https://open.spotify.com/search/Drake%20One%20Dance"
+      }
+    ]
   },
   {
     "id": "artist-64",
     "name": "The Weeknd",
     "language": "en",
-    "genre": "R&B / Pop"
+    "genre": "R&B / Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=The%20Weeknd",
+    "spotifySearchUrl": "https://open.spotify.com/search/The%20Weeknd",
+    "featuredSongs": [
+      {
+        "title": "Blinding Lights",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=The%20Weeknd%20Blinding%20Lights",
+        "spotifySearchUrl": "https://open.spotify.com/search/The%20Weeknd%20Blinding%20Lights"
+      },
+      {
+        "title": "Starboy",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=The%20Weeknd%20Starboy",
+        "spotifySearchUrl": "https://open.spotify.com/search/The%20Weeknd%20Starboy"
+      }
+    ]
   },
   {
     "id": "artist-65",
     "name": "Travis Scott",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Travis%20Scott",
+    "spotifySearchUrl": "https://open.spotify.com/search/Travis%20Scott",
+    "featuredSongs": [
+      {
+        "title": "SICKO MODE",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Travis%20Scott%20SICKO%20MODE",
+        "spotifySearchUrl": "https://open.spotify.com/search/Travis%20Scott%20SICKO%20MODE"
+      },
+      {
+        "title": "FE!N",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Travis%20Scott%20FE!N",
+        "spotifySearchUrl": "https://open.spotify.com/search/Travis%20Scott%20FE!N"
+      }
+    ]
   },
   {
     "id": "artist-66",
     "name": "Kendrick Lamar",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Kendrick%20Lamar",
+    "spotifySearchUrl": "https://open.spotify.com/search/Kendrick%20Lamar",
+    "featuredSongs": [
+      {
+        "title": "HUMBLE.",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Kendrick%20Lamar%20HUMBLE.",
+        "spotifySearchUrl": "https://open.spotify.com/search/Kendrick%20Lamar%20HUMBLE."
+      },
+      {
+        "title": "Not Like Us",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Kendrick%20Lamar%20Not%20Like%20Us",
+        "spotifySearchUrl": "https://open.spotify.com/search/Kendrick%20Lamar%20Not%20Like%20Us"
+      }
+    ]
   },
   {
     "id": "artist-67",
     "name": "J. Cole",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=J.%20Cole",
+    "spotifySearchUrl": "https://open.spotify.com/search/J.%20Cole"
   },
   {
     "id": "artist-68",
     "name": "21 Savage",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=21%20Savage",
+    "spotifySearchUrl": "https://open.spotify.com/search/21%20Savage"
   },
   {
     "id": "artist-69",
     "name": "Future",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Future",
+    "spotifySearchUrl": "https://open.spotify.com/search/Future"
   },
   {
     "id": "artist-70",
     "name": "Metro Boomin",
     "language": "en",
-    "genre": "Productor"
+    "genre": "Productor",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Metro%20Boomin",
+    "spotifySearchUrl": "https://open.spotify.com/search/Metro%20Boomin"
   },
   {
     "id": "artist-71",
     "name": "Lil Baby",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Lil%20Baby",
+    "spotifySearchUrl": "https://open.spotify.com/search/Lil%20Baby"
   },
   {
     "id": "artist-72",
     "name": "Gunna",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Gunna",
+    "spotifySearchUrl": "https://open.spotify.com/search/Gunna"
   },
   {
     "id": "artist-73",
     "name": "Playboi Carti",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Playboi%20Carti",
+    "spotifySearchUrl": "https://open.spotify.com/search/Playboi%20Carti"
   },
   {
     "id": "artist-74",
     "name": "Tyler, The Creator",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Tyler%2C%20The%20Creator",
+    "spotifySearchUrl": "https://open.spotify.com/search/Tyler%2C%20The%20Creator"
   },
   {
     "id": "artist-75",
     "name": "A$AP Rocky",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=A%24AP%20Rocky",
+    "spotifySearchUrl": "https://open.spotify.com/search/A%24AP%20Rocky"
   },
   {
     "id": "artist-76",
     "name": "Post Malone",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Post%20Malone",
+    "spotifySearchUrl": "https://open.spotify.com/search/Post%20Malone"
   },
   {
     "id": "artist-77",
     "name": "Eminem",
     "language": "en",
-    "genre": "Rap"
+    "genre": "Rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eminem",
+    "spotifySearchUrl": "https://open.spotify.com/search/Eminem",
+    "featuredSongs": [
+      {
+        "title": "Lose Yourself",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eminem%20Lose%20Yourself",
+        "spotifySearchUrl": "https://open.spotify.com/search/Eminem%20Lose%20Yourself"
+      },
+      {
+        "title": "Without Me",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Eminem%20Without%20Me",
+        "spotifySearchUrl": "https://open.spotify.com/search/Eminem%20Without%20Me"
+      }
+    ]
   },
   {
     "id": "artist-78",
     "name": "50 Cent",
     "language": "en",
-    "genre": "Rap"
+    "genre": "Rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=50%20Cent",
+    "spotifySearchUrl": "https://open.spotify.com/search/50%20Cent"
   },
   {
     "id": "artist-79",
     "name": "Snoop Dogg",
     "language": "en",
-    "genre": "Rap"
+    "genre": "Rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Snoop%20Dogg",
+    "spotifySearchUrl": "https://open.spotify.com/search/Snoop%20Dogg"
   },
   {
     "id": "artist-80",
     "name": "Kanye West",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Kanye%20West",
+    "spotifySearchUrl": "https://open.spotify.com/search/Kanye%20West"
   },
   {
     "id": "artist-81",
     "name": "Jay-Z",
     "language": "en",
-    "genre": "Rap"
+    "genre": "Rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Jay-Z",
+    "spotifySearchUrl": "https://open.spotify.com/search/Jay-Z"
   },
   {
     "id": "artist-82",
     "name": "Lil Wayne",
     "language": "en",
-    "genre": "Rap"
+    "genre": "Rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Lil%20Wayne",
+    "spotifySearchUrl": "https://open.spotify.com/search/Lil%20Wayne"
   },
   {
     "id": "artist-83",
     "name": "Nicki Minaj",
     "language": "en",
-    "genre": "Rap"
+    "genre": "Rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Nicki%20Minaj",
+    "spotifySearchUrl": "https://open.spotify.com/search/Nicki%20Minaj"
   },
   {
     "id": "artist-84",
     "name": "Cardi B",
     "language": "en",
-    "genre": "Rap"
+    "genre": "Rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Cardi%20B",
+    "spotifySearchUrl": "https://open.spotify.com/search/Cardi%20B"
   },
   {
     "id": "artist-85",
     "name": "Doja Cat",
     "language": "en",
-    "genre": "Pop / Rap"
+    "genre": "Pop / Rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Doja%20Cat",
+    "spotifySearchUrl": "https://open.spotify.com/search/Doja%20Cat"
   },
   {
     "id": "artist-86",
     "name": "Beyoncé",
     "language": "en",
-    "genre": "R&B / Pop"
+    "genre": "R&B / Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Beyonc%C3%A9",
+    "spotifySearchUrl": "https://open.spotify.com/search/Beyonc%C3%A9"
   },
   {
     "id": "artist-87",
     "name": "Rihanna",
     "language": "en",
-    "genre": "Pop / R&B"
+    "genre": "Pop / R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rihanna",
+    "spotifySearchUrl": "https://open.spotify.com/search/Rihanna",
+    "featuredSongs": [
+      {
+        "title": "Umbrella",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rihanna%20Umbrella",
+        "spotifySearchUrl": "https://open.spotify.com/search/Rihanna%20Umbrella"
+      },
+      {
+        "title": "Diamonds",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Rihanna%20Diamonds",
+        "spotifySearchUrl": "https://open.spotify.com/search/Rihanna%20Diamonds"
+      }
+    ]
   },
   {
     "id": "artist-88",
     "name": "SZA",
     "language": "en",
-    "genre": "R&B"
+    "genre": "R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=SZA",
+    "spotifySearchUrl": "https://open.spotify.com/search/SZA"
   },
   {
     "id": "artist-89",
     "name": "Frank Ocean",
     "language": "en",
-    "genre": "R&B"
+    "genre": "R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Frank%20Ocean",
+    "spotifySearchUrl": "https://open.spotify.com/search/Frank%20Ocean"
   },
   {
     "id": "artist-90",
     "name": "Brent Faiyaz",
     "language": "en",
-    "genre": "R&B"
+    "genre": "R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Brent%20Faiyaz",
+    "spotifySearchUrl": "https://open.spotify.com/search/Brent%20Faiyaz"
   },
   {
     "id": "artist-91",
     "name": "PARTYNEXTDOOR",
     "language": "en",
-    "genre": "R&B"
+    "genre": "R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=PARTYNEXTDOOR",
+    "spotifySearchUrl": "https://open.spotify.com/search/PARTYNEXTDOOR"
   },
   {
     "id": "artist-92",
     "name": "Chris Brown",
     "language": "en",
-    "genre": "R&B / Pop"
+    "genre": "R&B / Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Chris%20Brown",
+    "spotifySearchUrl": "https://open.spotify.com/search/Chris%20Brown"
   },
   {
     "id": "artist-93",
     "name": "Justin Bieber",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Justin%20Bieber",
+    "spotifySearchUrl": "https://open.spotify.com/search/Justin%20Bieber"
   },
   {
     "id": "artist-94",
     "name": "Justin Timberlake",
     "language": "en",
-    "genre": "Pop / R&B"
+    "genre": "Pop / R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Justin%20Timberlake",
+    "spotifySearchUrl": "https://open.spotify.com/search/Justin%20Timberlake"
   },
   {
     "id": "artist-95",
     "name": "Bruno Mars",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bruno%20Mars",
+    "spotifySearchUrl": "https://open.spotify.com/search/Bruno%20Mars",
+    "featuredSongs": [
+      {
+        "title": "Locked Out of Heaven",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bruno%20Mars%20Locked%20Out%20of%20Heaven",
+        "spotifySearchUrl": "https://open.spotify.com/search/Bruno%20Mars%20Locked%20Out%20of%20Heaven"
+      },
+      {
+        "title": "24K Magic",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Bruno%20Mars%2024K%20Magic",
+        "spotifySearchUrl": "https://open.spotify.com/search/Bruno%20Mars%2024K%20Magic"
+      }
+    ]
   },
   {
     "id": "artist-96",
     "name": "Ed Sheeran",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Ed%20Sheeran",
+    "spotifySearchUrl": "https://open.spotify.com/search/Ed%20Sheeran"
   },
   {
     "id": "artist-97",
     "name": "Harry Styles",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Harry%20Styles",
+    "spotifySearchUrl": "https://open.spotify.com/search/Harry%20Styles"
   },
   {
     "id": "artist-98",
     "name": "Zayn",
     "language": "en",
-    "genre": "Pop / R&B"
+    "genre": "Pop / R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Zayn",
+    "spotifySearchUrl": "https://open.spotify.com/search/Zayn"
   },
   {
     "id": "artist-99",
     "name": "Ariana Grande",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Ariana%20Grande",
+    "spotifySearchUrl": "https://open.spotify.com/search/Ariana%20Grande",
+    "featuredSongs": [
+      {
+        "title": "7 rings",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Ariana%20Grande%207%20rings",
+        "spotifySearchUrl": "https://open.spotify.com/search/Ariana%20Grande%207%20rings"
+      },
+      {
+        "title": "Into You",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Ariana%20Grande%20Into%20You",
+        "spotifySearchUrl": "https://open.spotify.com/search/Ariana%20Grande%20Into%20You"
+      }
+    ]
   },
   {
     "id": "artist-100",
     "name": "Taylor Swift",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Taylor%20Swift",
+    "spotifySearchUrl": "https://open.spotify.com/search/Taylor%20Swift",
+    "featuredSongs": [
+      {
+        "title": "Anti-Hero",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Taylor%20Swift%20Anti-Hero",
+        "spotifySearchUrl": "https://open.spotify.com/search/Taylor%20Swift%20Anti-Hero"
+      },
+      {
+        "title": "Cruel Summer",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Taylor%20Swift%20Cruel%20Summer",
+        "spotifySearchUrl": "https://open.spotify.com/search/Taylor%20Swift%20Cruel%20Summer"
+      }
+    ]
   },
   {
     "id": "artist-101",
     "name": "Billie Eilish",
     "language": "en",
-    "genre": "Alternative pop"
+    "genre": "Alternative pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Billie%20Eilish",
+    "spotifySearchUrl": "https://open.spotify.com/search/Billie%20Eilish",
+    "featuredSongs": [
+      {
+        "title": "Birds of a Feather",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Billie%20Eilish%20Birds%20of%20a%20Feather",
+        "spotifySearchUrl": "https://open.spotify.com/search/Billie%20Eilish%20Birds%20of%20a%20Feather"
+      },
+      {
+        "title": "Bad Guy",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Billie%20Eilish%20Bad%20Guy",
+        "spotifySearchUrl": "https://open.spotify.com/search/Billie%20Eilish%20Bad%20Guy"
+      }
+    ]
   },
   {
     "id": "artist-102",
     "name": "Olivia Rodrigo",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Olivia%20Rodrigo",
+    "spotifySearchUrl": "https://open.spotify.com/search/Olivia%20Rodrigo"
   },
   {
     "id": "artist-103",
     "name": "Sabrina Carpenter",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Sabrina%20Carpenter",
+    "spotifySearchUrl": "https://open.spotify.com/search/Sabrina%20Carpenter"
   },
   {
     "id": "artist-104",
     "name": "Dua Lipa",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Dua%20Lipa",
+    "spotifySearchUrl": "https://open.spotify.com/search/Dua%20Lipa",
+    "featuredSongs": [
+      {
+        "title": "Levitating",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Dua%20Lipa%20Levitating",
+        "spotifySearchUrl": "https://open.spotify.com/search/Dua%20Lipa%20Levitating"
+      },
+      {
+        "title": "Houdini",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Dua%20Lipa%20Houdini",
+        "spotifySearchUrl": "https://open.spotify.com/search/Dua%20Lipa%20Houdini"
+      }
+    ]
   },
   {
     "id": "artist-105",
     "name": "Lady Gaga",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Lady%20Gaga",
+    "spotifySearchUrl": "https://open.spotify.com/search/Lady%20Gaga"
   },
   {
     "id": "artist-106",
     "name": "Miley Cyrus",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Miley%20Cyrus",
+    "spotifySearchUrl": "https://open.spotify.com/search/Miley%20Cyrus"
   },
   {
     "id": "artist-107",
     "name": "The Neighbourhood",
     "language": "en",
-    "genre": "Alternative"
+    "genre": "Alternative",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=The%20Neighbourhood",
+    "spotifySearchUrl": "https://open.spotify.com/search/The%20Neighbourhood"
   },
   {
     "id": "artist-108",
     "name": "Arctic Monkeys",
     "language": "en",
-    "genre": "Indie rock"
+    "genre": "Indie rock",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Arctic%20Monkeys",
+    "spotifySearchUrl": "https://open.spotify.com/search/Arctic%20Monkeys",
+    "featuredSongs": [
+      {
+        "title": "Do I Wanna Know?",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Arctic%20Monkeys%20Do%20I%20Wanna%20Know%3F",
+        "spotifySearchUrl": "https://open.spotify.com/search/Arctic%20Monkeys%20Do%20I%20Wanna%20Know%3F"
+      },
+      {
+        "title": "505",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Arctic%20Monkeys%20505",
+        "spotifySearchUrl": "https://open.spotify.com/search/Arctic%20Monkeys%20505"
+      }
+    ]
   },
   {
     "id": "artist-109",
     "name": "Imagine Dragons",
     "language": "en",
-    "genre": "Pop rock"
+    "genre": "Pop rock",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Imagine%20Dragons",
+    "spotifySearchUrl": "https://open.spotify.com/search/Imagine%20Dragons"
   },
   {
     "id": "artist-110",
     "name": "Coldplay",
     "language": "en",
-    "genre": "Pop rock"
+    "genre": "Pop rock",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Coldplay",
+    "spotifySearchUrl": "https://open.spotify.com/search/Coldplay",
+    "featuredSongs": [
+      {
+        "title": "Yellow",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Coldplay%20Yellow",
+        "spotifySearchUrl": "https://open.spotify.com/search/Coldplay%20Yellow"
+      },
+      {
+        "title": "Viva La Vida",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Coldplay%20Viva%20La%20Vida",
+        "spotifySearchUrl": "https://open.spotify.com/search/Coldplay%20Viva%20La%20Vida"
+      }
+    ]
   },
   {
     "id": "artist-111",
     "name": "Linkin Park",
     "language": "en",
-    "genre": "Rock"
+    "genre": "Rock",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Linkin%20Park",
+    "spotifySearchUrl": "https://open.spotify.com/search/Linkin%20Park",
+    "featuredSongs": [
+      {
+        "title": "In the End",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Linkin%20Park%20In%20the%20End",
+        "spotifySearchUrl": "https://open.spotify.com/search/Linkin%20Park%20In%20the%20End"
+      },
+      {
+        "title": "Numb",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Linkin%20Park%20Numb",
+        "spotifySearchUrl": "https://open.spotify.com/search/Linkin%20Park%20Numb"
+      }
+    ]
   },
   {
     "id": "artist-112",
     "name": "Twenty One Pilots",
     "language": "en",
-    "genre": "Alternative"
+    "genre": "Alternative",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Twenty%20One%20Pilots",
+    "spotifySearchUrl": "https://open.spotify.com/search/Twenty%20One%20Pilots"
   },
   {
     "id": "artist-113",
     "name": "Chase Atlantic",
     "language": "en",
-    "genre": "Alternative R&B"
+    "genre": "Alternative R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Chase%20Atlantic",
+    "spotifySearchUrl": "https://open.spotify.com/search/Chase%20Atlantic"
   },
   {
     "id": "artist-114",
     "name": "Lana Del Rey",
     "language": "en",
-    "genre": "Alternative pop"
+    "genre": "Alternative pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Lana%20Del%20Rey",
+    "spotifySearchUrl": "https://open.spotify.com/search/Lana%20Del%20Rey"
   },
   {
     "id": "artist-115",
     "name": "Adele",
     "language": "en",
-    "genre": "Pop / Soul"
+    "genre": "Pop / Soul",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Adele",
+    "spotifySearchUrl": "https://open.spotify.com/search/Adele"
   },
   {
     "id": "artist-116",
     "name": "A$AP Ferg",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=A%24AP%20Ferg",
+    "spotifySearchUrl": "https://open.spotify.com/search/A%24AP%20Ferg"
   },
   {
     "id": "artist-117",
     "name": "Lil Uzi Vert",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Lil%20Uzi%20Vert",
+    "spotifySearchUrl": "https://open.spotify.com/search/Lil%20Uzi%20Vert"
   },
   {
     "id": "artist-118",
     "name": "Don Toliver",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Don%20Toliver",
+    "spotifySearchUrl": "https://open.spotify.com/search/Don%20Toliver"
   },
   {
     "id": "artist-119",
     "name": "Quavo",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Quavo",
+    "spotifySearchUrl": "https://open.spotify.com/search/Quavo"
   },
   {
     "id": "artist-120",
     "name": "Offset",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Offset",
+    "spotifySearchUrl": "https://open.spotify.com/search/Offset"
   },
   {
     "id": "artist-121",
     "name": "Migos",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Migos",
+    "spotifySearchUrl": "https://open.spotify.com/search/Migos"
   },
   {
     "id": "artist-122",
     "name": "Central Cee",
     "language": "en",
-    "genre": "UK rap"
+    "genre": "UK rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Central%20Cee",
+    "spotifySearchUrl": "https://open.spotify.com/search/Central%20Cee"
   },
   {
     "id": "artist-123",
     "name": "Dave",
     "language": "en",
-    "genre": "UK rap"
+    "genre": "UK rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Dave",
+    "spotifySearchUrl": "https://open.spotify.com/search/Dave"
   },
   {
     "id": "artist-124",
     "name": "Stormzy",
     "language": "en",
-    "genre": "UK rap"
+    "genre": "UK rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Stormzy",
+    "spotifySearchUrl": "https://open.spotify.com/search/Stormzy"
   },
   {
     "id": "artist-125",
     "name": "Jorja Smith",
     "language": "en",
-    "genre": "R&B"
+    "genre": "R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Jorja%20Smith",
+    "spotifySearchUrl": "https://open.spotify.com/search/Jorja%20Smith"
   },
   {
     "id": "artist-126",
     "name": "Tate McRae",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Tate%20McRae",
+    "spotifySearchUrl": "https://open.spotify.com/search/Tate%20McRae"
   },
   {
     "id": "artist-127",
     "name": "Tyla",
     "language": "en",
-    "genre": "Pop / Amapiano"
+    "genre": "Pop / Amapiano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Tyla",
+    "spotifySearchUrl": "https://open.spotify.com/search/Tyla"
   },
   {
     "id": "artist-128",
     "name": "PinkPantheress",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=PinkPantheress",
+    "spotifySearchUrl": "https://open.spotify.com/search/PinkPantheress"
   },
   {
     "id": "artist-129",
     "name": "FKA twigs",
     "language": "en",
-    "genre": "Alternative R&B"
+    "genre": "Alternative R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=FKA%20twigs",
+    "spotifySearchUrl": "https://open.spotify.com/search/FKA%20twigs"
   },
   {
     "id": "artist-130",
     "name": "Halsey",
     "language": "en",
-    "genre": "Alternative pop"
+    "genre": "Alternative pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Halsey",
+    "spotifySearchUrl": "https://open.spotify.com/search/Halsey"
   },
   {
     "id": "artist-131",
     "name": "Lorde",
     "language": "en",
-    "genre": "Alternative pop"
+    "genre": "Alternative pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Lorde",
+    "spotifySearchUrl": "https://open.spotify.com/search/Lorde"
   },
   {
     "id": "artist-132",
     "name": "A$AP Mob",
     "language": "en",
-    "genre": "Hip-hop"
+    "genre": "Hip-hop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=A%24AP%20Mob",
+    "spotifySearchUrl": "https://open.spotify.com/search/A%24AP%20Mob"
   },
   {
     "id": "artist-133",
     "name": "Peso Pluma",
     "language": "es",
-    "genre": "Regional mexicano"
+    "genre": "Regional mexicano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Peso%20Pluma",
+    "spotifySearchUrl": "https://open.spotify.com/search/Peso%20Pluma"
   },
   {
     "id": "artist-134",
     "name": "Junior H",
     "language": "es",
-    "genre": "Regional mexicano"
+    "genre": "Regional mexicano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Junior%20H",
+    "spotifySearchUrl": "https://open.spotify.com/search/Junior%20H"
   },
   {
     "id": "artist-135",
     "name": "Natanael Cano",
     "language": "es",
-    "genre": "Regional mexicano"
+    "genre": "Regional mexicano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Natanael%20Cano",
+    "spotifySearchUrl": "https://open.spotify.com/search/Natanael%20Cano"
   },
   {
     "id": "artist-136",
     "name": "Fuerza Regida",
     "language": "es",
-    "genre": "Regional mexicano"
+    "genre": "Regional mexicano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Fuerza%20Regida",
+    "spotifySearchUrl": "https://open.spotify.com/search/Fuerza%20Regida"
   },
   {
     "id": "artist-137",
     "name": "Grupo Frontera",
     "language": "es",
-    "genre": "Regional mexicano"
+    "genre": "Regional mexicano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Grupo%20Frontera",
+    "spotifySearchUrl": "https://open.spotify.com/search/Grupo%20Frontera"
   },
   {
     "id": "artist-138",
     "name": "Carín León",
     "language": "es",
-    "genre": "Regional mexicano"
+    "genre": "Regional mexicano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Car%C3%ADn%20Le%C3%B3n",
+    "spotifySearchUrl": "https://open.spotify.com/search/Car%C3%ADn%20Le%C3%B3n"
   },
   {
     "id": "artist-139",
     "name": "Christian Nodal",
     "language": "es",
-    "genre": "Regional mexicano"
+    "genre": "Regional mexicano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Christian%20Nodal",
+    "spotifySearchUrl": "https://open.spotify.com/search/Christian%20Nodal"
   },
   {
     "id": "artist-140",
     "name": "Alejandro Sanz",
     "language": "es",
-    "genre": "Pop latino"
+    "genre": "Pop latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Alejandro%20Sanz",
+    "spotifySearchUrl": "https://open.spotify.com/search/Alejandro%20Sanz"
   },
   {
     "id": "artist-141",
     "name": "Juanes",
     "language": "es",
-    "genre": "Rock pop"
+    "genre": "Rock pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Juanes",
+    "spotifySearchUrl": "https://open.spotify.com/search/Juanes"
   },
   {
     "id": "artist-142",
     "name": "Jesse & Joy",
     "language": "es",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Jesse%20%26%20Joy",
+    "spotifySearchUrl": "https://open.spotify.com/search/Jesse%20%26%20Joy"
   },
   {
     "id": "artist-143",
     "name": "Mon Laferte",
     "language": "es",
-    "genre": "Alternativo"
+    "genre": "Alternativo",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Mon%20Laferte",
+    "spotifySearchUrl": "https://open.spotify.com/search/Mon%20Laferte"
   },
   {
     "id": "artist-144",
     "name": "Pablo Alborán",
     "language": "es",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Pablo%20Albor%C3%A1n",
+    "spotifySearchUrl": "https://open.spotify.com/search/Pablo%20Albor%C3%A1n"
   },
   {
     "id": "artist-145",
     "name": "Danny Ocean",
     "language": "es",
-    "genre": "Pop latino"
+    "genre": "Pop latino",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Danny%20Ocean",
+    "spotifySearchUrl": "https://open.spotify.com/search/Danny%20Ocean"
   },
   {
     "id": "artist-146",
     "name": "Lasso",
     "language": "es",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Lasso",
+    "spotifySearchUrl": "https://open.spotify.com/search/Lasso"
   },
   {
     "id": "artist-147",
     "name": "DannyLux",
     "language": "es",
-    "genre": "Regional mexicano"
+    "genre": "Regional mexicano",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=DannyLux",
+    "spotifySearchUrl": "https://open.spotify.com/search/DannyLux"
   },
   {
     "id": "artist-148",
     "name": "The Kid LAROI",
     "language": "en",
-    "genre": "Pop rap"
+    "genre": "Pop rap",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=The%20Kid%20LAROI",
+    "spotifySearchUrl": "https://open.spotify.com/search/The%20Kid%20LAROI"
   },
   {
     "id": "artist-149",
     "name": "Alicia Keys",
     "language": "en",
-    "genre": "R&B"
+    "genre": "R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Alicia%20Keys",
+    "spotifySearchUrl": "https://open.spotify.com/search/Alicia%20Keys"
   },
   {
     "id": "artist-150",
     "name": "Kali Uchis",
     "language": "en",
-    "genre": "R&B"
+    "genre": "R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Kali%20Uchis",
+    "spotifySearchUrl": "https://open.spotify.com/search/Kali%20Uchis"
   },
   {
     "id": "artist-151",
     "name": "Sia",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Sia",
+    "spotifySearchUrl": "https://open.spotify.com/search/Sia"
   },
   {
     "id": "artist-152",
     "name": "Avicii",
     "language": "en",
-    "genre": "Electrónica"
+    "genre": "Electrónica",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Avicii",
+    "spotifySearchUrl": "https://open.spotify.com/search/Avicii",
+    "featuredSongs": [
+      {
+        "title": "Wake Me Up",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Avicii%20Wake%20Me%20Up",
+        "spotifySearchUrl": "https://open.spotify.com/search/Avicii%20Wake%20Me%20Up"
+      },
+      {
+        "title": "The Nights",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Avicii%20The%20Nights",
+        "spotifySearchUrl": "https://open.spotify.com/search/Avicii%20The%20Nights"
+      }
+    ]
   },
   {
     "id": "artist-153",
     "name": "David Guetta",
     "language": "en",
-    "genre": "Electrónica"
+    "genre": "Electrónica",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=David%20Guetta",
+    "spotifySearchUrl": "https://open.spotify.com/search/David%20Guetta"
   },
   {
     "id": "artist-154",
     "name": "Calvin Harris",
     "language": "en",
-    "genre": "Electrónica"
+    "genre": "Electrónica",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Calvin%20Harris",
+    "spotifySearchUrl": "https://open.spotify.com/search/Calvin%20Harris"
   },
   {
     "id": "artist-155",
     "name": "Foo Fighters",
     "language": "en",
-    "genre": "Rock"
+    "genre": "Rock",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Foo%20Fighters",
+    "spotifySearchUrl": "https://open.spotify.com/search/Foo%20Fighters"
   },
   {
     "id": "artist-156",
     "name": "The Beatles",
     "language": "en",
-    "genre": "Rock"
+    "genre": "Rock",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=The%20Beatles",
+    "spotifySearchUrl": "https://open.spotify.com/search/The%20Beatles",
+    "featuredSongs": [
+      {
+        "title": "Let It Be",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=The%20Beatles%20Let%20It%20Be",
+        "spotifySearchUrl": "https://open.spotify.com/search/The%20Beatles%20Let%20It%20Be"
+      },
+      {
+        "title": "Hey Jude",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=The%20Beatles%20Hey%20Jude",
+        "spotifySearchUrl": "https://open.spotify.com/search/The%20Beatles%20Hey%20Jude"
+      }
+    ]
   },
   {
     "id": "artist-157",
     "name": "Queen",
     "language": "en",
-    "genre": "Rock"
+    "genre": "Rock",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Queen",
+    "spotifySearchUrl": "https://open.spotify.com/search/Queen",
+    "featuredSongs": [
+      {
+        "title": "Bohemian Rhapsody",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Queen%20Bohemian%20Rhapsody",
+        "spotifySearchUrl": "https://open.spotify.com/search/Queen%20Bohemian%20Rhapsody"
+      },
+      {
+        "title": "Don't Stop Me Now",
+        "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Queen%20Don't%20Stop%20Me%20Now",
+        "spotifySearchUrl": "https://open.spotify.com/search/Queen%20Don't%20Stop%20Me%20Now"
+      }
+    ]
   },
   {
     "id": "artist-158",
     "name": "Metallica",
     "language": "en",
-    "genre": "Metal"
+    "genre": "Metal",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Metallica",
+    "spotifySearchUrl": "https://open.spotify.com/search/Metallica"
   },
   {
     "id": "artist-159",
     "name": "Nirvana",
     "language": "en",
-    "genre": "Rock"
+    "genre": "Rock",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Nirvana",
+    "spotifySearchUrl": "https://open.spotify.com/search/Nirvana"
   },
   {
     "id": "artist-160",
     "name": "AURORA",
     "language": "en",
-    "genre": "Alternativo"
+    "genre": "Alternativo",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=AURORA",
+    "spotifySearchUrl": "https://open.spotify.com/search/AURORA"
   },
   {
     "id": "artist-161",
     "name": "Laufey",
     "language": "en",
-    "genre": "Jazz pop"
+    "genre": "Jazz pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Laufey",
+    "spotifySearchUrl": "https://open.spotify.com/search/Laufey"
   },
   {
     "id": "artist-162",
     "name": "Joji",
     "language": "en",
-    "genre": "R&B"
+    "genre": "R&B",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Joji",
+    "spotifySearchUrl": "https://open.spotify.com/search/Joji"
   },
   {
     "id": "artist-163",
     "name": "Conan Gray",
     "language": "en",
-    "genre": "Pop"
+    "genre": "Pop",
+    "youtubeSearchUrl": "https://www.youtube.com/results?search_query=Conan%20Gray",
+    "spotifySearchUrl": "https://open.spotify.com/search/Conan%20Gray"
   }
 ]
