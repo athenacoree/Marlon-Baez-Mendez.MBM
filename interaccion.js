@@ -82,6 +82,7 @@
   currentProfile=data;show(editModal,false);routeTo(data.handle,true);if(btn)btn.disabled=false;
  });
  async function loadRoute(){
+  if(routePath.includes("/confesiones/")){document.body.classList.remove("ia-home-mode","ia-profile-mode");document.body.classList.add("mbm-confession-page");return;}
   const handle=getHandle(routePath);
   if(!handle){
    document.body.classList.remove("ia-profile-mode");document.body.classList.add("ia-home-mode");
