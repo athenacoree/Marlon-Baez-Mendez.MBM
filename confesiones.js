@@ -3,7 +3,7 @@
 const cfg=window.MBM_SUPABASE;
 if(!cfg||!window.supabase||window.__MBM_CONFESSIONS)return;
 window.__MBM_CONFESSIONS=true;
-const db=window.supabase.createClient(cfg.url,cfg.key),FN="mbm-confessions";
+const db=window.MBM_DB||(window.MBM_DB=window.supabase.createClient(cfg.url,cfg.key)),FN="mbm-confessions";
 const $=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
 const api=async body=>{const {data,error}=await db.functions.invoke(FN,{body});if(error)throw new Error(data?.error||error.message||"No se pudo conectar con el servicio.");if(data?.error)throw new Error(data.error);return data};
 const visitor=()=>{let v=localStorage.getItem("mbm_conf_visitor");if(!v){v=crypto.randomUUID?crypto.randomUUID():Math.random().toString(36).slice(2)+Date.now();localStorage.setItem("mbm_conf_visitor",v)}return v};
@@ -29,7 +29,7 @@ function makeOwnerButton(){
  }catch(e){console.warn("No se pudo preparar Confesiones",e)}finally{window.__mbmConfOwnerChecking=false}})();
 }
 const observer=new MutationObserver(makeOwnerButton);observer.observe(document.documentElement,{childList:true,subtree:true});
-db.auth.onAuthStateChange(()=>setTimeout(makeOwnerButton,0));makeOwnerButton();
+db.auth.onAuthStateChange(()=>setTimeout(makeOwnerButton,0));window.addEventListener("mbm:route-change",()=>setTimeout(makeOwnerButton,0));makeOwnerButton();
 function buildPage(){document.body.classList.add("mbm-confession-page");document.body.append(page)}
 function publicHeader(data){
  const header=$("header","mc-head"),brand=$("a","mc-brand","INTERACCIÓN");brand.href=baseFrom(location.pathname);
