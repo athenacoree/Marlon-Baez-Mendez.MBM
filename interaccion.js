@@ -4,7 +4,7 @@
  const db=cfg&&window.supabase?(window.MBM_DB||(window.MBM_DB=window.supabase.createClient(cfg.url,cfg.key))):null;
  const $=id=>document.getElementById(id);
  const authModal=$("ia-auth-modal"),editModal=$("ia-edit-modal");
- let mode="signup",currentUser=null,currentProfile=null;
+ let mode="signup",currentUser=null,currentProfile=null,routeLoadId=0;
  const decodePath=()=>{const u=new URL(location.href);const forwarded=u.searchParams.get("__interaccion_path");if(forwarded){u.searchParams.delete("__interaccion_path");history.replaceState({}, "",u.pathname+(u.search?u.search:"")+u.hash);return forwarded;}return location.pathname;};
  let routePath=decodePath();
  window.__MBM_ROUTE_PATH=routePath;
@@ -33,10 +33,10 @@
     const {data,error}=await db.auth.signUp({email,password,options:{data:{display_name:name}}});
     if(error)throw error;
     if(!data.session){setMsg("ia-auth-message","Cuenta creada. Revisa tu correo para confirmar el registro y luego entra.");return;}
-    currentUser=data.user;await ensureProfile(name);show(authModal,false);$("ia-login-open").hidden=true;$("ia-signup-open").hidden=true;$("ia-account-open").hidden=false;routeTo(currentProfile.handle);
+    currentUser=data.user;await ensureProfile(name);show(authModal,false);$("ia-login-open").hidden=true;$("ia-signup-open").hidden=true;$("ia-account-open").hidden=false;await routeTo(currentProfile.handle);
    }else{
     const {data,error}=await db.auth.signInWithPassword({email,password});if(error)throw error;
-    currentUser=data.user;await ensureProfile();show(authModal,false);$("ia-login-open").hidden=true;$("ia-signup-open").hidden=true;$("ia-account-open").hidden=false;routeTo(currentProfile.handle);
+    currentUser=data.user;await ensureProfile();show(authModal,false);$("ia-login-open").hidden=true;$("ia-signup-open").hidden=true;$("ia-account-open").hidden=false;await routeTo(currentProfile.handle);
    }
   }catch(err){setMsg("ia-auth-message",err.message||"No se pudo completar el acceso.");}
   finally{button.disabled=false;}
@@ -82,9 +82,10 @@
   const btn=e.submitter; if(btn)btn.disabled=true;setMsg("ia-edit-message","Guardando…");
   const {data,error}=await db.from("profiles").update({name,handle,bio}).eq("id",currentUser.id).select("id,name,handle,bio,avatar_url,cover_url").single();
   if(error){setMsg("ia-edit-message",error.code==="23505"?"Esa dirección ya está ocupada. Prueba otra.":error.message);if(btn)btn.disabled=false;return;}
-  currentProfile=data;show(editModal,false);routeTo(data.handle,true);if(btn)btn.disabled=false;
+  currentProfile=data;show(editModal,false);await routeTo(data.handle,true);if(btn)btn.disabled=false;
  });
  async function loadRoute(){
+  const requestId=++routeLoadId,requestedPath=routePath;
   if(routePath.includes("/confesiones/")){document.body.classList.remove("ia-home-mode","ia-profile-mode");document.body.classList.add("mbm-confession-page");return;}
   document.body.classList.remove("mbm-confession-page");$("mbmConfessionsApp")?.remove();
   const handle=getHandle(routePath);
@@ -101,7 +102,9 @@
   }
   if(!db){document.body.classList.remove("ia-profile-mode");document.body.classList.add("ia-home-mode");$("eyebrow").textContent="SIN CONEXIÓN";$("name").textContent="No se pudo cargar el perfil."; $("tagline").textContent="Comprueba tu conexión e inténtalo de nuevo.";return;}
   let {data,error}=await db.from("profiles").select("id,name,handle,bio,avatar_url,cover_url").eq("handle",handle).maybeSingle();
+  if(requestId!==routeLoadId||requestedPath!==routePath)return;
   if(!error&&!data){const legacy=await db.from("profiles").select("id,name,handle,bio,avatar_url,cover_url").eq("handle","@"+handle).maybeSingle();data=legacy.data;error=legacy.error;}
+  if(requestId!==routeLoadId||requestedPath!==routePath)return;
   if(error||!data){const oldActions=$("ia-profile-actions");if(oldActions)oldActions.remove();document.body.classList.remove("ia-profile-mode");document.body.classList.add("ia-home-mode");$("eyebrow").textContent="PERFIL NO ENCONTRADO";$("name").textContent="Este perfil no está disponible."; $("tagline").textContent="Comprueba que el enlace esté escrito correctamente.";return;}
   const owner=!!currentUser&&currentUser.id===data.id;applyProfile(data,owner);
  }
@@ -113,5 +116,5 @@
   if(!currentUser){currentProfile=null;$("ia-login-open").hidden=false;$("ia-signup-open").hidden=false;$("ia-account-open").hidden=true;}
   else{$("ia-login-open").hidden=true;$("ia-signup-open").hidden=true;$("ia-account-open").hidden=false;}
  });
- refreshSession().then(loadRoute);
+ refreshSession().then(loadRoute).then(()=>window.dispatchEvent(new CustomEvent("mbm:route-change",{detail:{path:routePath}})));
 })();
