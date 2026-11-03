@@ -251,7 +251,7 @@ Deno.serve(async (req: Request) => {
       visits.forEach(x=>addDay(x.created_at,"visits"));messages.forEach(x=>addDay(x.created_at,"messages"));replies.forEach(x=>addDay(x.created_at,"replies"));reactions.forEach(x=>addDay(x.created_at,"reactions"));
       return json({
         link, totals:{visits:visits.length,messages:messages.length,public:messages.filter(x=>x.visibility==="public").length,private:messages.filter(x=>x.visibility==="private").length,replies:replies.length,reactions:reactions.length,reports:reportRows.filter(x=>messages.some(m=>m.id===x.confession_id)).length},
-        daily:Object.values(daily), messages:messages.map(m=>({...m,reply_count:replies.filter(x=>x.confession_id===m.id).length,reaction_count:reactions.filter(x=>x.confession_id===m.id).length,report_count:(reports.data||[]).filter(x=>x.confession_id===m.id).length})),
+        daily:Object.values(daily), messages:messages.map(m=>({...m,reply_count:replies.filter(x=>x.confession_id===m.id).length,reaction_count:reactions.filter(x=>x.confession_id===m.id).length,report_count:reportRows.filter(x=>x.confession_id===m.id).length})),
       });
     }
     return fail("Acción desconocida.");
